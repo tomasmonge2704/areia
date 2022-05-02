@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Nabvar from './components/NabVar/Nabvar';
+import Home from './components/NabVar/home';
+import Datos from './components/NabVar/datos';
+import Mapa from './components/NabVar/mapa';
+import Sponsors from './components/NabVar/sponsors';
+import FotosFooter from './components/NabVar/fotosFooter';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nabvar/>
+      <Home/>
+      <Datos/>
+      <Mapa/>
+      <Sponsors/>
+      <FotosFooter/>
     </div>
   );
 }
