@@ -41,20 +41,21 @@
 
 .datos{
   background-color: #1c1c1c;
-  height:20rem;
+  height:17rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 h1{
   color:rgb(243 255 51);
-  font-weight:5;
+  font-size:2rem !important;
 }
 .datos p{
   color: aliceblue;
 }
 .nav-link{
-  padding-left: 60px !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
   color: #f1f1f18a !important ;
 }
 .nav-link:hover{
@@ -65,4 +66,15 @@ h1{
 }
 .comoLlegar{
   width: 50%;
+}
+.NavContacto{
+  color: #C3D900 !important;
+}
+#navLogo{
+height: 100%;
+width: 200px;
+transform: scale(2);
+}
+.datos div:hover p{
+  color:#C3D900
 }
