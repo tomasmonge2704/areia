@@ -92,6 +92,9 @@ transform: scale(4);
 .navbar-nav{
   margin-left: 3vh;
 }
+.navbar-light .navbar-toggler-icon{
+  filter: invert(1);
+}
 @media (max-width: 991px) {
  .container{
    justify-content: space-between !important;
@@ -112,9 +115,8 @@ transform: scale(4);
 }
 .datos{
   height: 20rem;
-  display:block;
-}
-.datos div{
-  width: 19%;
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  text-align: center;
 }
 }
