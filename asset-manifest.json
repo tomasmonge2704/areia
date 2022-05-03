@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.80d88e3d.css",
+    "main.css": "./static/css/main.fb716865.css",
     "main.js": "./static/js/main.91f9cb2f.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areiaeditadas-104.jpg": "./static/media/Areiaeditadas-104.54bf2c14ffdc8ff1329d.jpg",
@@ -12,12 +12,12 @@
     "static/media/Areia_Logotipo_Color.png": "./static/media/Areia_Logotipo_Color.dc1084809ab1ea26a562.png",
     "static/media/trown.png": "./static/media/trown.7181b119488391188746.png",
     "index.html": "./index.html",
-    "main.80d88e3d.css.map": "./static/css/main.80d88e3d.css.map",
+    "main.fb716865.css.map": "./static/css/main.fb716865.css.map",
     "main.91f9cb2f.js.map": "./static/js/main.91f9cb2f.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80d88e3d.css",
+    "static/css/main.fb716865.css",
     "static/js/main.91f9cb2f.js"
   ]
 }
