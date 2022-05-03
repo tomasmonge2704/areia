@@ -30,6 +30,17 @@ function App() {
           </div>
         }>
         </Route>
+        <Route exact path="/Areia/" element={
+          <div>
+            <Nabvar />
+            <Home />
+            <Datos />
+            <Mapa />
+            <Sponsors />
+            <FotosFooter />
+          </div>
+        }>
+        </Route>
         <Route exact path="/nosotros" element={
           <div>
             <Nabvar />
@@ -45,6 +56,27 @@ function App() {
         }>
         </Route>
         <Route exact path="/contacto" element={
+          <div>
+            <Nabvar />
+            
+          </div>
+        }>
+        </Route>
+        <Route exact path="/Areia/nosotros" element={
+          <div>
+            <Nabvar />
+          
+          </div>
+        }>
+        </Route>
+        <Route exact path="/Areia/eventos" element={
+          <div>
+            <Nabvar />
+            
+          </div>
+        }>
+        </Route>
+        <Route exact path="/Areia/contacto" element={
           <div>
             <Nabvar />
             

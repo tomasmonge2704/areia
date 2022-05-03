@@ -5,7 +5,7 @@ export default function Nabvar() {
     return (
         <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#1c1c1c" }}>
             <Container>
-                <Navbar.Brand href="#home" id="logoMobile" style={{ width: "100px" }}><img id="navLogo" src={logo} /></Navbar.Brand>
+                <Navbar.Brand href="#home" id="logoMobile" style={{ width: "100px" }}><Link to={`/`} style={{ textDecoration: "none" }}><img id="navLogo" src={logo} /></Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
