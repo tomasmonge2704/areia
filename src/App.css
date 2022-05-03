@@ -97,6 +97,18 @@ transform: scale(4);
 .navbar-light .navbar-toggler-icon{
   filter: invert(1);
 }
+#comoLlegar{
+  height: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#mapa2{
+  width: 50%;
+}
+#textMapa{
+  margin-bottom: 15%;
+}
 @media (max-width: 991px) {
  .container{
    justify-content: space-between !important;
@@ -119,6 +131,18 @@ transform: scale(4);
   height: 20rem;
   display: grid;
   grid-template-columns: repeat(2, 0fr);
+  text-align: center;
+}
+#comoLlegar{
+  height: auto;
+  display: initial;
+}
+#mapa2{
+  width: 100%;
+}
+#textMapa{
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
 }
 }
