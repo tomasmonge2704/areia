@@ -8,23 +8,51 @@ import FotosFooter from './components/NabVar/fotosFooter';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
   useEffect(() => {
     AOS.init(
-      {duration : 2000}
+      { duration: 2000 }
     );
     AOS.refresh();
   }, []);
   return (
-    <div>
-      <Nabvar/>
-      <Home/>
-      <Datos/>
-      <Mapa/>
-      <Sponsors/>
-      <FotosFooter/>
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route exact path="/" element={
+          <div>
+            <Nabvar />
+            <Home />
+            <Datos />
+            <Mapa />
+            <Sponsors />
+            <FotosFooter />
+          </div>
+        }>
+        </Route>
+        <Route exact path="/nosotros" element={
+          <div>
+            <Nabvar />
+          
+          </div>
+        }>
+        </Route>
+        <Route exact path="/eventos" element={
+          <div>
+            <Nabvar />
+            
+          </div>
+        }>
+        </Route>
+        <Route exact path="/contacto" element={
+          <div>
+            <Nabvar />
+            
+          </div>
+        }>
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 

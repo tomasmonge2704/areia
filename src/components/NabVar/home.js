@@ -5,8 +5,10 @@ export default function Home (){
         <div className="home" style={{backgroundImage:`url(${Imagen2}), url(${Imagen1})`}}>
             
             <div>
+                <a href="https://linktr.ee/estoesareia">
                 <button data-aos="fade-up" id="bottone1"><strong>INSCRIBITE</strong><p>en un click!</p>
                 </button>
+                </a>
                 </div>
 
         </div>
