@@ -13,7 +13,7 @@ export default function Nabvar() {
                             <Nav.Link href="#features">INICIO</Nav.Link>
                         </Link>
                         <Link to={`/nosotros`} style={{ textDecoration: "none" }}>
-                            <Nav.Link href="#pricing" style={{ marginRight: "7vh", marginLeft: "2vh" }}>NOSOTROS</Nav.Link>
+                            <Nav.Link href="#pricing" style={{ marginRight: "5vh", marginLeft: "2vh" }}>NOSOTROS</Nav.Link>
                         </Link>
                     </Nav>
                     <Link to={`/`} style={{ textDecoration: "none" }}>
@@ -25,7 +25,7 @@ export default function Nabvar() {
                     </Link>
                     <Nav>
                         <Link to={`/eventos`} style={{ textDecoration: "none" }}>
-                            <Nav.Link href="#deets" style={{ marginLeft: "7vh", marginRight: "2vh" }}>EVENTOS</Nav.Link>
+                            <Nav.Link href="#deets" style={{ marginLeft: "4vh", marginRight: "2vh" }}>EVENTOS</Nav.Link>
                         </Link>
 
                         <Nav.Link href="#memes" style={{display:"flex", justifyContent:"space-between"}}>

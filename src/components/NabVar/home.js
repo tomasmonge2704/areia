@@ -6,7 +6,7 @@ export default function Home (){
             
             <div>
                 <a href="https://linktr.ee/estoesareia">
-                <button data-aos="fade-up" id="bottone1"><strong>INSCRIBITE</strong><p>en un click!</p>
+                <button data-aos="fade-up" id="bottone1"><strong>INSCRIBITE</strong><p>EN UN CLICK!</p>
                 </button>
                 </a>
                 </div>

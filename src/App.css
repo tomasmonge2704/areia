@@ -1,6 +1,10 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-*{
-  font-family:Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Scandia';
+  src: url('Scandia/Scandia.otf') format('otf'),
+  url('Scandia/Scandia Medium.otf') format('otf');
+  font-style: normal;
+  font-weight: normal;
 }
 
 .padding{
@@ -26,6 +30,7 @@
   padding-bottom: 5px;
   padding-top: 10px;
   border-radius: 9px;
+  color: #1c1c1c;
   background: rgb(243 255 51);
   border: none;
   font-family: inherit;
