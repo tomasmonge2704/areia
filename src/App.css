@@ -162,6 +162,10 @@ a{
  .container{
    justify-content: space-between !important;
  }
+ #bottone1{
+  padding-left: 3rem;
+  padding-right: 3rem;
+ }
  #logoMobile{
   display:initial;
   margin-left: 2rem;

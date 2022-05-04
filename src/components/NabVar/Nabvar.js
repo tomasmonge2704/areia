@@ -33,7 +33,7 @@ export default function Nabvar() {
                                 CONTACTO
                             </Link>
                             <div id="socialIcons">
-                                <a href="#"><i class="fa fa-instagram"></i> </a>
+                                <a href="https://www.instagram.com/areiafutbol/"><i class="fa fa-instagram"></i> </a>
                                 <a href="#"><i class="fa fa-phone"></i> </a>
                             </div>
                         </Nav.Link>
