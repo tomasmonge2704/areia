@@ -27,11 +27,17 @@ export default function Nabvar() {
                         <Link to={`/eventos`} style={{ textDecoration: "none" }}>
                             <Nav.Link href="#deets" style={{ marginLeft: "7vh", marginRight: "2vh" }}>EVENTOS</Nav.Link>
                         </Link>
-                        <Link to={`/contacto`} style={{ textDecoration: "none" }}>
-                            <Nav.Link className="NavContacto" href="#memes">
+
+                        <Nav.Link href="#memes" style={{display:"flex", justifyContent:"space-between"}}>
+                            <Link to={`/contacto`} className="NavContacto" style={{ textDecoration: "none" }}>
                                 CONTACTO
-                            </Nav.Link>
-                        </Link>
+                            </Link>
+                            <div id="socialIcons">
+                                <a href="#"><i class="fa fa-instagram"></i> </a>
+                                <a href="#"><i class="fa fa-phone"></i> </a>
+                            </div>
+                        </Nav.Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>

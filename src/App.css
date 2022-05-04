@@ -1,3 +1,4 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 *{
   font-family:Arial, Helvetica, sans-serif;
 }
@@ -111,6 +112,46 @@ transform: scale(4);
 #mapa{
   height: 50vh;
   width: 100%;
+}
+strong{
+  font-size: 22px;
+}
+a{
+  text-decoration: none !important;
+}
+.fa-instagram{
+ 
+  color: #1c1c1c;
+  background-color: #C3D900;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.fa-phone{
+  color: #1c1c1c;
+  background-color: #C3D900;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.fa-instagram:hover{
+  background-color: white;
+}
+.fa-phone:hover{
+  background-color: white;
+}
+#socialIcons{
+  display: flex;
+  margin-left: 30%;
+}
+#socialIcons a{
+  padding-left: 5px;
 }
 @media (max-width: 991px) {
  .container{
