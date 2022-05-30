@@ -6,7 +6,9 @@
   font-style: normal;
   font-weight: normal;
 }
-
+body{
+  background-color: #1c1c1c !important;
+}
 .padding{
   padding: 4rem;
 }
@@ -98,7 +100,7 @@ transform: scale(4);
   flex-grow: unset !important;
 }
 .navbar-nav{
-  margin-left: 3vh;
+  margin-left: 5vh;
 }
 .navbar-light .navbar-toggler-icon{
   filter: invert(1);
@@ -115,7 +117,6 @@ transform: scale(4);
   margin-bottom: 15%;
 }
 #mapa{
-  height: 50vh;
   width: 100%;
 }
 strong{
@@ -158,6 +159,11 @@ a{
 #socialIcons a{
   padding-left: 5px;
 }
+.sponsor{
+  max-height: 220px;
+  max-width: 190px;
+  min-height: 90px;
+}
 @media (max-width: 991px) {
  .container{
    justify-content: space-between !important;
@@ -198,7 +204,15 @@ a{
   margin-bottom: 5%;
   text-align: center;
 }
-#mapa{
-  height: 300px;
+
+.sponsor{
+  max-width:125px;
+  min-height: 50px;
 }
+}
+#contact-form{
+  border-radius: 37px;
+  background: #1c1c1c;
+  box-shadow:  16px 16px 32px #181818,
+               -16px -16px 32px #202020;
 }

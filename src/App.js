@@ -8,7 +8,8 @@ import FotosFooter from './components/NabVar/fotosFooter';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter,Routes, Route } from "react-router-dom";
+import Contacto from './components/NabVar/contacto';
 function App() {
   useEffect(() => {
     AOS.init(
@@ -17,7 +18,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={
           <div>
@@ -58,7 +59,8 @@ function App() {
         <Route exact path="/contacto" element={
           <div>
             <Nabvar />
-            
+            <Contacto/>
+            <Mapa/>
           </div>
         }>
         </Route>
@@ -84,7 +86,7 @@ function App() {
         }>
         </Route>
       </Routes>
-    </HashRouter>
+      </BrowserRouter>
   );
 }
 

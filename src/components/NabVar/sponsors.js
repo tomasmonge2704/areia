@@ -7,17 +7,17 @@ import sponsor5 from "../../SELECCION DE FOTOS/trown.png"
 
 export default function Sponsors () {
     return(
-        <div style={{display:"grid",justifyContent:"center",textAlign:"center",width:"100%",marginBottom:"3rem"}}>
+        <div style={{display:"grid",justifyContent:"center",textAlign:"center",width:"100%",paddingBottom:"3rem",backgroundColor:"white"}}>
             <p style={{marginTop:"3rem"}}>MAIN SPONSORS</p>
             <div>
-            <img src={sponsor}/>
-            <img src={sponsor2}/>
-            <img src={sponsor3}/>
+            <img className="sponsor" src={sponsor}/>
+            <img className="sponsor" src={sponsor2}/>
+            <img className="sponsor" src={sponsor3}/>
             </div>
             <p>PARTNERS</p>
             <div>
-            <img src={sponsor4}/>
-            <img src={sponsor5}/>
+            <img className="sponsor" src={sponsor4}/>
+            <img className="sponsor" src={sponsor5}/>
             </div>
         </div>
     )
