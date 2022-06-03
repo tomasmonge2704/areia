@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {HashRouter,Routes, Route } from "react-router-dom";
-import Contacto from './components/NabVar/contacto';
+import Inicio from './components/NabVar/inicio';
 function App() {
   useEffect(() => {
     AOS.init(
@@ -22,12 +22,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={
           <div>
-            <Nabvar />
-            <Home />
-            <Datos />
-            <Mapa />
-            <Sponsors />
-            <FotosFooter />
+            <Nabvar section="inicio"/>
+            <Inicio/>
           </div>
         }>
         </Route>
@@ -44,23 +40,26 @@ function App() {
         </Route>
         <Route exact path="/nosotros" element={
           <div>
-            <Nabvar />
+            <Nabvar section="nosotros" />
           
           </div>
         }>
         </Route>
         <Route exact path="/eventos" element={
           <div>
-            <Nabvar />
+            <Nabvar section="eventos"/>
             
           </div>
         }>
         </Route>
         <Route exact path="/contacto" element={
           <div>
-            <Nabvar />
-            <Contacto/>
-            <Mapa/>
+            <Nabvar section="contacto" />
+            <Home />
+            <Datos />
+            <Mapa />
+            <Sponsors />
+            <FotosFooter />
           </div>
         }>
         </Route>

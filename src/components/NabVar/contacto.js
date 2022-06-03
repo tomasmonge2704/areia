@@ -12,7 +12,7 @@ export default function Contacto(){
         </div>
         <div >
             <h1 style={{color:"rgb(255 255 254)"}}>Inscripciones</h1>
-            <button data-aos="fade-up" id="bottone1"><h2 style={{color:"black",fontWeight:"300"}}>Ir a inscripciones</h2>
+            <button id="bottone1"><h2 style={{color:"black",fontWeight:"300"}}>Ir a inscripciones</h2>
                 </button>
         </div>
         </div>

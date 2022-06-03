@@ -22,7 +22,7 @@ body{
    align-items: center;
    height: 40rem;
    background-repeat: no-repeat, no-repeat;
-   background-size: 50% 100%, 50% 100%;
+   background-size: 50% 100%, 58% 100%;
    background-position: left center, right center;
  }
  /* From uiverse.io by @Custyyyy */
@@ -57,11 +57,30 @@ body{
   justify-content: space-evenly;
   align-items: center;
 }
-h1{
+.contactoFooter{
+  height:8rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.datos h1{
   color:rgb(243 255 51);
   font-size:2rem !important;
 }
+.footer{
+  color:rgb(243 255 51);
+  font-size:35px !important;
+  font-weight: 300;
+}
 .datos p{
+  color: aliceblue;
+}
+.contactoFooter h1{
+  font-size: 17px !important;
+  color: aliceblue;
+}
+.contactoFooter p{
   color: aliceblue;
 }
 .nav-link{
@@ -78,7 +97,16 @@ h1{
 .comoLlegar{
   width: 50%;
 }
-.NavContacto{
+#navInicio .inicio{
+  color: #C3D900 !important;
+}
+#navNosotros .nosotros{
+  color: #C3D900 !important;
+}
+#navEventos .eventos{
+  color: #C3D900 !important;
+}
+#navContacto .contacto{
   color: #C3D900 !important;
 }
 #navLogo{
@@ -154,15 +182,15 @@ a{
 }
 #socialIcons{
   display: flex;
-  margin-left: 30%;
+  margin-left: 10%;
 }
 #socialIcons a{
   padding-left: 5px;
 }
 .sponsor{
-  max-height: 220px;
-  max-width: 190px;
-  min-height: 90px;
+  filter: grayscale(1);
+  max-height: 150px;
+  max-width: 100px;
 }
 @media (max-width: 991px) {
  .container{
@@ -206,8 +234,20 @@ a{
 }
 
 .sponsor{
-  max-width:125px;
-  min-height: 50px;
+  max-width:90px;
+  min-height: 40px;
+}
+#socialIcons{
+  position: relative;
+  left: 77%;
+  top:-35px;
+  margin-left: 0;
+}
+.navbar-nav{
+  margin-left: 0;
+}
+.container, .container-md, .container-sm{
+  max-width: 100% !important;
 }
 }
 #contact-form{

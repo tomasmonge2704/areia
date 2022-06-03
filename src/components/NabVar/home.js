@@ -1,5 +1,5 @@
-import Imagen1 from "../../SELECCION DE FOTOS/arei-66.jpg"
-import Imagen2 from "../../SELECCION DE FOTOS/areia0412-10.jpg"
+import Imagen1 from "../../SELECCION DE FOTOS/fotoHome2.png"
+import Imagen2 from "../../SELECCION DE FOTOS/fotoHome1.png"
 export default function Home (){
     return(
         <div className="home" style={{backgroundImage:`url(${Imagen2}), url(${Imagen1})`}}>
