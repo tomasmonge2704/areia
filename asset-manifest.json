@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.86033288.css",
-    "main.js": "./static/js/main.b3af621f.js",
+    "main.css": "./static/css/main.5f3d74da.css",
+    "main.js": "./static/js/main.618df157.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
-    "static/media/Areiaeditadas-104.jpg": "./static/media/Areiaeditadas-104.54bf2c14ffdc8ff1329d.jpg",
-    "static/media/arei-66.jpg": "./static/media/arei-66.ea8d6beda0f3c40b9d65.jpg",
-    "static/media/areia13_11-005.jpg": "./static/media/areia13_11-005.891b10c540dbe53744a3.jpg",
-    "static/media/areia0412-10.jpg": "./static/media/areia0412-10.98fe81baeb08d9bcf2b4.jpg",
-    "static/media/mapa.png": "./static/media/mapa.4ba8139203d5d0acab57.png",
-    "static/media/sponsor.png": "./static/media/sponsor.f475ea2c5601ca0c70f8.png",
+    "static/media/fotoInicio.png": "./static/media/fotoInicio.8665abf6af8850f23e30.png",
+    "static/media/fotoHome2.png": "./static/media/fotoHome2.5338b08fff028092ad92.png",
+    "static/media/fotoFooter1.png": "./static/media/fotoFooter1.13793a1163850d43d289.png",
+    "static/media/fotoHome1.png": "./static/media/fotoHome1.e13155b1f951b170ce9b.png",
+    "static/media/fotoFooter2.png": "./static/media/fotoFooter2.30c837222cdbb814f51c.png",
+    "static/media/mapa.png": "./static/media/mapa.f4013777edde12dc6237.png",
+    "static/media/mapa2.png": "./static/media/mapa2.6b0cf670251a5e2c4fe9.png",
+    "static/media/sponsor.png": "./static/media/sponsor.ab11f9a020ee81015586.png",
     "static/media/Areia_Logotipo_Color.png": "./static/media/Areia_Logotipo_Color.dc1084809ab1ea26a562.png",
     "static/media/Scandia.otf": "./static/media/Scandia.c1f02e85c347a4d48ea5.otf",
     "static/media/Scandia Medium.otf": "./static/media/Scandia Medium.7f91aae81f5032f3f2f7.otf",
-    "static/media/mapa2.png": "./static/media/mapa2.6ff2af088bf9ba7fb7ea.png",
-    "static/media/budweiser.png": "./static/media/budweiser.f65b0ba5fa745598a695.png",
-    "static/media/puma.png": "./static/media/puma.13dd4c4026fec2bfea4e.png",
+    "static/media/budweiser.png": "./static/media/budweiser.b8b2ce05a162c0e086a9.png",
+    "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
+    "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "static/media/trown.png": "./static/media/trown.7181b119488391188746.png",
     "index.html": "./index.html",
-    "main.86033288.css.map": "./static/css/main.86033288.css.map",
-    "main.b3af621f.js.map": "./static/js/main.b3af621f.js.map",
+    "main.5f3d74da.css.map": "./static/css/main.5f3d74da.css.map",
+    "main.618df157.js.map": "./static/js/main.618df157.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86033288.css",
-    "static/js/main.b3af621f.js"
+    "static/css/main.5f3d74da.css",
+    "static/js/main.618df157.js"
   ]
 }
