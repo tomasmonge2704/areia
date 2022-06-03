@@ -249,6 +249,13 @@ a{
 .container, .container-md, .container-sm{
   max-width: 100% !important;
 }
+.textInicio{
+font-size: 14px !important;
+}
+.storeButton img{
+  margin-right: 0 !important;
+  max-width: 175px;
+}
 }
 #contact-form{
   border-radius: 37px;

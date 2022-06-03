@@ -7,16 +7,16 @@ export default function Inicio (){
         <img src={Imagen} style={{width:"100%"}}/>
         <div style={{backgroundColor:"white",height:"25rem",display:"grid",justifyContent:"space-around",textAlign:"center",alignContent:"center"}}>
             <p style={{color:"black",fontSize:"40px"}}>AREIA APP</p>
-            <div>
+            <div className="storeButton">
             <img src={appStore} style={{marginRight:"10px"}}/>
             <img src={playStore}style={{marginLeft:"10px"}}/>
             </div>
-            <p style={{color:"black",fontSize:"25px",marginTop:"30px"}}>POSICIONES,ESTADISTICAS,CANCHAS,NOTICIAS Y MAS<br/><strong>Descarga la app y enterate de todo!</strong></p>
+            <p className="textInicio" style={{color:"black",fontSize:"25px",marginTop:"30px"}}>POSICIONES,ESTADISTICAS,CANCHAS,NOTICIAS Y MAS<br/><strong>Descarga la app y enterate de todo!</strong></p>
             
         </div>
         <footer>
         <h1 className="footer" style={{marginLeft:"13%",fontSize:"30px",marginTop:"5rem"}}>CONTACTO</h1>
-        <div className="contactoFooter">
+        <div className="contactoFooter" style={{display:"grid",justifiContent:"center"}}>
         
             <div><h1>TEL.</h1> <p>03484218510</p></div>
             <div><h1>WA.</h1> <p>1141576513</p></div>
