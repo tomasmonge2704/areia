@@ -10,6 +10,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {HashRouter,Routes, Route } from "react-router-dom";
 import Inicio from './components/NabVar/inicio';
+import Nosotros from './components/NabVar/nosotros';
+import Eventos from './components/NabVar/eventos';
 function App() {
   useEffect(() => {
     AOS.init(
@@ -41,14 +43,14 @@ function App() {
         <Route exact path="/nosotros" element={
           <div>
             <Nabvar section="nosotros" />
-          
+            <Nosotros/>
           </div>
         }>
         </Route>
         <Route exact path="/eventos" element={
           <div>
             <Nabvar section="eventos"/>
-            
+            <Eventos/>
           </div>
         }>
         </Route>

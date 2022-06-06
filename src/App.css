@@ -25,6 +25,24 @@ body{
    background-size: 50% 100%, 58% 100%;
    background-position: left center, right center;
  }
+ .nosotrosHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 34% 100%, 34% 100%,34% 100%;
+  background-position: left center, center center, right center;
+}
+.nosotrosGaleria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 25% 100%, 50% 100%,25% 100%;
+  background-position: left center, center center, right center;
+}
  /* From uiverse.io by @Custyyyy */
 #bottone1 {
   padding-left: 5rem;
@@ -249,12 +267,18 @@ a{
 .container, .container-md, .container-sm{
   max-width: 100% !important;
 }
-.textInicio{
-font-size: 14px !important;
+.textInicio, strong{
+font-size: 12px !important;
 }
+
 .storeButton img{
   margin-right: 0 !important;
-  max-width: 175px;
+  max-width: 140px;
+}
+.contactoFooter{
+  display: grid;
+  justify-content: center;
+  margin-bottom: 13rem;
 }
 }
 #contact-form{
@@ -262,4 +286,10 @@ font-size: 14px !important;
   background: #1c1c1c;
   box-shadow:  16px 16px 32px #181818,
                -16px -16px 32px #202020;
+}
+.nosotrosInfo p,strong{
+  color: black;
+}
+.nosotrosInfo strong{
+  font-size: 15px;
 }

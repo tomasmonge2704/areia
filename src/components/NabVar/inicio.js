@@ -1,6 +1,7 @@
 import Imagen from "../../SELECCION DE FOTOS/fotoInicio.png"
 import appStore from "../../SELECCION DE FOTOS/available_on_app_store.png"
 import playStore from "../../SELECCION DE FOTOS/available_on_google_play.png"
+import ContactoFooter from "./contactoFooter"
 export default function Inicio (){
     return(
         <>
@@ -14,16 +15,7 @@ export default function Inicio (){
             <p className="textInicio" style={{color:"black",fontSize:"25px",marginTop:"30px"}}>POSICIONES,ESTADISTICAS,CANCHAS,NOTICIAS Y MAS<br/><strong>Descarga la app y enterate de todo!</strong></p>
             
         </div>
-        <footer>
-        <h1 className="footer" style={{marginLeft:"13%",fontSize:"30px",marginTop:"5rem"}}>CONTACTO</h1>
-        <div className="contactoFooter" style={{display:"grid",justifiContent:"center"}}>
-        
-            <div><h1>TEL.</h1> <p>03484218510</p></div>
-            <div><h1>WA.</h1> <p>1141576513</p></div>
-            <div><h1>UBICACION.</h1> <p>PATRICIAS ARGENTINAS 4005, PILAR</p></div>
-            <div><h1>MAIL.</h1> <p>INFO@AREIA.COM.AR</p></div>
-        </div>
-        </footer>
+        <ContactoFooter/>
         </>
     )
 }
