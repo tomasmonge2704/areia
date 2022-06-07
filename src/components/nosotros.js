@@ -11,7 +11,7 @@ import video1 from "../videos/video1.mp4";
 import video2 from "../videos/video2.mp4";
 import video3 from "../videos/video3.mp4";
 import ContactoFooter from "./contactoFooter";
-import $ from "jquery";
+
 
 export default function Nosotros() {
   function play(e) {
@@ -60,7 +60,7 @@ export default function Nosotros() {
           />
           <img style={{ maxWidth: "100%" }} src={Imagen5} />
         </div>
-        <div>
+        <div className="textTorneo">
           <h1 style={{ color: "white", fontWeight: "200" }}>TORNEO</h1>
           <p style={{ color: "white", fontWeight: "200" }}>
             <strong style={{ color: "white", fontWeight: "500" }}>AREIA</strong>{" "}

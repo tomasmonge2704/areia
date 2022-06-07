@@ -349,7 +349,7 @@ font-size: 12px !important;
 }
 .contenedor{
   padding-top: 10rem;
-  padding-left: 6rem;
+  padding-left: 0rem;
 }
 .contenedor div{
   width: 100% !important;
@@ -363,7 +363,7 @@ font-size: 12px !important;
   height: 20rem;
 }
 .canchas .titulo{
-  top: 11px !important;
+  top: 4px !important;
   font-size: 44px;
 }
 .imgTorneo div{
@@ -381,4 +381,24 @@ font-size: 12px !important;
 }
 .nosotrosInfo strong{
   font-size: 15px;
+}
+@media (max-height: 900px) {
+  .homeVideos video:hover{
+    position: absolute;
+    width: 90%;
+    height: 73%;
+    z-index: 1000;
+  }
+  .textTorneo{
+    padding: 5%;
+  }
+  #bottone1{
+    padding-top: 0px;
+  }
+}
+@media (max-height: 667px) {
+  .homeVideos video:hover {
+    width: 80%;
+    height: 78%;
+  }
 }
