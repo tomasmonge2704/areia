@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.244c4cf4.css",
-    "main.js": "./static/js/main.4f920432.js",
+    "main.css": "./static/css/main.ef528fb5.css",
+    "main.js": "./static/js/main.28617803.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
+    "static/media/fotoCancha.png": "./static/media/fotoCancha.9fdb0e84fa54bd801577.png",
     "static/media/fotoInicio.png": "./static/media/fotoInicio.8665abf6af8850f23e30.png",
     "static/media/fotoHome2.png": "./static/media/fotoHome2.5338b08fff028092ad92.png",
     "static/media/fotoFooter1.png": "./static/media/fotoFooter1.13793a1163850d43d289.png",
     "static/media/fotoHome1.png": "./static/media/fotoHome1.e13155b1f951b170ce9b.png",
+    "static/media/GALERIA2.png": "./static/media/GALERIA2.15afc03acc9d8b7dda50.png",
     "static/media/fotoFooter2.png": "./static/media/fotoFooter2.30c837222cdbb814f51c.png",
+    "static/media/GALERIA3.png": "./static/media/GALERIA3.c352b9dce7c8b8e559c6.png",
+    "static/media/video2.png": "./static/media/video2.40027fe352c93830f202.png",
+    "static/media/video3.png": "./static/media/video3.de85ede0ac12fa69d650.png",
+    "static/media/areia 13_11-060.png": "./static/media/areia 13_11-060.184c4a35fc72a51a0e35.png",
+    "static/media/areia0412-29.png": "./static/media/areia0412-29.b237a8fb9a22f1565396.png",
+    "static/media/GALERIA1.png": "./static/media/GALERIA1.c4de3f770c4773a8eccb.png",
+    "static/media/video1.png": "./static/media/video1.356dd401b43f5548043a.png",
     "static/media/mapa.png": "./static/media/mapa.f4013777edde12dc6237.png",
     "static/media/mapa2.png": "./static/media/mapa2.6b0cf670251a5e2c4fe9.png",
     "static/media/sponsor.png": "./static/media/sponsor.ab11f9a020ee81015586.png",
@@ -17,14 +26,13 @@
     "static/media/budweiser.png": "./static/media/budweiser.b8b2ce05a162c0e086a9.png",
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
-    "static/media/trown.png": "./static/media/trown.7181b119488391188746.png",
     "index.html": "./index.html",
-    "main.244c4cf4.css.map": "./static/css/main.244c4cf4.css.map",
-    "main.4f920432.js.map": "./static/js/main.4f920432.js.map",
+    "main.ef528fb5.css.map": "./static/css/main.ef528fb5.css.map",
+    "main.28617803.js.map": "./static/js/main.28617803.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.244c4cf4.css",
-    "static/js/main.4f920432.js"
+    "static/css/main.ef528fb5.css",
+    "static/js/main.28617803.js"
   ]
 }
