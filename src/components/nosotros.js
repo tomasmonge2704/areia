@@ -7,16 +7,27 @@ import Imagen6 from "../SELECCION DE FOTOS/fotoCancha.png";
 import Imagen7 from "../SELECCION DE FOTOS/GALERIA1.png";
 import Imagen8 from "../SELECCION DE FOTOS/GALERIA2.png";
 import Imagen9 from "../SELECCION DE FOTOS/GALERIA3.png";
+import video1 from "../videos/video1.mp4";
+import video2 from "../videos/video2.mp4";
+import video3 from "../videos/video3.mp4";
 import ContactoFooter from "./contactoFooter";
+import $ from "jquery";
+
 export default function Nosotros() {
+  function play(e) {
+    e.target.play();
+  }
+  function pause(e) {
+    e.target.pause();
+  }
+
   return (
     <>
-      <div
-        className="nosotrosHome"
-        style={{
-          backgroundImage: `url(${Imagen1}), url(${Imagen2}),url(${Imagen3})`,
-        }}
-      />
+      <div className="homeVideos">
+        <video src={video1} onMouseOver={play} onMouseLeave={pause}></video>
+        <video src={video2} onMouseOver={play} onMouseLeave={pause}></video>
+        <video src={video3} onMouseOver={play} onMouseLeave={pause}></video>
+      </div>
       <div
         className="nosotrosInfo"
         style={{ backgroundColor: "white", height: "19vh" }}
@@ -36,17 +47,18 @@ export default function Nosotros() {
           alignItems: "center",
         }}
       >
-        <div className="imgTorneo"
+        <div
+          className="imgTorneo"
           style={{
             zIndex: "10",
             width: "40%",
           }}
         >
           <img
-            style={{ maxWidth: "100%", position:"relative",bottom:"2rem" }}
+            style={{ maxWidth: "100%", position: "relative", bottom: "2rem" }}
             src={Imagen4}
           />
-          <img style={{ maxWidth: "100%"}} src={Imagen5} />
+          <img style={{ maxWidth: "100%" }} src={Imagen5} />
         </div>
         <div>
           <h1 style={{ color: "white", fontWeight: "200" }}>TORNEO</h1>
@@ -68,7 +80,7 @@ export default function Nosotros() {
         </div>
       </div>
       <div
-      className="cont"
+        className="cont"
         style={{
           backgroundColor: "#f5ff35",
           height: "200px",
@@ -83,11 +95,16 @@ export default function Nosotros() {
           SERVICIO
         </h1>
       </div>
-      <div className="canchas" style={{ backgroundImage: `url(${Imagen6})`,backgroundSize:"100% 100%"}}>
-        <div className="contenedor"
-          style={{ height: "100%" }}
-        >
-          <h1 className="titulo"
+      <div
+        className="canchas"
+        style={{
+          backgroundImage: `url(${Imagen6})`,
+          backgroundSize: "100% 100%",
+        }}
+      >
+        <div className="contenedor" style={{ height: "100%" }}>
+          <h1
+            className="titulo"
             style={{
               color: "white",
               fontWeight: "400",
@@ -104,7 +121,7 @@ export default function Nosotros() {
               backgroundColor: "white",
               width: "40%",
               display: "grid",
-              placeContent:"space-evenly",
+              placeContent: "space-evenly",
               paddingBottom: "5rem",
               height: "100%",
             }}
@@ -119,7 +136,9 @@ export default function Nosotros() {
               <br />
               -4 canchas de F5 Femenino (iluminadas)
             </p>
-            <button id="bottone1"><strong>ver mapa de canchas</strong></button>
+            <button id="bottone1">
+              <strong>ver mapa de canchas</strong>
+            </button>
             <h1>PREDIO</h1>
             <p>
               -2 estacionamientos privados <br />
@@ -134,14 +153,23 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div className="contenedorWhite" style={{ backgroundColor: "white", height: "10rem",display:"flex",justifyContent:"center" }}></div>
+      <div
+        className="contenedorWhite"
+        style={{
+          backgroundColor: "white",
+          height: "10rem",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      ></div>
       <div
         className="nosotrosGaleria"
         style={{
           backgroundImage: `url(${Imagen7}), url(${Imagen8}),url(${Imagen9})`,
-        }}>
-            <h1 style={{color:"white",fontWeight:"200"}}>GALERIA</h1>
-        </div>
+        }}
+      >
+        <h1 style={{ color: "white", fontWeight: "200" }}>GALERIA</h1>
+      </div>
       <ContactoFooter />
     </>
   );

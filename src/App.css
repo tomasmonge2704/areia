@@ -190,6 +190,26 @@ a{
   align-items: center;
   border-radius: 50px;
 }
+.homeVideos{
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+.homeVideos video{
+border-radius: 25px;
+box-shadow:  16px 16px 32px #181818,
+-16px -16px 32px #202020;
+width: 30%;
+filter: grayscale(1);
+border: 3.5px solid rgb(245, 255, 53);
+
+}
+.homeVideos video:hover{
+  filter: grayscale(0);
+}
+.imgTorneo img{
+  filter: drop-shadow(black 2px 4px 6px);
+}
 .fa-phone{
   color: #1c1c1c;
   background-color: #C3D900;
@@ -226,6 +246,7 @@ a{
   height: 50rem;
 }
 @media (max-width: 991px) {
+
  .container{
    justify-content: space-between !important;
  }
@@ -343,7 +364,10 @@ font-size: 12px !important;
 }
 .canchas .titulo{
   top: 11px !important;
-  font-size: 50px;
+  font-size: 44px;
+}
+.imgTorneo div{
+  padding-top: 10px;
 }
 }
 #contact-form{
