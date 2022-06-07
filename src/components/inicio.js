@@ -1,6 +1,6 @@
-import Imagen from "../../SELECCION DE FOTOS/fotoInicio.png"
-import appStore from "../../SELECCION DE FOTOS/available_on_app_store.png"
-import playStore from "../../SELECCION DE FOTOS/available_on_google_play.png"
+import Imagen from "../SELECCION DE FOTOS/fotoInicio.png"
+import appStore from "../SELECCION DE FOTOS/available_on_app_store.png"
+import playStore from "../SELECCION DE FOTOS/available_on_google_play.png"
 import ContactoFooter from "./contactoFooter"
 export default function Inicio (){
     return(

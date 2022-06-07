@@ -1,12 +1,12 @@
-import Imagen1 from "../../SELECCION DE FOTOS/video1.png";
-import Imagen2 from "../../SELECCION DE FOTOS/video2.png";
-import Imagen3 from "../../SELECCION DE FOTOS/video3.png";
-import Imagen4 from "../../SELECCION DE FOTOS/areia 13_11-060.png";
-import Imagen5 from "../../SELECCION DE FOTOS/areia0412-29.png";
-import Imagen6 from "../../SELECCION DE FOTOS/fotoCancha.png";
-import Imagen7 from "../../SELECCION DE FOTOS/GALERIA1.png";
-import Imagen8 from "../../SELECCION DE FOTOS/GALERIA2.png";
-import Imagen9 from "../../SELECCION DE FOTOS/GALERIA3.png";
+import Imagen1 from "../SELECCION DE FOTOS/video1.png";
+import Imagen2 from "../SELECCION DE FOTOS/video2.png";
+import Imagen3 from "../SELECCION DE FOTOS/video3.png";
+import Imagen4 from "../SELECCION DE FOTOS/areia 13_11-060.png";
+import Imagen5 from "../SELECCION DE FOTOS/areia0412-29.png";
+import Imagen6 from "../SELECCION DE FOTOS/fotoCancha.png";
+import Imagen7 from "../SELECCION DE FOTOS/GALERIA1.png";
+import Imagen8 from "../SELECCION DE FOTOS/GALERIA2.png";
+import Imagen9 from "../SELECCION DE FOTOS/GALERIA3.png";
 import ContactoFooter from "./contactoFooter";
 export default function Nosotros() {
   return (
@@ -19,9 +19,9 @@ export default function Nosotros() {
       />
       <div
         className="nosotrosInfo"
-        style={{ backgroundColor: "white", height: "20vh" }}
+        style={{ backgroundColor: "white", height: "19vh" }}
       >
-        <p style={{ paddingLeft: "25vh", paddingTop: "5vh" }}>
+        <p>
           <strong>AREIA</strong> es mas que un torneo de futbol.<br></br> Es una
           experiencia social y deportiva.
           <br />
@@ -36,17 +36,17 @@ export default function Nosotros() {
           alignItems: "center",
         }}
       >
-        <div
+        <div className="imgTorneo"
           style={{
             zIndex: "10",
             width: "40%",
           }}
         >
           <img
-            style={{ maxWidth: "100%", paddingBottom: "20px" }}
+            style={{ maxWidth: "100%", position:"relative",bottom:"2rem" }}
             src={Imagen4}
           />
-          <img style={{ maxWidth: "100%" }} src={Imagen5} />
+          <img style={{ maxWidth: "100%"}} src={Imagen5} />
         </div>
         <div>
           <h1 style={{ color: "white", fontWeight: "200" }}>TORNEO</h1>
@@ -68,6 +68,7 @@ export default function Nosotros() {
         </div>
       </div>
       <div
+      className="cont"
         style={{
           backgroundColor: "#f5ff35",
           height: "200px",
@@ -82,13 +83,12 @@ export default function Nosotros() {
           SERVICIO
         </h1>
       </div>
-      <div style={{ backgroundImage: `url(${Imagen6})`, height: "50rem",backgroundSize:"100% 100%"}}>
-        <div
-          style={{ paddingTop: "8rem", paddingLeft: "12rem", height: "100%" }}
+      <div className="canchas" style={{ backgroundImage: `url(${Imagen6})`,backgroundSize:"100% 100%"}}>
+        <div className="contenedor"
+          style={{ height: "100%" }}
         >
-          <h1
+          <h1 className="titulo"
             style={{
-              fontSize: "78px",
               color: "white",
               fontWeight: "400",
               margin: "0",
@@ -134,7 +134,7 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "white", height: "10rem",display:"flex",justifyContent:"center" }}></div>
+      <div className="contenedorWhite" style={{ backgroundColor: "white", height: "10rem",display:"flex",justifyContent:"center" }}></div>
       <div
         className="nosotrosGaleria"
         style={{

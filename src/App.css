@@ -43,6 +43,14 @@ body{
   background-size: 25% 100%, 50% 100%,25% 100%;
   background-position: left center, center center, right center;
 }
+.titulo{
+  font-size: 78px;
+}
+.nosotrosInfo p{
+  padding-left: 25vh;
+  padding-top: 5vh;
+  font-size: 20px;
+}
  /* From uiverse.io by @Custyyyy */
 #bottone1 {
   padding-left: 5rem;
@@ -210,6 +218,13 @@ a{
   max-height: 150px;
   max-width: 100px;
 }
+.contenedor{
+  padding-top: 8rem;
+  padding-left: 12rem;
+}
+.canchas{
+  height: 50rem;
+}
 @media (max-width: 991px) {
  .container{
    justify-content: space-between !important;
@@ -222,6 +237,14 @@ a{
   display:initial;
   margin-left: 2rem;
 }
+.nosotrosInfo p{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 18px;
+}
+.nosotrosInfo strong{
+  font-size: 15px !important;
+}
 #navLogoA{
   display: none;
 }
@@ -231,6 +254,14 @@ a{
 .home{
   background-size: 100% 50%, 100% 50%;
   background-position: top center, bottom center;
+}
+.nosotrosHome{
+  background-size: 100% 34%, 100% 34%,100% 34%;
+  background-position: top center,center center, bottom center;
+}
+.nosotrosGaleria{
+  background-size: 100% 34%, 100% 34%,100% 34%;
+  background-position: top center,center center, bottom center;
 }
 .datos{
   height: 20rem;
@@ -279,6 +310,40 @@ font-size: 12px !important;
   display: grid;
   justify-content: center;
   margin-bottom: 13rem;
+}
+.titulo{
+  font-size: 25px;
+}
+.imgTorneo{
+  display: none;
+}
+.cont{
+  height: 5rem !important;
+}
+.cont h1{
+  font-size: 15px !important;
+}
+.cont strong{
+  font-size: 15px !important;
+}
+.contenedor{
+  padding-top: 10rem;
+  padding-left: 6rem;
+}
+.contenedor div{
+  width: 100% !important;
+  padding: 30px;
+  height: 573px !important;
+}
+.contenedorWhite{
+  height: 24rem !important;
+}
+.canchas{
+  height: 20rem;
+}
+.canchas .titulo{
+  top: 11px !important;
+  font-size: 50px;
 }
 }
 #contact-form{

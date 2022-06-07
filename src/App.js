@@ -1,17 +1,13 @@
 import './App.css';
 import Nabvar from './components/NabVar/Nabvar';
-import Home from './components/NabVar/home';
-import Datos from './components/NabVar/datos';
-import Mapa from './components/NabVar/mapa';
-import Sponsors from './components/NabVar/sponsors';
-import FotosFooter from './components/NabVar/fotosFooter';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {HashRouter,Routes, Route } from "react-router-dom";
-import Inicio from './components/NabVar/inicio';
-import Nosotros from './components/NabVar/nosotros';
-import Eventos from './components/NabVar/eventos';
+import Inicio from './components/inicio';
+import Nosotros from './components/nosotros';
+import Eventos from './components/eventos';
+import Contacto from './components/contacto';
 function App() {
   useEffect(() => {
     AOS.init(
@@ -26,17 +22,6 @@ function App() {
           <div>
             <Nabvar section="inicio"/>
             <Inicio/>
-          </div>
-        }>
-        </Route>
-        <Route exact path="/Areia/" element={
-          <div>
-            <Nabvar />
-            <Home />
-            <Datos />
-            <Mapa />
-            <Sponsors />
-            <FotosFooter />
           </div>
         }>
         </Route>
@@ -57,11 +42,7 @@ function App() {
         <Route exact path="/contacto" element={
           <div>
             <Nabvar section="contacto" />
-            <Home />
-            <Datos />
-            <Mapa />
-            <Sponsors />
-            <FotosFooter />
+            <Contacto/>
           </div>
         }>
         </Route>
