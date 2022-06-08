@@ -4,14 +4,19 @@ import Imagen3 from "../SELECCION DE FOTOS/video3.png";
 import Imagen4 from "../SELECCION DE FOTOS/areia 13_11-060.png";
 import Imagen5 from "../SELECCION DE FOTOS/areia0412-29.png";
 import Imagen6 from "../SELECCION DE FOTOS/fotoCancha.png";
-import Imagen7 from "../SELECCION DE FOTOS/GALERIA1.png";
-import Imagen8 from "../SELECCION DE FOTOS/GALERIA2.png";
-import Imagen9 from "../SELECCION DE FOTOS/GALERIA3.png";
+import Imagen7 from "../SELECCION DE FOTOS/Areia editadas-45.jpg";
+import Imagen8 from "../SELECCION DE FOTOS/areia 13_11-043.jpg";
+import Imagen9 from "../SELECCION DE FOTOS/areia producto-3.jpg";
+import Imagen10 from "../SELECCION DE FOTOS/AREIA FECHA3-29.jpg";
+import Imagen11 from "../SELECCION DE FOTOS/areia1812-163.jpg";
+import Imagen12 from "../SELECCION DE FOTOS/areia producto-4.jpg";
+import Imagen13 from "../SELECCION DE FOTOS/Areia editadas-8.jpg";
+import Imagen14 from "../SELECCION DE FOTOS/areia 13_11-088.jpg";
 import video1 from "../videos/video1.mp4";
 import video2 from "../videos/video2.mp4";
 import video3 from "../videos/video3.mp4";
 import ContactoFooter from "./contactoFooter";
-
+import { Carousel } from "react-bootstrap";
 
 export default function Nosotros() {
   function play(e) {
@@ -24,9 +29,9 @@ export default function Nosotros() {
   return (
     <>
       <div className="homeVideos">
-        <video src={video1} onMouseOver={play} onMouseLeave={pause}></video>
-        <video src={video2} onMouseOver={play} onMouseLeave={pause}></video>
-        <video src={video3} onMouseOver={play} onMouseLeave={pause}></video>
+        <video src={video1} poster={Imagen1} onMouseOver={play} onMouseLeave={pause}></video>
+        <video src={video2} poster={Imagen2} onMouseOver={play} onMouseLeave={pause}></video>
+        <video src={video3} poster={Imagen3} onMouseOver={play} onMouseLeave={pause}></video>
       </div>
       <div
         className="nosotrosInfo"
@@ -58,7 +63,7 @@ export default function Nosotros() {
             style={{ maxWidth: "100%", position: "relative", bottom: "2rem" }}
             src={Imagen4}
           />
-          <img style={{ maxWidth: "100%" }} src={Imagen5} />
+          <img style={{ maxWidth: "100%",filter:"none" }} src={Imagen5} />
         </div>
         <div className="textTorneo">
           <h1 style={{ color: "white", fontWeight: "200" }}>TORNEO</h1>
@@ -137,7 +142,7 @@ export default function Nosotros() {
               -4 canchas de F5 Femenino (iluminadas)
             </p>
             <button id="bottone1">
-              <strong>ver mapa de canchas</strong>
+              <strong>Ver mapa de canchas</strong>
             </button>
             <h1>PREDIO</h1>
             <p>
@@ -162,13 +167,74 @@ export default function Nosotros() {
           justifyContent: "center",
         }}
       ></div>
-      <div
-        className="nosotrosGaleria"
-        style={{
-          backgroundImage: `url(${Imagen7}), url(${Imagen8}),url(${Imagen9})`,
-        }}
-      >
-        <h1 style={{ color: "white", fontWeight: "200" }}>GALERIA</h1>
+      <div style={{textAlign:"center"}}>
+        <h1 style={{paddingTop:"3%",color:"rgb(243 255 51)",fontWeight:"200"}}>GALERIA</h1>
+      <Carousel variant="dark" style={{boxShadow:"16px 16px 32px #181818,-16px -16px 32px #202020",margin:"3%",filter:"drop-shadow(black 2px 4px 6px)"}}>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen7}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen8}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen9}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen10}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen11}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen12}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen13}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
+      className="d-block w-100"
+      src={Imagen14}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
       </div>
       <ContactoFooter />
     </>

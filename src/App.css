@@ -193,9 +193,11 @@ a{
 .homeVideos{
   display: flex;
   justify-content: space-around;
-  padding: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 .homeVideos video{
+object-fit: cover;
 border-radius: 25px;
 box-shadow:  16px 16px 32px #181818,
 -16px -16px 32px #202020;
@@ -357,7 +359,7 @@ font-size: 12px !important;
   height: 573px !important;
 }
 .contenedorWhite{
-  height: 24rem !important;
+  height: 29rem !important;
 }
 .canchas{
   height: 20rem;
@@ -383,22 +385,18 @@ font-size: 12px !important;
   font-size: 15px;
 }
 @media (max-height: 900px) {
-  .homeVideos video:hover{
-    position: absolute;
-    width: 90%;
-    height: 73%;
-    z-index: 1000;
-  }
+ .homeVideos video{
+   height: 200px;
+   border-radius:18px;
+ }
+
   .textTorneo{
     padding: 5%;
   }
-  #bottone1{
+  .canchas #bottone1{
     padding-top: 0px;
   }
 }
 @media (max-height: 667px) {
-  .homeVideos video:hover {
-    width: 80%;
-    height: 78%;
-  }
+ 
 }
