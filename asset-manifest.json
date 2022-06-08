@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.76547b5b.css",
-    "main.js": "./static/js/main.cbfdac67.js",
+    "main.css": "./static/css/main.e3620ea0.css",
+    "main.js": "./static/js/main.8244ad67.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
+    "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
+    "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
+    "static/media/areia producto-4.jpg": "./static/media/areia producto-4.14f8b8cf720eb21ddbc3.jpg",
+    "static/media/Areia editadas-8.jpg": "./static/media/Areia editadas-8.135ac9bc57a89b5d01a8.jpg",
     "static/media/video3.mp4": "./static/media/video3.93d110a07ebc266f8953.mp4",
+    "static/media/AREIA FECHA3-29.jpg": "./static/media/AREIA FECHA3-29.3fc8d2677c5fe72c4b1e.jpg",
     "static/media/fotoCancha.png": "./static/media/fotoCancha.9fdb0e84fa54bd801577.png",
     "static/media/video1.mp4": "./static/media/video1.8a0b444cd3c0ba130c79.mp4",
     "static/media/video2.mp4": "./static/media/video2.6ae41b6d633eba4de2f1.mp4",
     "static/media/fotoInicio.png": "./static/media/fotoInicio.8665abf6af8850f23e30.png",
     "static/media/fotoHome2.png": "./static/media/fotoHome2.5338b08fff028092ad92.png",
+    "static/media/areia 13_11-043.jpg": "./static/media/areia 13_11-043.30997f24f355e4de017d.jpg",
     "static/media/fotoFooter1.png": "./static/media/fotoFooter1.13793a1163850d43d289.png",
+    "static/media/areia 13_11-088.jpg": "./static/media/areia 13_11-088.24e8ebf2b2ab0ae3048a.jpg",
     "static/media/fotoHome1.png": "./static/media/fotoHome1.e13155b1f951b170ce9b.png",
-    "static/media/GALERIA2.png": "./static/media/GALERIA2.15afc03acc9d8b7dda50.png",
+    "static/media/areia1812-163.jpg": "./static/media/areia1812-163.31f6f60b70a70ebd8d64.jpg",
     "static/media/fotoFooter2.png": "./static/media/fotoFooter2.30c837222cdbb814f51c.png",
-    "static/media/GALERIA3.png": "./static/media/GALERIA3.c352b9dce7c8b8e559c6.png",
     "static/media/video2.png": "./static/media/video2.40027fe352c93830f202.png",
     "static/media/video3.png": "./static/media/video3.de85ede0ac12fa69d650.png",
     "static/media/areia 13_11-060.png": "./static/media/areia 13_11-060.184c4a35fc72a51a0e35.png",
     "static/media/areia0412-29.png": "./static/media/areia0412-29.b237a8fb9a22f1565396.png",
-    "static/media/GALERIA1.png": "./static/media/GALERIA1.c4de3f770c4773a8eccb.png",
     "static/media/video1.png": "./static/media/video1.356dd401b43f5548043a.png",
     "static/media/mapa.png": "./static/media/mapa.f4013777edde12dc6237.png",
     "static/media/mapa2.png": "./static/media/mapa2.6b0cf670251a5e2c4fe9.png",
@@ -30,12 +35,12 @@
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.76547b5b.css.map": "./static/css/main.76547b5b.css.map",
-    "main.cbfdac67.js.map": "./static/js/main.cbfdac67.js.map",
+    "main.e3620ea0.css.map": "./static/css/main.e3620ea0.css.map",
+    "main.8244ad67.js.map": "./static/js/main.8244ad67.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76547b5b.css",
-    "static/js/main.cbfdac67.js"
+    "static/css/main.e3620ea0.css",
+    "static/js/main.8244ad67.js"
   ]
 }
