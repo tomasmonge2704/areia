@@ -43,6 +43,11 @@ body{
   background-size: 25% 100%, 50% 100%,25% 100%;
   background-position: left center, center center, right center;
 }
+.nuestroEspacio{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
 .titulo{
   font-size: 78px;
 }
@@ -50,6 +55,19 @@ body{
   padding-left: 25vh;
   padding-top: 5vh;
   font-size: 20px;
+}
+.imgCasamiento{
+  width: 50%;
+  height: 80%;
+
+}
+.divCasamiento img{
+  position: relative;
+  left: 50px;
+}
+.divCasamiento div{
+  height: 35vh;
+  justify-items: start;
 }
  /* From uiverse.io by @Custyyyy */
 #bottone1 {
@@ -248,7 +266,45 @@ border: 3.5px solid rgb(245, 255, 53);
   height: 50rem;
 }
 @media (max-width: 991px) {
-
+  .divCasamiento{
+    height: 60vh !important;
+    margin:0 8% 8% 8% !important;
+  }
+  .imgCasamiento {
+    position: absolute !important;
+    width: 100%;
+    height: 60vh;
+    left: 0 !important;
+    opacity: 0.3;
+}
+.divCasamiento div{
+  color:white !important;
+  z-index: 10;
+  background-color:unset !important;
+  padding: 0!important;
+}
+  .eventosAbout{
+    height: 33vh !important;
+    padding: 5%;
+  }
+  .eventosAbout p, strong{
+    font-size: 14px !important;
+  }
+  .nuestroEspacio{
+    display: grid;
+   
+  }
+  .nuestroEspacio-text{
+    z-index: 10;
+    width: 100% !important;
+  }
+  .nuestroEspacio-img{
+    position: absolute;
+    opacity: 0.2;
+    background-size: 100% 100% !important;
+    height: 60vh !important;
+    width: 100% !important;
+  }
  .container{
    justify-content: space-between !important;
  }

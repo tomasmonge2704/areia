@@ -29,9 +29,24 @@ export default function Nosotros() {
   return (
     <>
       <div className="homeVideos">
-        <video src={video1} poster={Imagen1} onMouseOver={play} onMouseLeave={pause}></video>
-        <video src={video2} poster={Imagen2} onMouseOver={play} onMouseLeave={pause}></video>
-        <video src={video3} poster={Imagen3} onMouseOver={play} onMouseLeave={pause}></video>
+        <video
+          src={video1}
+          poster={Imagen1}
+          onMouseOver={play}
+          onMouseLeave={pause}
+        ></video>
+        <video
+          src={video2}
+          poster={Imagen2}
+          onMouseOver={play}
+          onMouseLeave={pause}
+        ></video>
+        <video
+          src={video3}
+          poster={Imagen3}
+          onMouseOver={play}
+          onMouseLeave={pause}
+        ></video>
       </div>
       <div
         className="nosotrosInfo"
@@ -63,7 +78,7 @@ export default function Nosotros() {
             style={{ maxWidth: "100%", position: "relative", bottom: "2rem" }}
             src={Imagen4}
           />
-          <img style={{ maxWidth: "100%",filter:"none" }} src={Imagen5} />
+          <img style={{ maxWidth: "100%", filter: "none" }} src={Imagen5} />
         </div>
         <div className="textTorneo">
           <h1 style={{ color: "white", fontWeight: "200" }}>TORNEO</h1>
@@ -167,74 +182,113 @@ export default function Nosotros() {
           justifyContent: "center",
         }}
       ></div>
-      <div style={{textAlign:"center"}}>
-        <h1 style={{paddingTop:"3%",color:"rgb(243 255 51)",fontWeight:"200"}}>GALERIA</h1>
-      <Carousel variant="dark" style={{boxShadow:"16px 16px 32px #181818,-16px -16px 32px #202020",margin:"3%",filter:"drop-shadow(black 2px 4px 6px)"}}>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen7}
-      alt="First slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen8}
-      alt="Second slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen9}
-      alt="Third slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen10}
-      alt="Third slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen11}
-      alt="Third slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen12}
-      alt="Third slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen13}
-      alt="Third slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-    style={{maxHeight:"40rem",filter:"drop-shadow(black 2px 4px 6px)"}}
-      className="d-block w-100"
-      src={Imagen14}
-      alt="Third slide"
-    />
-  </Carousel.Item>
-</Carousel>
+      <div style={{ textAlign: "center" }}>
+        <h1
+          style={{
+            paddingTop: "5%",
+            color: "rgb(243 255 51)",
+            fontWeight: "200",
+          }}
+        >
+          GALERIA
+        </h1>
+        <Carousel
+          variant="dark"
+          style={{
+            boxShadow: "16px 16px 32px #181818,-16px -16px 32px #202020",
+            marginTop: "5%",
+            filter: "drop-shadow(black 2px 4px 6px)",
+          }}
+        >
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen7}
+              alt="First slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen8}
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen9}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen10}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen11}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen12}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen13}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "40rem",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen14}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+        </Carousel>
       </div>
       <ContactoFooter />
     </>
