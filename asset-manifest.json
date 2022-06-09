@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.56757b0f.css",
-    "main.js": "./static/js/main.4e21b25a.js",
+    "main.css": "./static/css/main.ec3c24f5.css",
+    "main.js": "./static/js/main.746b0751.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
     "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
@@ -38,12 +38,12 @@
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.56757b0f.css.map": "./static/css/main.56757b0f.css.map",
-    "main.4e21b25a.js.map": "./static/js/main.4e21b25a.js.map",
+    "main.ec3c24f5.css.map": "./static/css/main.ec3c24f5.css.map",
+    "main.746b0751.js.map": "./static/js/main.746b0751.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56757b0f.css",
-    "static/js/main.4e21b25a.js"
+    "static/css/main.ec3c24f5.css",
+    "static/js/main.746b0751.js"
   ]
 }
