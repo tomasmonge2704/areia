@@ -31,7 +31,7 @@ export default function Contacto() {
           <h1>WA.</h1> <p>1141576513</p>
         </div>
         <div>
-          <h1>UBICACION.</h1> <p>PATRICIAS ARGENTINAS 4005, PILAR</p>
+          <h1>UBICACIÓN.</h1> <p>PATRICIAS ARGENTINAS 4005, PILAR</p>
         </div>
         <div>
           <h1>MAIL.</h1> <p>INFO@AREIA.COM.AR</p>
@@ -46,7 +46,7 @@ export default function Contacto() {
             <div id="comoLlegar">
                 <div id="textMapa">
                 <a href="https://linktr.ee/estoesareia">
-                <button id="bottone1"><strong>COMO LLEGAR</strong>
+                <button id="bottone1"><strong>CÓMO LLEGAR</strong>
                 </button>
                 </a>
                 </div>

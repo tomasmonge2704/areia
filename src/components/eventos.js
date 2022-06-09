@@ -23,7 +23,7 @@ export default function Eventos() {
           SOLO TENES QUE DISFRUTAR
         </h1>
         <div style={{ display: "flex", alignItems: "baseline" }}>
-          <img style={{ height: "24px" }} src={logo} />
+          <img className="spanAeria" style={{ height: "22px" }} src={logo} />
           <p style={{ color: "#C3D900", fontSize: "25px" }}>/ eventos</p>
         </div>
       </div>

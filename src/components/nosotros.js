@@ -50,14 +50,14 @@ export default function Nosotros() {
       </div>
       <div
         className="nosotrosInfo"
-        style={{ backgroundColor: "white", height: "19vh" }}
+        style={{ backgroundColor: "white", height: "21vh" }}
       >
         <p>
-          <strong>AREIA</strong> es mas que un torneo de futbol.<br></br> Es una
+          <strong>AREIA</strong> es más que un torneo de fútbol.<br></br> Es una
           experiencia social y deportiva.
           <br />
           <br />
-          <strong>PARA ENTENDERLA HAY QUE VIVIRLA</strong>
+          <strong>PARA ENTENDERLA, HAY QUE VIVIRLA.</strong>
         </p>
       </div>
       <div
@@ -66,12 +66,14 @@ export default function Nosotros() {
           justifyContent: "space-evenly",
           alignItems: "center",
         }}
+        className="contenedorTorneo"
       >
         <div
           className="imgTorneo"
           style={{
             zIndex: "10",
-            width: "40%",
+            width: "34vw",
+            marginLeft: "10vw"
           }}
         >
           <img
@@ -81,17 +83,17 @@ export default function Nosotros() {
           <img style={{ maxWidth: "100%", filter: "none" }} src={Imagen5} />
         </div>
         <div className="textTorneo">
-          <h1 style={{ color: "white", fontWeight: "200" }}>TORNEO</h1>
+          <h1 style={{ color: "white", fontWeight: "200",paddingBottom:"2vh" }}>TORNEO</h1>
           <p style={{ color: "white", fontWeight: "200" }}>
             <strong style={{ color: "white", fontWeight: "500" }}>AREIA</strong>{" "}
-            cuenta con una politica de admicion
+            cuenta con una política de admisión
             <br />
             en base a un sistema de recomendaciones.
             <br />
             <br />
             Para ingesar al torneo es necesario recibir
             <br />
-            la recomendacion de dos capitanes.
+            la recomendación de dos capitanes.
             <br />
             <br />
             El acceso al predio es exclusivo para los <br />
@@ -111,7 +113,7 @@ export default function Nosotros() {
       >
         <h1 style={{ fontWeight: "400" }}>
           CALIDAD{" "}
-          <strong style={{ fontSize: "38px" }}> ATENCION AL CLIENTE </strong>{" "}
+          <strong style={{ fontSize: "38px" }}> ATENCIÓN AL CLIENTE </strong>{" "}
           SERVICIO
         </h1>
       </div>
@@ -190,9 +192,10 @@ export default function Nosotros() {
             fontWeight: "200",
           }}
         >
-          GALERIA
+          GALERÍA
         </h1>
         <Carousel
+        className="carouselDiv"
           variant="dark"
           style={{
             boxShadow: "16px 16px 32px #181818,-16px -16px 32px #202020",
@@ -203,7 +206,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -214,7 +217,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -225,7 +228,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -236,7 +239,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -247,7 +250,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -258,7 +261,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -269,7 +272,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -280,7 +283,7 @@ export default function Nosotros() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "40rem",
+                maxHeight: "90vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
