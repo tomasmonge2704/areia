@@ -39,7 +39,7 @@ export default function Eventos() {
         }}
       >
         <h1 style={{ fontSize: "20px" }}>ABOUT US</h1>
-        <p style={{ fontSize: "15px" }}>
+        <p style={{ fontSize: "17px",marginTop:"2%" }}>
           AREIA es una empresa con{" "}
           <strong style={{ fontSize: "15px" }}>
             mas de 10 años de experiencia
@@ -48,7 +48,7 @@ export default function Eventos() {
           en la organizacion de eventos tanto sociales como corporativos.
           <br />
           <br />
-          Queremos que cada persona que nos visita se lleve de recuerdo una
+          Queremos que cada persona que nos visita <br/> se lleve de recuerdo una
           experiencia inolvidable.
           <br />
           <br />
@@ -64,21 +64,22 @@ export default function Eventos() {
             width: "40%",
             display: "grid",
             padding: "8%",
+            paddingLeft:"10%",
             alignContent: "center",
             color: "white",
           }}
         >
-          <h2 style={{ fontSize: "15px", fontWeight: "200" }}>
+          <h2 style={{ fontSize: "15px", fontWeight: "500" }}>
             NUESTRO ESPACIO
           </h2>
           <h1 style={{ fontSize: "40px", fontWeight: "200" }}>
-            CONTAMOS CON UN AMBIENTE ATRACTIVO Y NATURAL.
+            CONTAMOS CON UN AMBIENTE ATRACTIVO <br/> Y NATURAL.
           </h1>
-          <p style={{ fontSize: "15px", fontWeight: "200" }}>
+          <p style={{ fontSize: "20px", fontWeight: "200" }}>
             Las mas de 5 hectareas de espacio verde son ideales para
-            desconectarse de la rutina y vivir una experiencia unica.
+            desconectarse de la rutina y vivir <br/> una experiencia unica.
           </p>
-          <p style={{ fontSize: "15px", fontWeight: "200" }}>
+          <p style={{ fontSize: "20px", fontWeight: "200" }}>
             La versatilidad de nuestras instalaciones permite que nos podamos
             adaptar perfectamente al tamaño del evento a realizar.
           </p>
@@ -88,33 +89,31 @@ export default function Eventos() {
           style={{
             backgroundImage: `url(${imagen2})`,
             height: "100%",
-            width: "60%",
+            width: "53%",
+            backgroundRepeat:"no-repeat"
           }}
         />
       </div>
       <div
       className="divCasamiento"
         style={{
-          height: "38vh",
-          display: "flex",
-          justifyContent: "center",
-          margin: "7vh",
-          marginRight:"10vw"
-          ,alignItems:"center" 
+          height: "50vh",
+          margin: "10vh 12vw 7vh 46.5vw"
+          ,alignItems:"center"
         }}
       >
         <img className="imgCasamiento" src={imagen3} />
-        <div style={{ backgroundColor: "white", color: "black",padding:"9%",display:"grid"}}>
+        <div style={{ backgroundColor: "white", color: "black",padding:"4vw 17vh 4vw 19vh",display:"grid",alignContent:"center"}}>
           <h2 style={{ fontSize: "15px", fontWeight: "600" }}>UBICACION</h2>
           <h1 style={{ fontSize: "40px", fontWeight: "400" }}>
             AREIA SIEMPRE ESTUVO CERCA.
           </h1>
-          <p style={{ fontSize: "18px", fontWeight: "200" }}>
+          <p style={{ fontSize: "18px", fontWeight: "400",color:"black" }}>
             A 35km de Capital Federal con facil y rapido acceso en una zona
             segura rodeada de barrios cerrados.
           </p>
           <button id="bottone1">
-              <p>VER MAPA</p>
+              <strong style={{fontWeight:"600"}}>VER MAPA</strong>
             </button>
         </div>
       </div>
