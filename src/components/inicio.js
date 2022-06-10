@@ -5,7 +5,7 @@ import ContactoFooter from "./contactoFooter";
 export default function Inicio() {
   return (
     <>
-      <img src={Imagen} style={{ width: "100%" }} />
+      <img className="imgInicio" src={Imagen} style={{ width: "100%",maxHeight:"60vh" }} />
       <div
         style={{
           backgroundColor: "white",

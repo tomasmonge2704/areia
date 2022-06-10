@@ -17,35 +17,58 @@ import video2 from "../videos/video2.mp4";
 import video3 from "../videos/video3.mp4";
 import ContactoFooter from "./contactoFooter";
 import { Carousel } from "react-bootstrap";
-
+import {useState} from 'react';
 export default function Nosotros() {
+  const [isActive1, setIsActive1] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
   function play(e) {
     e.target.play();
   }
   function pause(e) {
     e.target.pause();
+    setIsActive1(false)
+    setIsActive2(false)
+    setIsActive3(false)
   }
-
+  const handleClick1 = event => {
+    // 👇️ toggle isActive state on click
+    setIsActive1(current => !current);
+  };
+  const handleClick2 = event => {
+    // 👇️ toggle isActive state on click
+    setIsActive2(current => !current);
+  };
+  const handleClick3 = event => {
+    // 👇️ toggle isActive state on click
+    setIsActive3(current => !current);
+  };
   return (
     <>
       <div className="homeVideos">
         <video
+        className={isActive1 ? 'activeVideo' : ''}
           src={video1}
           poster={Imagen1}
           onMouseOver={play}
           onMouseLeave={pause}
+          onClick={handleClick1}
         ></video>
         <video
+        className={isActive2 ? 'activeVideo' : ''}
           src={video2}
           poster={Imagen2}
           onMouseOver={play}
           onMouseLeave={pause}
+          onClick={handleClick2}
         ></video>
         <video
+        className={isActive3 ? 'activeVideo' : ''}
           src={video3}
           poster={Imagen3}
           onMouseOver={play}
           onMouseLeave={pause}
+          onClick={handleClick3}
         ></video>
       </div>
       <div
