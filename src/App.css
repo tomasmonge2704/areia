@@ -266,6 +266,14 @@ a {
 .nuestroEspacio-text{
   grid-gap: 3%;
 }
+.divOrg{
+  display: flex;
+  height: 90vh;
+}
+.divOrg h1{
+  font-size: 23px;
+  font-weight: 400;
+}
 @media (max-width: 991px) {
   .divCasamiento {
     height: 60vh !important;

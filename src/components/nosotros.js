@@ -22,14 +22,12 @@ export default function Nosotros() {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
-  function play(e) {
-    e.target.play();
+ 
+  function unMute(e) {
+    e.target.muted = false
   }
-  function pause(e) {
-    e.target.pause();
-    setIsActive1(false)
-    setIsActive2(false)
-    setIsActive3(false)
+  function Mute(e) {
+    e.target.muted = true
   }
   const handleClick1 = event => {
     // 👇️ toggle isActive state on click
@@ -50,25 +48,34 @@ export default function Nosotros() {
         className={isActive1 ? 'activeVideo' : ''}
           src={video1}
           poster={Imagen1}
-          onMouseOver={play}
-          onMouseLeave={pause}
+          onMouseOver={unMute}
+          onMouseLeave={Mute}
           onClick={handleClick1}
+          autoPlay
+          loop
+          muted={isActive1 ? false : true}
         ></video>
         <video
         className={isActive2 ? 'activeVideo' : ''}
           src={video2}
           poster={Imagen2}
-          onMouseOver={play}
-          onMouseLeave={pause}
+          onMouseOver={unMute}
+          onMouseLeave={Mute}
           onClick={handleClick2}
+          autoPlay
+          loop
+          muted={isActive2 ? false : true}
         ></video>
         <video
         className={isActive3 ? 'activeVideo' : ''}
           src={video3}
           poster={Imagen3}
-          onMouseOver={play}
-          onMouseLeave={pause}
+          onMouseOver={unMute}
+          onMouseLeave={Mute}
           onClick={handleClick3}
+          autoPlay
+          loop
+          muted={isActive3 ? false : true}
         ></video>
       </div>
       <div
