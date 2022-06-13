@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.77a78559.css",
-    "main.js": "./static/js/main.2428458b.js",
+    "main.css": "./static/css/main.43d0c73f.css",
+    "main.js": "./static/js/main.d401a6db.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
     "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
@@ -15,6 +15,7 @@
     "static/media/fotoInicio.png": "./static/media/fotoInicio.8665abf6af8850f23e30.png",
     "static/media/eventosHome.png": "./static/media/eventosHome.ec5e8a911f29a6d98873.png",
     "static/media/fotoHome2.png": "./static/media/fotoHome2.5338b08fff028092ad92.png",
+    "static/media/fotoEventos2.png": "./static/media/fotoEventos2.e68cf2f89c9333037ce4.png",
     "static/media/espacioAeria.png": "./static/media/espacioAeria.639757dcff81dc9d8f33.png",
     "static/media/areia 13_11-043.jpg": "./static/media/areia 13_11-043.30997f24f355e4de017d.jpg",
     "static/media/fotoFooter1.png": "./static/media/fotoFooter1.13793a1163850d43d289.png",
@@ -29,6 +30,7 @@
     "static/media/video1.png": "./static/media/video1.356dd401b43f5548043a.png",
     "static/media/mapa.png": "./static/media/mapa.f4013777edde12dc6237.png",
     "static/media/casamientoAeria.png": "./static/media/casamientoAeria.170a6ed92bc3e26c3f73.png",
+    "static/media/fotoEventos1.png": "./static/media/fotoEventos1.7b26493566fe26a5c5ae.png",
     "static/media/mapa2.png": "./static/media/mapa2.6b0cf670251a5e2c4fe9.png",
     "static/media/sponsor.png": "./static/media/sponsor.ab11f9a020ee81015586.png",
     "static/media/Areia_Logotipo_Color.png": "./static/media/Areia_Logotipo_Color.dc1084809ab1ea26a562.png",
@@ -38,12 +40,12 @@
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.77a78559.css.map": "./static/css/main.77a78559.css.map",
-    "main.2428458b.js.map": "./static/js/main.2428458b.js.map",
+    "main.43d0c73f.css.map": "./static/css/main.43d0c73f.css.map",
+    "main.d401a6db.js.map": "./static/js/main.d401a6db.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77a78559.css",
-    "static/js/main.2428458b.js"
+    "static/css/main.43d0c73f.css",
+    "static/js/main.d401a6db.js"
   ]
 }
