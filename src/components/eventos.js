@@ -26,7 +26,7 @@ export default function Eventos() {
         </h1>
         <div style={{ display: "flex", alignItems: "baseline" }}>
           <img className="spanAeria" style={{ height: "22px" }} src={logo} />
-          <p style={{ color: "#C3D900", fontSize: "25px" }}>/ eventos</p>
+          <p style={{ color: "#C3D900", fontSize: "22px" }}>/ eventos</p>
         </div>
       </div>
       <div
@@ -128,7 +128,7 @@ export default function Eventos() {
         </div>
       </div>
       <div className="divOrg">
-        <div style={{height:"100%",display:"grid",backgroundColor:"white",color:"black",width:"47vw",alignItems:"center",justifyItems:"center",padding:"3%",textAlign:"center"}}>
+        <div className="contt" style={{height:"100%",display:"grid",backgroundColor:"white",color:"black",width:"47vw",alignItems:"center",justifyItems:"center",padding:"3%",textAlign:"center"}}>
           <h1>
             TENEMOS UN EQUIPO QUE SE ENCARGA <br/> DE TODOS LOS ASPECTOS DE TU EVENTO.
           </h1>
@@ -136,7 +136,7 @@ export default function Eventos() {
           <h1>LA ORGANIZACION, COORDINACION<br/> Y ASESORAMIENTO REQUERIDO.</h1>
           <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
-        <div style={{ backgroundImage: `url(${imagen5})`,height:"100%",width:"53vw",backgroundRepeat:"no-repeat",backgroundSize:"100% 100%" }}></div>
+        <div className="contt2" style={{ backgroundImage: `url(${imagen5})`,height:"100%",width:"53vw",backgroundRepeat:"no-repeat",backgroundSize:"100% 100%" }}></div>
       </div>
       <ContactoFooter />
     </>

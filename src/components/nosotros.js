@@ -12,12 +12,14 @@ import Imagen11 from "../SELECCION DE FOTOS/areia1812-163.jpg";
 import Imagen12 from "../SELECCION DE FOTOS/areia producto-4.jpg";
 import Imagen13 from "../SELECCION DE FOTOS/Areia editadas-8.jpg";
 import Imagen14 from "../SELECCION DE FOTOS/areia 13_11-088.jpg";
+import closeButton from "../SELECCION DE FOTOS/closeButton.png";
 import video1 from "../videos/video1.mp4";
 import video2 from "../videos/video2.mp4";
 import video3 from "../videos/video3.mp4";
 import ContactoFooter from "./contactoFooter";
 import { Carousel } from "react-bootstrap";
 import {useState} from 'react';
+import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
 export default function Nosotros() {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
@@ -28,6 +30,22 @@ export default function Nosotros() {
   }
   function Mute(e) {
     e.target.muted = true
+    setIsActive1(false)
+    setIsActive2(false)
+    setIsActive3(false)
+  }
+  function play(e) {
+    e.target.play()
+    e.target.muted = false
+  }
+  function stop(e) {
+    e.target.pause()
+    e.target.muted = true
+  }
+  function closeAll(){
+    setIsActive1(false)
+    setIsActive2(false)
+    setIsActive3(false)
   }
   const handleClick1 = event => {
     // 👇️ toggle isActive state on click
@@ -43,11 +61,14 @@ export default function Nosotros() {
   };
   return (
     <>
+    <div className={isActive1 || isActive2 || isActive3 ? 'closeButton-active' : "closeButton"} style={{backgroundImage:`url(${closeButton})`}} onClick={closeAll}></div>
+    <BrowserView>
       <div className="homeVideos">
+        
         <video
         className={isActive1 ? 'activeVideo' : ''}
           src={video1}
-          poster={Imagen1}
+       
           onMouseOver={unMute}
           onMouseLeave={Mute}
           onClick={handleClick1}
@@ -58,7 +79,7 @@ export default function Nosotros() {
         <video
         className={isActive2 ? 'activeVideo' : ''}
           src={video2}
-          poster={Imagen2}
+      
           onMouseOver={unMute}
           onMouseLeave={Mute}
           onClick={handleClick2}
@@ -69,7 +90,7 @@ export default function Nosotros() {
         <video
         className={isActive3 ? 'activeVideo' : ''}
           src={video3}
-          poster={Imagen3}
+  
           onMouseOver={unMute}
           onMouseLeave={Mute}
           onClick={handleClick3}
@@ -77,7 +98,42 @@ export default function Nosotros() {
           loop
           muted={isActive3 ? false : true}
         ></video>
+       
       </div>
+      </BrowserView>
+      <MobileView>
+      <div className="homeVideos">
+        
+        <video
+        className={isActive1 ? 'activeVideo' : ''}
+          src={video1}
+          poster={Imagen1}
+          onMouseOver={play}
+          onMouseLeave={stop}
+          onClick={handleClick1}
+          muted={isActive1 ? false : true}
+        ></video>
+        <video
+        className={isActive2 ? 'activeVideo' : ''}
+          src={video2}
+          poster={Imagen2}
+          onMouseOver={play}
+          onMouseLeave={stop}
+          onClick={handleClick2}
+          muted={isActive2 ? false : true}
+        ></video>
+        <video
+        className={isActive3 ? 'activeVideo' : ''}
+          src={video3}
+          poster={Imagen3}
+          onMouseOver={play}
+          onMouseLeave={stop}
+          onClick={handleClick3}
+          muted={isActive3 ? false : true}
+        ></video>
+       
+      </div>
+      </MobileView>
       <div
         className="nosotrosInfo"
         style={{ backgroundColor: "white", height: "21vh" }}

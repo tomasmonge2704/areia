@@ -14,7 +14,9 @@ body {
 }
 
 /*rgb(243 255 51);*/
-
+.closeButton{
+  display: none;
+}
 .home {
   display: flex;
   justify-content: center;
@@ -275,9 +277,28 @@ a {
   font-weight: 400;
 }
 @media (max-width: 991px) {
+  .divOrg {
+    height: 150vh;
+    display: grid !important;
+    width: 100%;
+  }
+  .contt{
+    width: 100% !important;
+    font-size: 12px;
+  }
+  .contt h1 {
+    font-size: 18px;
+  }
+  .contt div{
+    width: 80% !important;
+  }
+  .contt2{
+    width: 100% !important;
+    height: 60vh !important;
+  }
   .divCasamiento {
     height: 60vh !important;
-    margin: 0 8% 8% 8% !important;
+    margin: 0 8% 0% 8% !important;
   }
   .textTorneo {
     padding: 5%;
@@ -476,9 +497,22 @@ strong {
 .activeVideo {
   position: relative;
   bottom: 5vh;
-  height: 85vh !important;
 }
 @media (max-height: 900px) {
+  .closeButton-active{
+    display: initial;
+    position: absolute;
+    z-index: 1000;
+    height: 40px;
+    width:40px;
+    top:70%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    filter:  invert(1) drop-shadow(3px 4px 6px black);
+    background-size: 100% 100%;
+  }
   .homeVideos video {
     height: 200px;
     border-radius: 18px;
@@ -492,9 +526,9 @@ strong {
   }
   .activeVideo {
     position: absolute;
-    z-index: 1000;
-    height: 80vh !important;
-    width: 80vw !important;
+    z-index: 999;
+    height: 75vh !important;
+    width: 90vw !important;
   }
   .imgInicio {
     height: 35vh !important;
