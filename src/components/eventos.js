@@ -5,6 +5,10 @@ import imagen2 from "../SELECCION DE FOTOS/espacioAeria.png";
 import imagen3 from "../SELECCION DE FOTOS/casamientoAeria.png";
 import imagen4 from "../SELECCION DE FOTOS/fotoEventos1.png";
 import imagen5 from "../SELECCION DE FOTOS/fotoEventos2.png";
+import img1x4 from "../SELECCION DE FOTOS/foto1x4.png"
+import img2x4 from "../SELECCION DE FOTOS/foto2x4.png"
+import img3x4 from "../SELECCION DE FOTOS/foto3x4.png"
+import img4x4 from "../SELECCION DE FOTOS/foto4x4.png"
 export default function Eventos() {
   return (
     <>
@@ -26,7 +30,7 @@ export default function Eventos() {
         </h1>
         <div style={{ display: "flex", alignItems: "baseline" }}>
           <img className="spanAeria" style={{ height: "22px" }} src={logo} />
-          <p style={{ color: "#C3D900", fontSize: "22px" }}>/ eventos</p>
+          <p style={{ color: "#C3D900", fontSize: "20px" }}>/ eventos</p>
         </div>
       </div>
       <div
@@ -137,6 +141,25 @@ export default function Eventos() {
           <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
         <div className="contt2" style={{ backgroundImage: `url(${imagen5})`,height:"100%",width:"53vw",backgroundRepeat:"no-repeat",backgroundSize:"100% 100%" }}></div>
+      </div>
+      <div className="ofrecemos" style={{display:"grid",textAlign:"center"}} >
+        <h1>OFRECEMOS</h1>
+        <p>Estacionamiento privado para mas de 500 autos <br/>Seguridad privada<br/>Catering<br/>Tecnica/Iluminacion & DJs<br/>Servicio de cocteleria<br/>Event Planner</p>
+      </div>
+      <div className="eventos4x4Cont" >
+        <div className="fotos4x4"style={{width:"100%"}}>
+          <img src={img1x4}/>
+          <img src={img2x4}/>
+          <img src={img3x4}/>
+          <img src={img4x4}/>
+        </div>
+        <div style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
+          <a href="" className="eventosButton">
+        <button id="bottone1" >
+            <h1 style={{ fontWeight: "200",fontSize:"25PX" }}>EVENTOS@AREIA.COM.AR</h1>
+          </button>
+          </a>
+          </div>
       </div>
       <ContactoFooter />
     </>

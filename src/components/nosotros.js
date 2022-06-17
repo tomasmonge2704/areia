@@ -30,9 +30,6 @@ export default function Nosotros() {
   }
   function Mute(e) {
     e.target.muted = true
-    setIsActive1(false)
-    setIsActive2(false)
-    setIsActive3(false)
   }
   function play(e) {
     e.target.play()
@@ -75,7 +72,9 @@ export default function Nosotros() {
           autoPlay
           loop
           muted={isActive1 ? false : true}
-        ></video>
+        >
+         
+        </video>
         <video
         className={isActive2 ? 'activeVideo' : ''}
           src={video2}
@@ -98,7 +97,23 @@ export default function Nosotros() {
           loop
           muted={isActive3 ? false : true}
         ></video>
-       
+       <div className="videoButtons">
+        <a href="">
+       <button id="bottone1" className={isActive1 ? 'videoButton1' : 'displayNone'}>
+            <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
+          </button>
+          </a> 
+          <a href="">
+          <button id="bottone1" className={isActive2 ? 'videoButton2' : 'displayNone'}>
+            <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
+          </button>
+          </a> 
+          <a href="">
+          <button id="bottone1" className={isActive3 ? 'videoButton3' : 'displayNone'}>
+            <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
+          </button>
+          </a>
+       </div>
       </div>
       </BrowserView>
       <MobileView>
