@@ -28,9 +28,9 @@ export default function Eventos() {
         <h1 style={{ color: "white", fontWeight: "200", fontSize: "35px" }}>
           SOLO TENES QUE DISFRUTAR
         </h1>
-        <div style={{ display: "flex", alignItems: "baseline" }}>
+        <div style={{ display: "flex", alignItems: "baseline",alignContent:"center",flexDirection:"row" }}>
           <img className="spanAeria" style={{ height: "22px" }} src={logo} />
-          <p style={{ color: "#C3D900", fontSize: "20px" }}>/ eventos</p>
+          <p style={{ color: "#C3D900", fontSize: "20px" }}>/eventos</p>
         </div>
       </div>
       <div

@@ -1,153 +1,185 @@
-import Imagen1 from "../SELECCION DE FOTOS/video1.png";
-import Imagen2 from "../SELECCION DE FOTOS/video2.png";
-import Imagen3 from "../SELECCION DE FOTOS/video3.png";
-import Imagen4 from "../SELECCION DE FOTOS/areia 13_11-060.png";
-import Imagen5 from "../SELECCION DE FOTOS/areia0412-29.png";
-import Imagen6 from "../SELECCION DE FOTOS/fotoCancha.png";
-import Imagen7 from "../SELECCION DE FOTOS/Areia editadas-45.jpg";
-import Imagen8 from "../SELECCION DE FOTOS/areia 13_11-043.jpg";
-import Imagen9 from "../SELECCION DE FOTOS/areia producto-3.jpg";
-import Imagen10 from "../SELECCION DE FOTOS/AREIA FECHA3-29.jpg";
-import Imagen11 from "../SELECCION DE FOTOS/areia1812-163.jpg";
-import Imagen12 from "../SELECCION DE FOTOS/areia producto-4.jpg";
-import Imagen13 from "../SELECCION DE FOTOS/Areia editadas-8.jpg";
-import Imagen14 from "../SELECCION DE FOTOS/areia 13_11-088.jpg";
-import closeButton from "../SELECCION DE FOTOS/closeButton.png";
-import video1 from "../videos/video1.mp4";
-import video2 from "../videos/video2.mp4";
-import video3 from "../videos/video3.mp4";
-import ContactoFooter from "./contactoFooter";
+import Imagen1 from "../../SELECCION DE FOTOS/video1.png";
+import Imagen2 from "../../SELECCION DE FOTOS/video2.png";
+import Imagen3 from "../../SELECCION DE FOTOS/video3.png";
+import Imagen4 from "../../SELECCION DE FOTOS/areia 13_11-060.png";
+import Imagen5 from "../../SELECCION DE FOTOS/areia0412-29.png";
+import Imagen6 from "../../SELECCION DE FOTOS/fotoCancha.png";
+import Imagen7 from "../../SELECCION DE FOTOS/Areia editadas-45.jpg";
+import Imagen8 from "../../SELECCION DE FOTOS/areia 13_11-043.jpg";
+import Imagen9 from "../../SELECCION DE FOTOS/areia producto-3.jpg";
+import Imagen10 from "../../SELECCION DE FOTOS/AREIA FECHA3-29.jpg";
+import Imagen11 from "../../SELECCION DE FOTOS/areia1812-163.jpg";
+import Imagen12 from "../../SELECCION DE FOTOS/areia producto-4.jpg";
+import Imagen13 from "../../SELECCION DE FOTOS/Areia editadas-8.jpg";
+import Imagen14 from "../../SELECCION DE FOTOS/areia 13_11-088.jpg";
+import closeButton from "../../SELECCION DE FOTOS/closeButton.png";
+import video1 from "../../videos/video1.mp4";
+import video2 from "../../videos/video2.mp4";
+import video3 from "../../videos/video3.mp4";
+import ContactoFooter from "../contactoFooter";
 import { Carousel } from "react-bootstrap";
-import {useState} from 'react';
-import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
+import { useState } from "react";
+import { BrowserView, MobileView, isIOS } from "react-device-detect";
 export default function Nosotros() {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
- 
+
   function unMute(e) {
-    e.target.muted = false
+    e.target.muted = false;
   }
   function Mute(e) {
-    e.target.muted = true
+    e.target.muted = true;
   }
   function play(e) {
-    e.target.play()
-    e.target.muted = false
+    e.target.play();
+    e.target.muted = false;
   }
   function stop(e) {
-    e.target.pause()
-    e.target.muted = true
+    e.target.pause();
+    e.target.muted = true;
   }
-  function closeAll(){
-    setIsActive1(false)
-    setIsActive2(false)
-    setIsActive3(false)
+  function closeAll() {
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive3(false);
   }
-  const handleClick1 = event => {
+  const handleClick1 = (event) => {
     // 👇️ toggle isActive state on click
-    setIsActive1(current => !current);
+    setIsActive1((current) => !current);
   };
-  const handleClick2 = event => {
+  const handleClick2 = (event) => {
     // 👇️ toggle isActive state on click
-    setIsActive2(current => !current);
+    setIsActive2((current) => !current);
   };
-  const handleClick3 = event => {
+  const handleClick3 = (event) => {
     // 👇️ toggle isActive state on click
-    setIsActive3(current => !current);
+    setIsActive3((current) => !current);
   };
   return (
     <>
-    <div className={isActive1 || isActive2 || isActive3 ? 'closeButton-active' : "closeButton"} style={{backgroundImage:`url(${closeButton})`}} onClick={closeAll}></div>
-    <BrowserView>
-      <div className="homeVideos">
-        
-        <video
-        className={isActive1 ? 'activeVideo' : ''}
-          src={video1}
-       
-          onMouseOver={unMute}
-          onMouseLeave={Mute}
-          onClick={handleClick1}
-          autoPlay
-          loop
-          muted={isActive1 ? false : true}
-        >
-         
-        </video>
-        <video
-        className={isActive2 ? 'activeVideo' : ''}
-          src={video2}
-      
-          onMouseOver={unMute}
-          onMouseLeave={Mute}
-          onClick={handleClick2}
-          autoPlay
-          loop
-          muted={isActive2 ? false : true}
-        ></video>
-        <video
-        className={isActive3 ? 'activeVideo' : ''}
-          src={video3}
-  
-          onMouseOver={unMute}
-          onMouseLeave={Mute}
-          onClick={handleClick3}
-          autoPlay
-          loop
-          muted={isActive3 ? false : true}
-        ></video>
-       <div className="videoButtons">
-        <a href="">
-       <button id="bottone1" className={isActive1 ? 'videoButton1' : 'displayNone'}>
-            <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
-          </button>
-          </a> 
-          <a href="">
-          <button id="bottone1" className={isActive2 ? 'videoButton2' : 'displayNone'}>
-            <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
-          </button>
-          </a> 
-          <a href="">
-          <button id="bottone1" className={isActive3 ? 'videoButton3' : 'displayNone'}>
-            <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
-          </button>
-          </a>
-       </div>
-      </div>
+      <div
+        className={
+          isActive1 || isActive2 || isActive3
+            ? "closeButton-active"
+            : "closeButton"
+        }
+        style={{ backgroundImage: `url(${closeButton})` }}
+        onClick={closeAll}
+      ></div>
+      <BrowserView>
+        <div className="homeVideos">
+          <video
+            className={isActive1 ? "activeVideo" : ""}
+            src={video1}
+            onMouseOver={unMute}
+            onMouseLeave={Mute}
+            onClick={handleClick1}
+            autoPlay
+            loop
+            muted={isActive1 ? false : true}
+          ></video>
+          <video
+            className={isActive2 ? "activeVideo" : ""}
+            src={video2}
+            onMouseOver={unMute}
+            onMouseLeave={Mute}
+            onClick={handleClick2}
+            autoPlay
+            loop
+            muted={isActive2 ? false : true}
+          ></video>
+          <video
+            className={isActive3 ? "activeVideo" : ""}
+            src={video3}
+            onMouseOver={unMute}
+            onMouseLeave={Mute}
+            onClick={handleClick3}
+            autoPlay
+            loop
+            muted={isActive3 ? false : true}
+          ></video>
+          <div className="videoButtons">
+            <a href="">
+              <button
+                id="bottone1"
+                className={isActive1 ? "videoButton1" : "displayNone"}
+              >
+                <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
+              </button>
+            </a>
+            <a href="">
+              <button
+                id="bottone1"
+                className={isActive2 ? "videoButton2" : "displayNone"}
+              >
+                <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
+              </button>
+            </a>
+            <a href="">
+              <button
+                id="bottone1"
+                className={isActive3 ? "videoButton3" : "displayNone"}
+              >
+                <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
+              </button>
+            </a>
+          </div>
+        </div>
       </BrowserView>
       <MobileView>
-      <div className="homeVideos">
-        
-        <video
-        className={isActive1 ? 'activeVideo' : ''}
-          src={video1}
-          poster={Imagen1}
-          onMouseOver={play}
-          onMouseLeave={stop}
-          onClick={handleClick1}
-          muted={isActive1 ? false : true}
-        ></video>
-        <video
-        className={isActive2 ? 'activeVideo' : ''}
-          src={video2}
-          poster={Imagen2}
-          onMouseOver={play}
-          onMouseLeave={stop}
-          onClick={handleClick2}
-          muted={isActive2 ? false : true}
-        ></video>
-        <video
-        className={isActive3 ? 'activeVideo' : ''}
-          src={video3}
-          poster={Imagen3}
-          onMouseOver={play}
-          onMouseLeave={stop}
-          onClick={handleClick3}
-          muted={isActive3 ? false : true}
-        ></video>
-       
-      </div>
+        {isIOS ? (
+          <div className="homeVideos">
+            <video
+              src={video1}
+              poster={Imagen1}
+              onMouseOver={play}
+              onMouseLeave={stop}
+            ></video>
+            <video
+              src={video2}
+              poster={Imagen2}
+              onMouseOver={play}
+              onMouseLeave={stop}
+            ></video>
+            <video
+              src={video3}
+              poster={Imagen3}
+              onMouseOver={play}
+              onMouseLeave={stop}
+            ></video>
+          </div>
+        ) : (
+          <div className="homeVideos">
+            <video
+              className={isActive1 ? "activeVideo" : ""}
+              src={video1}
+              poster={Imagen1}
+              onMouseOver={play}
+              onMouseLeave={stop}
+              onClick={handleClick1}
+              muted={isActive1 ? false : true}
+            ></video>
+            <video
+              className={isActive2 ? "activeVideo" : ""}
+              src={video2}
+              poster={Imagen2}
+              onMouseOver={play}
+              onMouseLeave={stop}
+              onClick={handleClick2}
+              muted={isActive2 ? false : true}
+            ></video>
+            <video
+              className={isActive3 ? "activeVideo" : ""}
+              src={video3}
+              poster={Imagen3}
+              onMouseOver={play}
+              onMouseLeave={stop}
+              onClick={handleClick3}
+              muted={isActive3 ? false : true}
+            ></video>
+          </div>
+        )}
       </MobileView>
       <div
         className="nosotrosInfo"
@@ -174,7 +206,7 @@ export default function Nosotros() {
           style={{
             zIndex: "10",
             width: "34vw",
-            marginLeft: "10vw"
+            marginLeft: "10vw",
           }}
         >
           <img
@@ -184,7 +216,11 @@ export default function Nosotros() {
           <img style={{ maxWidth: "100%", filter: "none" }} src={Imagen5} />
         </div>
         <div className="textTorneo">
-          <h1 style={{ color: "white", fontWeight: "200",paddingBottom:"2vh" }}>TORNEO</h1>
+          <h1
+            style={{ color: "white", fontWeight: "200", paddingBottom: "2vh" }}
+          >
+            TORNEO
+          </h1>
           <p style={{ color: "white", fontWeight: "200" }}>
             <strong style={{ color: "white", fontWeight: "500" }}>AREIA</strong>{" "}
             cuenta con una política de admisión
@@ -296,7 +332,7 @@ export default function Nosotros() {
           GALERÍA
         </h1>
         <Carousel
-        className="carouselDiv"
+          className="carouselDiv"
           variant="dark"
           style={{
             boxShadow: "16px 16px 32px #181818,-16px -16px 32px #202020",

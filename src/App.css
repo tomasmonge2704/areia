@@ -85,7 +85,7 @@ body {
   font-family: inherit;
   text-align: center;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.1s;
 }
 
 #bottone1:hover {
@@ -574,7 +574,7 @@ strong {
     z-index: 1000;
     height: 40px;
     width:40px;
-    top:70%;
+    top:83%;
     left: 0; 
     right: 0; 
     margin-left: auto; 

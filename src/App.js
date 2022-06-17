@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {HashRouter,Routes, Route } from "react-router-dom";
 import Inicio from './components/inicio';
-import Nosotros from './components/nosotros';
+import Nosotros from './components/Nosotros/nosotros';
 import Eventos from './components/eventos';
 import Contacto from './components/contacto';
 function App() {
