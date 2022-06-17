@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c2e5a096.css",
-    "main.js": "./static/js/main.40939b8b.js",
+    "main.css": "./static/css/main.a654374e.css",
+    "main.js": "./static/js/main.8c8ed69c.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
     "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
@@ -23,6 +23,10 @@
     "static/media/fotoHome1.png": "./static/media/fotoHome1.e13155b1f951b170ce9b.png",
     "static/media/areia1812-163.jpg": "./static/media/areia1812-163.31f6f60b70a70ebd8d64.jpg",
     "static/media/fotoFooter2.png": "./static/media/fotoFooter2.30c837222cdbb814f51c.png",
+    "static/media/foto1x4.png": "./static/media/foto1x4.0f0099048b3551bd9ac4.png",
+    "static/media/foto3x4.png": "./static/media/foto3x4.628831c31995f8ad89a0.png",
+    "static/media/foto2x4.png": "./static/media/foto2x4.ca40b1bd2c9a2c630303.png",
+    "static/media/foto4x4.png": "./static/media/foto4x4.9f7481fbcbd9c1ce1eef.png",
     "static/media/video2.png": "./static/media/video2.02e7596b1c92d0bca6a3.png",
     "static/media/video3.png": "./static/media/video3.8a6442240cab28a32309.png",
     "static/media/areia 13_11-060.png": "./static/media/areia 13_11-060.184c4a35fc72a51a0e35.png",
@@ -40,12 +44,12 @@
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.c2e5a096.css.map": "./static/css/main.c2e5a096.css.map",
-    "main.40939b8b.js.map": "./static/js/main.40939b8b.js.map",
+    "main.a654374e.css.map": "./static/css/main.a654374e.css.map",
+    "main.8c8ed69c.js.map": "./static/js/main.8c8ed69c.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2e5a096.css",
-    "static/js/main.40939b8b.js"
+    "static/css/main.a654374e.css",
+    "static/js/main.8c8ed69c.js"
   ]
 }
