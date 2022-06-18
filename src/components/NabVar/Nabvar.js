@@ -73,7 +73,7 @@ export default function Nabvar({ section }) {
               <a href="https://www.instagram.com/areiafutbol/">
                 <i className="fa fa-instagram"></i>{" "}
               </a>
-              <a href="#">
+              <a href="https://wa.link/u3nof1">
                 <i className="fa fa-phone"></i>{" "}
               </a>
             </div>

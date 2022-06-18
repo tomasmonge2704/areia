@@ -100,7 +100,7 @@ export default function Nosotros() {
             muted={isActive3 ? false : true}
           ></video>
           <div className="videoButtons">
-            <a href="">
+            <a href="https://www.youtube.com/shorts/2pFB6DUgnKA">
               <button
                 id="bottone1"
                 className={isActive1 ? "videoButton1" : "displayNone"}
@@ -108,7 +108,7 @@ export default function Nosotros() {
                 <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
               </button>
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/shorts/3pfezF8Ejsw">
               <button
                 id="bottone1"
                 className={isActive2 ? "videoButton2" : "displayNone"}
@@ -116,7 +116,7 @@ export default function Nosotros() {
                 <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
               </button>
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/shorts/fAQLYpIoBB0">
               <button
                 id="bottone1"
                 className={isActive3 ? "videoButton3" : "displayNone"}
