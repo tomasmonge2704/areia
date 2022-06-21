@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.ac22ea27.css",
+    "main.css": "./static/css/main.43719eef.css",
     "main.js": "./static/js/main.8dece5f4.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
@@ -44,12 +44,12 @@
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.ac22ea27.css.map": "./static/css/main.ac22ea27.css.map",
+    "main.43719eef.css.map": "./static/css/main.43719eef.css.map",
     "main.8dece5f4.js.map": "./static/js/main.8dece5f4.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac22ea27.css",
+    "static/css/main.43719eef.css",
     "static/js/main.8dece5f4.js"
   ]
 }
