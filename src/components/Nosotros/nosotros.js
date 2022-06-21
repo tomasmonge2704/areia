@@ -183,7 +183,7 @@ export default function Nosotros() {
       </MobileView>
       <div
         className="nosotrosInfo"
-        style={{ backgroundColor: "white", height: "21vh" }}
+        style={{ backgroundColor: "white", height: "18vw" }}
       >
         <p>
           <strong>AREIA</strong> es más que un torneo de fútbol.<br></br> Es una

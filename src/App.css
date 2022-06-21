@@ -65,7 +65,7 @@ body {
 .divCasamiento img {
   position: absolute;
   left: 10vw;
-  top:164vh;
+  transform: translate(0%,6%);
 }
 .divCasamiento div {
   height: 43vh;
@@ -333,6 +333,10 @@ a {
 font-size: 25px !important;
 }
 @media (max-width: 991px) {
+  .homeVideos video {
+    height: 200px;
+    border-radius: 18px;
+  }
   .eventos4x4Cont{
     height: 70vw;
   }
@@ -381,6 +385,7 @@ font-size: 25px !important;
     left: 0 !important;
     top: initial !important;
     opacity: 0.3;
+    transform: translate(0%,0%) !important;
   }
   .nuestroEspacio-text h1{
     font-size: 28px !important;
@@ -402,7 +407,7 @@ font-size: 25px !important;
     padding: 15vh 0 0 0 !important;
   }
   .eventosAbout {
-    height: 33vh !important;
+    height: 75vw !important;
     padding: 5%;
   }
   .eventosAbout p,
@@ -569,6 +574,9 @@ strong {
   bottom: 5vh;
 }
 @media (max-height: 900px) {
+  .nosotrosInfo{
+    height: 35vw !important ;
+  }
   .closeButton-active{
     display: initial;
     position: absolute;
@@ -583,10 +591,7 @@ strong {
     filter:  invert(1) drop-shadow(3px 4px 6px black);
     background-size: 100% 100%;
   }
-  .homeVideos video {
-    height: 200px;
-    border-radius: 18px;
-  }
+
 
   .textTorneo {
     padding: 5%;

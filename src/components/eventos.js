@@ -37,7 +37,7 @@ export default function Eventos() {
         className="eventosAbout"
         style={{
           backgroundColor: "white",
-          height: "27vh",
+          height: "20vw",
           display: "grid",
           textAlign: "center",
           alignItems: "center",

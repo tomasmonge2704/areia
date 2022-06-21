@@ -16,7 +16,7 @@ export default function Contacto() {
       >
         <div>
           <a href="https://linktr.ee/estoesareia">
-            <button data-aos="fade-up" id="bottone1">
+            <button id="bottone1">
               <h1 style={{ color: "black", fontWeight: "400" }}>INSCRIBITE</h1>
               <p>EN UN CLICK!</p>
             </button>
