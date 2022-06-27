@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.91b3a241.css",
-    "main.js": "./static/js/main.e53d1eab.js",
+    "main.css": "./static/css/main.3e4926aa.css",
+    "main.js": "./static/js/main.f7ec9c5a.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
     "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
@@ -38,18 +38,17 @@
     "static/media/mapa2.png": "./static/media/mapa2.6b0cf670251a5e2c4fe9.png",
     "static/media/sponsor.png": "./static/media/sponsor.ab11f9a020ee81015586.png",
     "static/media/Areia_Logotipo_Color.png": "./static/media/Areia_Logotipo_Color.dc1084809ab1ea26a562.png",
-    "static/media/Scandia.otf": "./static/media/Scandia.c1f02e85c347a4d48ea5.otf",
-    "static/media/Scandia Medium.otf": "./static/media/Scandia Medium.7f91aae81f5032f3f2f7.otf",
     "static/media/budweiser.png": "./static/media/budweiser.b8b2ce05a162c0e086a9.png",
+    "static/media/Scandia.woff": "./static/media/Scandia.c29d9a19f62e390e8ce0.woff",
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.91b3a241.css.map": "./static/css/main.91b3a241.css.map",
-    "main.e53d1eab.js.map": "./static/js/main.e53d1eab.js.map",
+    "main.3e4926aa.css.map": "./static/css/main.3e4926aa.css.map",
+    "main.f7ec9c5a.js.map": "./static/js/main.f7ec9c5a.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91b3a241.css",
-    "static/js/main.e53d1eab.js"
+    "static/css/main.3e4926aa.css",
+    "static/js/main.f7ec9c5a.js"
   ]
 }
