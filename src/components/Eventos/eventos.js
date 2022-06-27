@@ -1,21 +1,22 @@
-import ContactoFooter from "./contactoFooter";
-import imagenHome from "../SELECCION DE FOTOS/eventosHome.png";
-import logo from "../SELECCION DE FOTOS/spanAeria.png";
-import imagen2 from "../SELECCION DE FOTOS/espacioAeria.png";
-import imagen3 from "../SELECCION DE FOTOS/casamientoAeria.png";
-import imagen4 from "../SELECCION DE FOTOS/fotoEventos1.png";
-import imagen5 from "../SELECCION DE FOTOS/fotoEventos2.png";
-import img1x4 from "../SELECCION DE FOTOS/foto1x4.png"
-import img2x4 from "../SELECCION DE FOTOS/foto2x4.png"
-import img3x4 from "../SELECCION DE FOTOS/foto3x4.png"
-import img4x4 from "../SELECCION DE FOTOS/foto4x4.png"
+import ContactoFooter from "../contactoFooter";
+import imagenHome from "../../SELECCION DE FOTOS/eventosHome.png";
+import logo from "../../SELECCION DE FOTOS/spanAeria.png";
+import imagen2 from "../../SELECCION DE FOTOS/espacioAeria.png";
+import imagen3 from "../../SELECCION DE FOTOS/casamientoAeria.png";
+import imagen4 from "../../SELECCION DE FOTOS/fotoEventos1.png";
+import imagen5 from "../../SELECCION DE FOTOS/fotoEventos2.png";
+import img1x4 from "../../SELECCION DE FOTOS/foto1x4.png"
+import img2x4 from "../../SELECCION DE FOTOS/foto2x4.png"
+import img3x4 from "../../SELECCION DE FOTOS/foto3x4.png"
+import img4x4 from "../../SELECCION DE FOTOS/foto4x4.png"
+import './Eventos.css'
 export default function Eventos() {
   return (
     <>
       <div
         style={{
           backgroundImage: `url(${imagenHome})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           height: "55vh",
           display: "grid",
           justifyContent: "space-around",
@@ -24,12 +25,13 @@ export default function Eventos() {
           justifyItems: "center",
           textAlign: "center",
         }}
+        className='divEventosHome'
       >
         <h1 style={{ color: "white", fontWeight: "200", fontSize: "35px" }}>
           SOLO TENES QUE DISFRUTAR
         </h1>
         <div style={{ display: "flex", alignItems: "baseline",alignContent:"center",flexDirection:"row" }}>
-          <img className="spanAeria" style={{ height: "22px" }} src={logo} />
+          <img className="spanAeria" style={{ height: "20px" }} src={logo} />
           <p style={{ color: "#C3D900", fontSize: "20px" }}>/eventos</p>
         </div>
       </div>
@@ -67,7 +69,6 @@ export default function Eventos() {
           className="nuestroEspacio-text"
           style={{
             height: "100%",
-            width: "40%",
             display: "grid",
             padding: "8%",
             paddingLeft: "10%",
@@ -90,12 +91,12 @@ export default function Eventos() {
             adaptar perfectamente al tamaño del evento a realizar.
           </p>
         </div>
-        <div
+        <img
           className="nuestroEspacio-img"
+          src={imagen2}
           style={{
-            backgroundImage: `url(${imagen2})`,
             height: "100%",
-            width: "53%",
+            width: "50%",
             backgroundRepeat: "no-repeat",
           }}
         />
@@ -136,11 +137,11 @@ export default function Eventos() {
           <h1>
             TENEMOS UN EQUIPO QUE SE ENCARGA <br/> DE TODOS LOS ASPECTOS DE TU EVENTO.
           </h1>
-          <div style={{ backgroundImage: `url(${imagen4})`,height:"46vh",width:"50%",backgroundRepeat:"no-repeat",backgroundSize:"100% 100%" }} />
+          <img src={imagen4} style={{ height:"46vh",width:"85%",objectFit:"cover"}} />
           <h1>LA ORGANIZACION, COORDINACION<br/> Y ASESORAMIENTO REQUERIDO.</h1>
           <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
-        <div className="contt2" style={{ backgroundImage: `url(${imagen5})`,height:"100%",width:"53vw",backgroundRepeat:"no-repeat",backgroundSize:"100% 100%" }}></div>
+        <img src={imagen5} className="contt2" style={{height:"100%",width:"53vw",objectFit:"cover"}}/>
       </div>
       <div className="ofrecemos" style={{display:"grid",textAlign:"center"}} >
         <h1>OFRECEMOS</h1>
@@ -155,7 +156,7 @@ export default function Eventos() {
         </div>
         <div style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
           <a href="" className="eventosButton">
-        <button id="bottone1" >
+        <button id="bottone1" style={{borderRadius:"0px"}}>
             <h1 style={{ fontWeight: "200",fontSize:"25PX" }}>EVENTOS@AREIA.COM.AR</h1>
           </button>
           </a>

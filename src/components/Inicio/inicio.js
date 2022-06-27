@@ -1,7 +1,8 @@
-import Imagen from "../SELECCION DE FOTOS/fotoInicio.png";
-import appStore from "../SELECCION DE FOTOS/available_on_app_store.png";
-import playStore from "../SELECCION DE FOTOS/available_on_google_play.png";
-import ContactoFooter from "./contactoFooter";
+import Imagen from "../../SELECCION DE FOTOS/fotoInicio.png";
+import appStore from "../../SELECCION DE FOTOS/available_on_app_store.png";
+import playStore from "../../SELECCION DE FOTOS/available_on_google_play.png";
+import ContactoFooter from "../contactoFooter";
+import './Inicio.css'
 export default function Inicio() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Inicio() {
           textAlign: "center",
           alignContent: "center",
         }}
+        className='divInicio'
       >
         <p style={{ color: "black", fontSize: "40px" }}>AREIA APP</p>
         <div className="storeButton">

@@ -1,12 +1,13 @@
-import Imagen1 from "../SELECCION DE FOTOS/fotoFooter2.png";
-import Imagen2 from "../SELECCION DE FOTOS/fotoFooter1.png";
-import Imagen3 from "../SELECCION DE FOTOS/fotoHome2.png";
-import Imagen4 from "../SELECCION DE FOTOS/fotoHome1.png";
-import sponsor2 from "../SELECCION DE FOTOS/sponsor.png";
-import sponsor from "../SELECCION DE FOTOS/puma.png";
-import sponsor3 from "../SELECCION DE FOTOS/budweiser.png";
-import imagenMapa from "../SELECCION DE FOTOS/mapa.png"
-import imagenMapa2 from "../SELECCION DE FOTOS/mapa2.png"
+import Imagen1 from "../../SELECCION DE FOTOS/fotoFooter2.png";
+import Imagen2 from "../../SELECCION DE FOTOS/fotoFooter1.png";
+import Imagen3 from "../../SELECCION DE FOTOS/fotoHome2.png";
+import Imagen4 from "../../SELECCION DE FOTOS/fotoHome1.png";
+import sponsor2 from "../../SELECCION DE FOTOS/sponsor.png";
+import sponsor from "../../SELECCION DE FOTOS/puma.png";
+import sponsor3 from "../../SELECCION DE FOTOS/budweiser.png";
+import imagenMapa from "../../SELECCION DE FOTOS/mapa.png"
+import imagenMapa2 from "../../SELECCION DE FOTOS/mapa2.png"
+import './contacto.css'
 export default function Contacto() {
   return (
     <>

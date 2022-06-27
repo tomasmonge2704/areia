@@ -44,11 +44,6 @@ body {
   background-size: 25% 100%, 50% 100%, 25% 100%;
   background-position: left center, center center, right center;
 }
-.nuestroEspacio {
-  height: 60vh;
-  display: flex;
-  justify-content: space-between;
-}
 .titulo {
   font-size: 78px;
 }
@@ -66,11 +61,6 @@ body {
   position: absolute;
   left: 10vw;
   transform: translate(0%,6%);
-}
-.divCasamiento div {
-  height: 43vh;
-  grid-gap: 16px;
-  justify-items: start;
 }
 /* From uiverse.io by @Custyyyy */
 #bottone1 {
@@ -351,11 +341,6 @@ font-size: 25px !important;
     font-size: 13px;
     font-weight: 200;
   }
-  .divOrg {
-    height: 150vh;
-    display: grid !important;
-    width: 100%;
-  }
   .contt{
     width: 100% !important;
     font-size: 12px;
@@ -363,29 +348,8 @@ font-size: 25px !important;
   .contt h1 {
     font-size: 18px;
   }
-  .contt div{
-    width: 80% !important;
-  }
-  .contt2{
-    width: 100% !important;
-    height: 60vh !important;
-  }
-  .divCasamiento {
-    height: 60vh !important;
-    margin: 0 8% 0% 8% !important;
-  }
   .textTorneo {
     padding: 5%;
-  }
-  .imgCasamiento {
-    position: absolute !important;
-    z-index: -1;
-    width: 100% !important;
-    height: 60vh;
-    left: 0 !important;
-    top: initial !important;
-    opacity: 0.3;
-    transform: translate(0%,0%) !important;
   }
   .nuestroEspacio-text h1{
     font-size: 28px !important;
@@ -400,16 +364,6 @@ font-size: 25px !important;
     color: white !important;
     font-size: 15px !important;
   }
-  .divCasamiento div {
-    color: white !important;
-    z-index: 10;
-    background-color: unset !important;
-    padding: 15vh 0 0 0 !important;
-  }
-  .eventosAbout {
-    height: 75vw !important;
-    padding: 5%;
-  }
   .eventosAbout p,
   strong {
     font-size: 14px !important;
@@ -419,13 +373,6 @@ font-size: 25px !important;
   }
   .nuestroEspacio-text {
     z-index: 10;
-    width: 100% !important;
-  }
-  .nuestroEspacio-img {
-    position: absolute;
-    opacity: 0.2;
-    background-size: 100% 100% !important;
-    height: 60vh !important;
     width: 100% !important;
   }
   .container {
@@ -605,9 +552,6 @@ strong {
     height: 75vh !important;
     width: 90vw !important;
   }
-  .imgInicio {
-    height: 35vh !important;
-  }
   .eventos4x4Cont{
     height: 75vw;
     margin-top: 14vw;
@@ -623,12 +567,6 @@ strong {
   }
   .spanAeria {
     height: 17px !important;
-  }
-  .nuestroEspacio {
-    height: 64vh !important;
-  }
-  .nuestroEspacio-img {
-    height: 64vh !important;
   }
 }
 @media (max-width: 1300px) {

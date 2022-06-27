@@ -20,6 +20,7 @@ import ContactoFooter from "../contactoFooter";
 import { Carousel } from "react-bootstrap";
 import { useState } from "react";
 import { BrowserView, MobileView, isIOS } from "react-device-detect";
+import './Nosotros.css'
 export default function Nosotros() {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
@@ -321,9 +322,10 @@ export default function Nosotros() {
           justifyContent: "center",
         }}
       ></div>
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center"}}>
         <h1
           style={{
+            paddingBottom: "5%",
             paddingTop: "5%",
             color: "rgb(243 255 51)",
             fontWeight: "200",
@@ -334,11 +336,6 @@ export default function Nosotros() {
         <Carousel
           className="carouselDiv"
           variant="dark"
-          style={{
-            boxShadow: "16px 16px 32px #181818,-16px -16px 32px #202020",
-            marginTop: "5%",
-            filter: "drop-shadow(black 2px 4px 6px)",
-          }}
         >
           <Carousel.Item>
             <img
