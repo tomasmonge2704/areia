@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.43719eef.css",
-    "main.js": "./static/js/main.2ea9d465.js",
+    "main.css": "./static/css/main.323bfe97.css",
+    "main.js": "./static/js/main.d11e19a0.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
     "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
@@ -12,8 +12,8 @@
     "static/media/fotoCancha.png": "./static/media/fotoCancha.9fdb0e84fa54bd801577.png",
     "static/media/video1.mp4": "./static/media/video1.8a0b444cd3c0ba130c79.mp4",
     "static/media/video2.mp4": "./static/media/video2.6ae41b6d633eba4de2f1.mp4",
+    "static/media/eventosHome.png": "./static/media/eventosHome.c50a03fbc1e0eb4c5d88.png",
     "static/media/fotoInicio.png": "./static/media/fotoInicio.8665abf6af8850f23e30.png",
-    "static/media/eventosHome.png": "./static/media/eventosHome.ec5e8a911f29a6d98873.png",
     "static/media/fotoHome2.png": "./static/media/fotoHome2.5338b08fff028092ad92.png",
     "static/media/fotoEventos2.png": "./static/media/fotoEventos2.e68cf2f89c9333037ce4.png",
     "static/media/espacioAeria.png": "./static/media/espacioAeria.639757dcff81dc9d8f33.png",
@@ -44,12 +44,12 @@
     "static/media/puma.png": "./static/media/puma.93a05f1239f47de9fbe4.png",
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
-    "main.43719eef.css.map": "./static/css/main.43719eef.css.map",
-    "main.2ea9d465.js.map": "./static/js/main.2ea9d465.js.map",
+    "main.323bfe97.css.map": "./static/css/main.323bfe97.css.map",
+    "main.d11e19a0.js.map": "./static/js/main.d11e19a0.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43719eef.css",
-    "static/js/main.2ea9d465.js"
+    "static/css/main.323bfe97.css",
+    "static/js/main.d11e19a0.js"
   ]
 }
