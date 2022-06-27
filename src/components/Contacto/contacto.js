@@ -46,7 +46,7 @@ export default function Contacto() {
             </div>
             <div id="comoLlegar">
                 <div id="textMapa">
-                <a href="https://linktr.ee/estoesareia">
+                <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1">
                 <button id="bottone1"><strong>CÓMO LLEGAR</strong>
                 </button>
                 </a>

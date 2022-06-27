@@ -127,9 +127,11 @@ export default function Eventos() {
             A 35km de Capital Federal con facil y rapido acceso en una zona
             segura rodeada de barrios cerrados.
           </p>
+          <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1">
           <button id="bottone1">
             <strong style={{ fontWeight: "600" }}>VER MAPA</strong>
           </button>
+          </a>
         </div>
       </div>
       <div className="divOrg">

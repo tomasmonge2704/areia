@@ -259,7 +259,7 @@ export default function Nosotros() {
         className="canchas"
         style={{
           backgroundImage: `url(${Imagen6})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
         }}
       >
         <div className="contenedor" style={{ height: "100%" }}>
@@ -296,9 +296,11 @@ export default function Nosotros() {
               <br />
               -4 canchas de F5 Femenino (iluminadas)
             </p>
+            <a href="https://youtu.be/QHpJ-beyWYs">
             <button id="bottone1">
               <strong>Ver mapa de canchas</strong>
             </button>
+            </a>
             <h1>PREDIO</h1>
             <p>
               -2 estacionamientos privados <br />
