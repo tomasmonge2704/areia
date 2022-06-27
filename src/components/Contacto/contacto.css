@@ -1,6 +1,9 @@
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-    
+  .datos h1 {
+    color: rgb(243 255 51);
+    font-size: 35px !important;
+  }
   }
    
   /* For Tablet View */
@@ -20,6 +23,13 @@
     #mapa2 img{
       padding: 0 !important;
       filter: drop-shadow(black 2px 4px 6px);
+    }
+    .datos h1 {
+      color: rgb(243 255 51);
+      font-size: 23px !important;
+    }
+    .datos p {
+      font-size: 11px !important;
     }
   }
    

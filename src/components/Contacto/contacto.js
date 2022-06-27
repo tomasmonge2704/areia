@@ -18,7 +18,7 @@ export default function Contacto() {
         <div>
           <a href="https://linktr.ee/estoesareia">
             <button id="bottone1">
-              <h1 style={{ color: "black", fontWeight: "400" }}>INSCRIBITE</h1>
+              <h1 style={{ color: "black", fontWeight: "100",margin:"0",fontSize:"30px" }}>INSCRIBITE</h1>
               <p>EN UN CLICK!</p>
             </button>
           </a>

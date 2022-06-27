@@ -6,8 +6,8 @@ import imagen3 from "../../SELECCION DE FOTOS/casamientoAeria.png";
 import imagen4 from "../../SELECCION DE FOTOS/fotoEventos1.png";
 import imagen5 from "../../SELECCION DE FOTOS/fotoEventos2.png";
 import img1x4 from "../../SELECCION DE FOTOS/foto1x4.png"
-import img2x4 from "../../SELECCION DE FOTOS/foto2x4.png"
-import img3x4 from "../../SELECCION DE FOTOS/foto3x4.png"
+import img3x4 from "../../SELECCION DE FOTOS/foto2x4.png"
+import img2x4 from "../../SELECCION DE FOTOS/foto3x4.png"
 import img4x4 from "../../SELECCION DE FOTOS/foto4x4.png"
 import './Eventos.css'
 export default function Eventos() {
@@ -27,8 +27,8 @@ export default function Eventos() {
         }}
         className='divEventosHome'
       >
-        <h1 style={{ color: "white", fontWeight: "200", fontSize: "35px" }}>
-          SOLO TENES QUE DISFRUTAR
+        <h1 style={{ color: "white", fontWeight: "200",margin:"0" }}>
+        SÓLO TENÉS QUE DISFRUTAR.
         </h1>
         <div style={{ display: "flex", alignItems: "baseline",alignContent:"center",flexDirection:"row" }}>
           <img className="spanAeria" style={{ height: "20px" }} src={logo} />
@@ -46,10 +46,10 @@ export default function Eventos() {
           alignContent: "center",
         }}
       >
-        <h1 style={{ fontSize: "20px" }}>ABOUT US</h1>
+        <strong style={{ fontSize: "15px" }}>ABOUT US</strong>
         <p style={{ fontSize: "17px", marginTop: "2%" }}>
           AREIA es una empresa con{" "}
-          <strong style={{ fontSize: "15px" }}>
+          <strong style={{ fontSize: "17px" }}>
             mas de 10 años de experiencia
           </strong>
           <br />
@@ -79,14 +79,14 @@ export default function Eventos() {
           <h2 style={{ fontSize: "15px", fontWeight: "500" }}>
             NUESTRO ESPACIO
           </h2>
-          <h1 style={{ fontSize: "2.2vw", fontWeight: "200" }}>
+          <h1 style={{ fontSize: "32px", fontWeight: "200" }}>
             CONTAMOS CON UN<br/> AMBIENTE ATRACTIVO <br /> Y NATURAL.
           </h1>
-          <p style={{ fontSize: "1vw", fontWeight: "200" }}>
+          <p style={{ fontSize: "15px", fontWeight: "200" }}>
             Las mas de 5 hectareas de espacio verde son ideales para
             desconectarse de la rutina y vivir <br /> una experiencia unica.
           </p>
-          <p style={{ fontSize: "1vw", fontWeight: "200" }}>
+          <p style={{ fontSize: "15px", fontWeight: "200" }}>
             La versatilidad de nuestras instalaciones permite que nos podamos
             adaptar perfectamente al tamaño del evento a realizar.
           </p>
@@ -139,7 +139,7 @@ export default function Eventos() {
           <h1>
             TENEMOS UN EQUIPO QUE SE ENCARGA <br/> DE TODOS LOS ASPECTOS DE TU EVENTO.
           </h1>
-          <img src={imagen4} style={{ height:"37vw",width:"58%",objectFit:"cover",borderRadius:"5%"}} />
+          <img src={imagen4} style={{ height:"31vw",width:"58%",objectFit:"cover",borderRadius:"5%",margin:"10px"}} />
           <h1>LA ORGANIZACION, COORDINACION<br/> Y ASESORAMIENTO REQUERIDO.</h1>
           <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
@@ -159,7 +159,7 @@ export default function Eventos() {
         <div style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
           <a href="mailto: eventos@AREIA.com.ar" className="eventosButton">
         <button id="bottone1" style={{borderRadius:"0px"}}>
-            <h1 style={{ fontWeight: "200",fontSize:"25PX" }}>EVENTOS@AREIA.COM.AR</h1>
+            <h1 style={{ fontWeight: "200",fontSize:"25px" }}>EVENTOS@AREIA.COM.AR</h1>
           </button>
           </a>
           </div>
