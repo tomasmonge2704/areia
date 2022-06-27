@@ -28,7 +28,7 @@
     height: 64vh !important;
   }
   .eventosAbout {
-    height: 75vw !important;
+    height: 90vw !important;
     padding: 5%;
   }
   .nuestroEspacio-img {
@@ -70,7 +70,8 @@
     height: 50vh !important;
   }
   .contt img {
-    width: 90% !important;
+    height: 80vw !important;
+    width: 80% !important;
     border-radius: 6%;
   }
 }

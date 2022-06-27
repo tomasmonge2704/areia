@@ -6,7 +6,7 @@ import './Inicio.css'
 export default function Inicio() {
   return (
     <>
-      <img className="imgInicio" src={Imagen} style={{ width: "100%",maxHeight:"60vh" }} />
+      <img className="imgInicio" src={Imagen} style={{ width: "100%",maxHeight:"60vh",objectFit:"cover" }} />
       <div
         style={{
           backgroundColor: "white",

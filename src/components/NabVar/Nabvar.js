@@ -3,7 +3,7 @@ import logo from "../../SELECCION DE FOTOS/Areia_Logotipo_Color.png";
 import { Link } from "react-router-dom";
 export default function Nabvar({ section }) {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#1c1c1c" }}>
+    <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home" id="logoMobile" style={{ width: "100px" }}>
           <Link to={`/`} style={{ textDecoration: "none" }}>

@@ -39,7 +39,7 @@ export default function Eventos() {
         className="eventosAbout"
         style={{
           backgroundColor: "white",
-          height: "20vw",
+          height: "25vw",
           display: "grid",
           textAlign: "center",
           alignItems: "center",
@@ -70,8 +70,8 @@ export default function Eventos() {
           style={{
             height: "100%",
             display: "grid",
-            padding: "8%",
-            paddingLeft: "10%",
+            padding: "10%",
+            paddingLeft: "12%",
             alignContent: "center",
             color: "white",
           }}
@@ -79,14 +79,14 @@ export default function Eventos() {
           <h2 style={{ fontSize: "15px", fontWeight: "500" }}>
             NUESTRO ESPACIO
           </h2>
-          <h1 style={{ fontSize: "40px", fontWeight: "200" }}>
-            CONTAMOS CON UN AMBIENTE ATRACTIVO <br /> Y NATURAL.
+          <h1 style={{ fontSize: "2.2vw", fontWeight: "200" }}>
+            CONTAMOS CON UN<br/> AMBIENTE ATRACTIVO <br /> Y NATURAL.
           </h1>
-          <p style={{ fontSize: "20px", fontWeight: "200" }}>
+          <p style={{ fontSize: "1vw", fontWeight: "200" }}>
             Las mas de 5 hectareas de espacio verde son ideales para
             desconectarse de la rutina y vivir <br /> una experiencia unica.
           </p>
-          <p style={{ fontSize: "20px", fontWeight: "200" }}>
+          <p style={{ fontSize: "1vw", fontWeight: "200" }}>
             La versatilidad de nuestras instalaciones permite que nos podamos
             adaptar perfectamente al tamaño del evento a realizar.
           </p>
@@ -96,7 +96,7 @@ export default function Eventos() {
           src={imagen2}
           style={{
             height: "100%",
-            width: "50%",
+            width: "53%",
             backgroundRepeat: "no-repeat",
           }}
         />
@@ -104,8 +104,8 @@ export default function Eventos() {
       <div
         className="divCasamiento"
         style={{
-          height: "50vh",
-          margin: "10vh 12vw 7vh 46.5vw",
+          height: "42vh",
+          margin: "9vh 10vw 9vh 46.5vw",
           alignItems: "center",
         }}
       >
@@ -114,7 +114,7 @@ export default function Eventos() {
           style={{
             backgroundColor: "white",
             color: "black",
-            padding: "4vw 17vh 4vw 19vh",
+            padding: "2vw 12vh 4vw 15vh",
             display: "grid",
             alignContent: "center",
           }}
@@ -137,7 +137,7 @@ export default function Eventos() {
           <h1>
             TENEMOS UN EQUIPO QUE SE ENCARGA <br/> DE TODOS LOS ASPECTOS DE TU EVENTO.
           </h1>
-          <img src={imagen4} style={{ height:"46vh",width:"85%",objectFit:"cover"}} />
+          <img src={imagen4} style={{ height:"37vw",width:"58%",objectFit:"cover",borderRadius:"5%"}} />
           <h1>LA ORGANIZACION, COORDINACION<br/> Y ASESORAMIENTO REQUERIDO.</h1>
           <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
@@ -155,7 +155,7 @@ export default function Eventos() {
           <img src={img4x4}/>
         </div>
         <div style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
-          <a href="" className="eventosButton">
+          <a href="mailto: eventos@AREIA.com.ar" className="eventosButton">
         <button id="bottone1" style={{borderRadius:"0px"}}>
             <h1 style={{ fontWeight: "200",fontSize:"25PX" }}>EVENTOS@AREIA.COM.AR</h1>
           </button>

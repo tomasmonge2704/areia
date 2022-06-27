@@ -7,7 +7,7 @@
   font-weight: normal;
 }
 body {
-  background-color: #1c1c1c !important;
+  background-color:rgb(23 23 24) !important;
 }
 .padding {
   padding: 4rem;
@@ -24,6 +24,15 @@ body {
   height: 40rem;
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 58% 100%;
+  background-position: left center, right center;
+}
+.home2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% 100%, 50% 100%;
   background-position: left center, right center;
 }
 .nosotrosHome {
@@ -69,7 +78,7 @@ body {
   padding-bottom: 5px;
   padding-top: 10px;
   border-radius: 9px;
-  color: #1c1c1c;
+  color: rgb(23 23 24);
   background: rgb(243 255 51);
   border: none;
   font-family: inherit;
@@ -88,7 +97,6 @@ body {
 }
 
 .datos {
-  background-color: #1c1c1c;
   height: 17rem;
   display: flex;
   justify-content: space-evenly;
@@ -191,7 +199,7 @@ a {
   text-decoration: none !important;
 }
 .fa-instagram {
-  color: #1c1c1c;
+  color: rgb(23 23 24);
   background-color: #c3d900;
   height: 30px;
   width: 30px;
@@ -221,7 +229,7 @@ a {
   filter: drop-shadow(black 2px 4px 6px);
 }
 .fa-phone {
-  color: #1c1c1c;
+  color: rgb(23 23 24);
   background-color: #c3d900;
   height: 30px;
   width: 30px;
@@ -404,6 +412,10 @@ font-size: 25px !important;
     background-size: 100% 50%, 100% 50%;
     background-position: top center, bottom center;
   }
+  .home2 {
+    background-size: 100% 50%, 100% 50%;
+    background-position: top center, bottom center;
+  }
   .nosotrosHome {
     background-size: 100% 34%, 100% 34%, 100% 34%;
     background-position: top center, center center, bottom center;
@@ -417,6 +429,8 @@ font-size: 25px !important;
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     text-align: center;
+    align-content: space-evenly;
+    align-items: baseline;
   }
   #comoLlegar {
     height: auto;
@@ -503,7 +517,6 @@ font-size: 25px !important;
 }
 #contact-form {
   border-radius: 37px;
-  background: #1c1c1c;
   box-shadow: 16px 16px 32px #181818, -16px -16px 32px #202020;
 }
 .nosotrosInfo p,

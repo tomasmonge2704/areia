@@ -13,7 +13,7 @@ export default function Contacto() {
     <>
       <div
         className="home"
-        style={{ backgroundImage: `url(${Imagen3}), url(${Imagen4})` }}
+        style={{ backgroundImage: `url(${Imagen4}), url(${Imagen3})` }}
       >
         <div>
           <a href="https://linktr.ee/estoesareia">
@@ -38,7 +38,7 @@ export default function Contacto() {
           <h1>MAIL.</h1> <p>INFO@AREIA.COM.AR</p>
         </div>
       </div>
-      <div style={{ backgroundColor: "#1c1c1c" }}>
+      <div>
             <div>
 
             <img src={imagenMapa} id="mapa" />
@@ -52,7 +52,7 @@ export default function Contacto() {
                 </a>
                 </div>
                 <div id="mapa2">
-                    <img src={imagenMapa2} style={{ width: "100%", height: "100%",padding:"5%",filter:"drop-shadow(2px 4px 6px black)" }} />
+                    <img src={imagenMapa2} style={{ width: "100%", height: "100%",padding:"5%"}}/>
                 </div>
 
 
@@ -83,8 +83,8 @@ export default function Contacto() {
       </div>
 
       <div
-        className="home"
-        style={{ backgroundImage: `url(${Imagen2}), url(${Imagen1})` }}
+        className="home2"
+        style={{ backgroundImage: `url(${Imagen2}), url(${Imagen1})`}}
       ></div>
     </>
   );

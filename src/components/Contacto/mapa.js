@@ -3,7 +3,7 @@ import imagenMapa2 from "../SELECCION DE FOTOS/mapa2.png"
 
 export default function Mapa() {
     return (
-        <div style={{ backgroundColor: "#1c1c1c" }}>
+        <div>
             <div>
 
             <img src={imagenMapa} id="mapa" />

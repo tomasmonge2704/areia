@@ -12,7 +12,15 @@
   /* For Mobile Portrait View */
   @media screen and (max-device-width: 480px)
   and (orientation: portrait) {
-   
+    #mapa {
+      height: 35vh;
+      object-fit: cover;
+      filter: drop-shadow(black 2px 4px 6px);
+    }
+    #mapa2 img{
+      padding: 0 !important;
+      filter: drop-shadow(black 2px 4px 6px);
+    }
   }
    
   /* For Mobile Landscape View */
