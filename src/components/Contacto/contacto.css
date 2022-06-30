@@ -1,4 +1,28 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% 100%, 58% 100%;
+  background-position: left center, right center;
+}
+.home2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% 100%, 50% 100%;
+  background-position: left center, right center;
+}
 /* For Desktop View */
+@media screen and (min-width: 1920px) {
+  .footer{
+    margin-left: 13vw !important;
+  }
+  }
+   
 @media screen and (min-width: 1024px) {
   .datos h1 {
     color: rgb(243 255 51);
@@ -9,9 +33,17 @@
   /* For Tablet View */
   @media screen and (min-device-width: 768px)
   and (max-device-width: 1024px) {
-   
   }
-   
+  /* For Noteboock View */
+  @media screen and (max-height: 750px)
+  and (max-width: 1500px) and (orientation:landscape)  {
+    .home{
+      height: 35rem;
+    }
+    .home2{
+      height: 35rem;
+    }
+  }
   /* For Mobile Portrait View */
   @media screen and (max-device-width: 480px)
   and (orientation: portrait) {
@@ -31,6 +63,17 @@
     .datos p {
       font-size: 11px !important;
     }
+    .home {
+      background-size: 100% 50%, 100% 50%;
+      background-position: top center, bottom center;
+      height: 70vh;
+    }
+    .home2 {
+      background-size: 100% 50%, 100% 50%;
+      background-position: top center, bottom center;
+      height: 70vh;
+    }
+    
   }
    
   /* For Mobile Landscape View */
@@ -47,7 +90,7 @@
   /* For iPhone 4 Portrait or Landscape View */
   @media screen and (min-device-width: 320px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    
+
   }
    
   /* For iPhone 5 Portrait or Landscape View */
@@ -59,5 +102,12 @@
   /* For iPhone 6 and 6 plus Portrait or Landscape View */
   @media (min-device-height: 667px) and (min-device-width: 375px)
   and (-webkit-min-device-pixel-ratio: 3) {
+        .home {
     
+      height: 78vh;
+    }
+    .home2 {
+    
+      height: 78vh;
+    }
   }

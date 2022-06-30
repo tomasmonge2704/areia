@@ -5,7 +5,7 @@ import ContactoFooter from "../contactoFooter";
 import './Inicio.css'
 export default function Inicio() {
   return (
-    <>
+    <div>
       <img className="imgInicio" src={Imagen} style={{ width: "100%",maxHeight:"60vh",objectFit:"cover" }} />
       <div
         style={{
@@ -29,14 +29,14 @@ export default function Inicio() {
         </div>
         <p
           className="textInicio"
-          style={{ color: "black", fontSize: "25px", marginTop: "30px" }}
+          style={{ color: "black", fontSize: "20px", marginTop: "30px" }}
         >
-          POSICIONES,ESTADÍSTICAS,CANCHAS,NOTICIAS Y MÁS
+          POSICIONES, ESTADÍSTICAS, CANCHAS, NOTICIAS Y MÁS
           <br />
           <strong>¡Descargá la app y enterate de todo!</strong>
         </p>
       </div>
       <ContactoFooter />
-    </>
+    </div>
   );
 }

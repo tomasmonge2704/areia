@@ -32,9 +32,9 @@ function App() {
           </div>
         }>
         </Route>
-        <Route exact path="/eventos" element={
+        <Route exact path="/venue" element={
           <div>
-            <Nabvar section="eventos"/>
+            <Nabvar section="venue"/>
             <Eventos/>
           </div>
         }>

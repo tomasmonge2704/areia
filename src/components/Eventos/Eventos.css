@@ -9,12 +9,25 @@
 .divEventosHome h1{
   font-size: 35px;
 }
+.divCasamiento img {
+  position: absolute;
+  left: 12vw;
+  width: 41vw;
+  transform: translate(0%,6%);
+}
+.divEventosHome img{
+height: 18px;
+}
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
   .nuestroEspacio {
     display: flex;
     justify-content: space-between;
   }
+  .divCasamiento div {
+    padding: 6vw 12vh 4vw 15vh;
+  }
+  
 }
 
 /* For Tablet View */
@@ -88,16 +101,58 @@
   .divEventosHome h1{
     font-size: 20px;
   }
-  .textInicio strong {
-    font-size: 11px !important;
-    font-weight: 200;
+  .divCasamiento div {
+    padding: 2vw 12vh 4vw 15vh;
   }
-  .textInicio{
-    font-size: 11px !important;
-    font-weight: 200;
+  .divEventosHome img{
+    height: 16px;
+    }
+    .nuestroEspacio-text{
+      padding: 13% 8% 10% 8% !important;
+    }
+  .botonEventosMail{
+    bottom: 29vw !important;
   }
 }
-
+/* For Noteboock View */
+  @media screen and (max-height: 800px)
+  and (max-width: 1600px) and (orientation:landscape)  {
+  .divEventosHome{
+    height: 65vh !important;
+  }
+  .divCasamiento{
+    height: 65vh !important;
+  }
+  .imgCasamiento{
+    height: 57vh;
+    left: 10vw !important;
+  }
+  .nuestroEspacio-text p{
+    font-size: 14px !important;
+  }
+  .nuestroEspacio-text h2{
+    font-size: 16px !important;
+  }
+  .nuestroEspacio-text h1{
+    font-size: 32px !important;
+  }
+  .divOrg {
+    height: 107vh !important;
+    
+}
+.ofrecemos{
+  height: 50vh;
+}
+.fotos4x4{
+  padding: 9%;
+}
+.eventos4x4Cont {
+height: 54vw;
+}
+.botonEventosMail{
+  bottom: 29vw  !important;
+}
+  }
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
 }

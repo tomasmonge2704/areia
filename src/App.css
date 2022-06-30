@@ -1,11 +1,11 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @font-face {
-  font-family:'Scandia web Regular';
+  font-family: "Scandia web Regular";
   src: url("./Scandia/Scandia.woff") format("woff");
 }
 body {
-  background-color:rgb(23 23 24) !important;
-  font-family:Scandia web Regular !important;
+  background-color: rgb(23 23 24) !important;
+  font-family: Scandia web Regular !important;
   font-style: normal;
   font-weight: normal;
 }
@@ -14,26 +14,8 @@ body {
 }
 
 /*rgb(243 255 51);*/
-.closeButton{
+.closeButton {
   display: none;
-}
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40rem;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 50% 100%, 58% 100%;
-  background-position: left center, right center;
-}
-.home2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40rem;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 50% 100%, 50% 100%;
-  background-position: left center, right center;
 }
 .nosotrosHome {
   display: flex;
@@ -65,11 +47,6 @@ body {
   width: 43vw;
   margin-left: 0vw;
   height: 37vh;
-}
-.divCasamiento img {
-  position: absolute;
-  left: 10vw;
-  transform: translate(0%,6%);
 }
 /* From uiverse.io by @Custyyyy */
 #bottone1 {
@@ -144,7 +121,7 @@ body {
 #navNosotros .nosotros {
   color: #c3d900 !important;
 }
-#navEventos .eventos {
+#navEventos .venue {
   color: #c3d900 !important;
 }
 #navContacto .contacto {
@@ -260,21 +237,21 @@ a {
 .canchas {
   height: 50rem;
 }
-.nuestroEspacio-text{
+.nuestroEspacio-text {
   grid-gap: 3%;
 }
-.divOrg{
+.divOrg {
   display: flex;
   height: 90vh;
 }
-.divOrg h1{
+.divOrg h1 {
   font-size: 23px;
   font-weight: 400;
 }
-.ofrecemos{
+.ofrecemos {
   color: white;
   height: 30vh;
-  padding-top:5%;
+  padding-top: 5%;
 }
 .ofrecemos h1 {
   font-size: 30px;
@@ -284,51 +261,51 @@ a {
   font-size: 18px;
   font-weight: 200;
 }
-.displayNone{
+.displayNone {
   opacity: 0;
 }
-.videoButton1{
+.videoButton1 {
   opacity: 1;
 }
-.videoButton2{
+.videoButton2 {
   opacity: 1;
 }
-.videoButton3{
+.videoButton3 {
   opacity: 1;
 }
-.fotos4x4{
+.fotos4x4 {
   padding: 9%;
   position: relative;
   bottom: 15vw;
 }
-.fotos4x4 img{
+.fotos4x4 img {
   border-radius: 15px;
   width: 50%;
   padding: 3px;
 }
-.eventos4x4Cont{
+.eventos4x4Cont {
   width: 100%;
   background-color: white;
   margin-top: 7vw;
   height: 56vw;
 }
-.eventosButton{
+.eventosButton {
   left: 40%;
 }
-.eventosButton h1{
-font-size: 25px !important;
+.eventosButton h1 {
+  font-size: 25px !important;
 }
 @media (max-width: 991px) {
   .homeVideos video {
     height: 200px;
     border-radius: 18px;
   }
-  .eventos4x4Cont{
+  .eventos4x4Cont {
     height: 70vw;
   }
-  .eventosButton h1{
+  .eventosButton h1 {
     font-size: 13px !important;
-    }
+  }
   .ofrecemos h1 {
     font-size: 20px;
     font-weight: 200;
@@ -337,17 +314,17 @@ font-size: 25px !important;
     font-size: 13px;
     font-weight: 100;
   }
-  .contt{
+  .contt {
     width: 100% !important;
     font-size: 12px;
   }
   .textTorneo {
     padding: 5%;
   }
-  .divCasamiento h1{
+  .divCasamiento h1 {
     font-size: 28px !important;
   }
-  .divCasamiento p{
+  .divCasamiento p {
     color: white !important;
     font-size: 15px !important;
   }
@@ -366,8 +343,8 @@ font-size: 25px !important;
     justify-content: space-between !important;
   }
   #bottone1 {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   #logoMobile {
     display: initial;
@@ -378,22 +355,11 @@ font-size: 25px !important;
     padding-top: 1rem;
     font-size: 18px;
   }
-  .nosotrosInfo strong {
-    font-size: 15px !important;
-  }
   #navLogoA {
     display: none;
   }
   .nav-link {
     margin: 0 !important;
-  }
-  .home {
-    background-size: 100% 50%, 100% 50%;
-    background-position: top center, bottom center;
-  }
-  .home2 {
-    background-size: 100% 50%, 100% 50%;
-    background-position: top center, bottom center;
   }
   .nosotrosHome {
     background-size: 100% 34%, 100% 34%, 100% 34%;
@@ -508,24 +474,9 @@ strong {
   bottom: 5vh;
 }
 @media (max-height: 900px) {
-  .nosotrosInfo{
+  .nosotrosInfo {
     height: 35vw !important ;
   }
-  .closeButton-active{
-    display: initial;
-    position: absolute;
-    z-index: 1000;
-    height: 40px;
-    width:40px;
-    top:83%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    filter:  invert(1) drop-shadow(3px 4px 6px black);
-    background-size: 100% 100%;
-  }
-
 
   .textTorneo {
     padding: 5%;
@@ -533,19 +484,16 @@ strong {
   .canchas #bottone1 {
     padding-top: 15px;
   }
-  .activeVideo {
-    position: absolute;
-    z-index: 999;
-    height: 75vh !important;
-    width: 90vw !important;
-  }
-  .eventos4x4Cont{
+  .eventos4x4Cont {
     height: 75vw;
     margin-top: 14vw;
   }
-  .fotos4x4{
-    padding: 9% 2% 9% 2% ;
+  .fotos4x4 {
+    padding: 9% 2% 9% 2%;
     bottom: 20vw;
+  }
+  #bottone1{
+    padding-top: 14px;
   }
 }
 @media (max-height: 667px) {
@@ -568,27 +516,26 @@ strong {
   .contenedorTorneo strong {
     font-size: 20px;
   }
-  
 }
-@media (min-width: 992px) and (max-width:1300px){
+@media (min-width: 992px) and (max-width: 1300px) {
   .divCasamiento div {
     padding: 5vw 5vh 4vw 12vh !important;
   }
-  .divCasamiento{
+  .divCasamiento {
     margin-right: 7vh !important;
   }
-  .divCasamiento h1{
+  .divCasamiento h1 {
     font-size: 28px !important;
   }
-  .divCasamiento p{
+  .divCasamiento p {
     font-size: 14px !important;
   }
 }
-@media (min-width: 1301px) and (max-width:1800px){
-  .divCasamiento h1{
+@media (min-width: 1301px) and (max-width: 1800px) {
+  .divCasamiento h1 {
     font-size: 31px !important;
   }
-  .divCasamiento p{
+  .divCasamiento p {
     font-size: 17px !important;
   }
 }
@@ -625,16 +572,16 @@ strong {
     margin-right: 5vw;
   }
 }
-@media (min-width:1000px) and (max-width: 1600px){
-  .divOrg{
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .divOrg {
     height: 70vh;
   }
 }
-@media (min-height:1000px) and (max-width: 991px){
-  .contactoFooter{
+@media (min-height: 1000px) and (max-width: 991px) {
+  .contactoFooter {
     margin-right: 40%;
   }
-  .eventos4x4Cont{
+  .eventos4x4Cont {
     height: 63vw;
   }
 }

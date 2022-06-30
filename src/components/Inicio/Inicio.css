@@ -1,4 +1,6 @@
-
+.textInicio strong{
+    font-size: 20px;
+}
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
@@ -17,7 +19,13 @@ and (orientation: portrait) {
     .imgInicio {
         height: 30vh !important;
       }
-    
+      .textInicio{
+        font-size: 13px !important;
+    }
+      .textInicio strong{
+        font-size: 12px !important;
+        font-weight: 600;
+    }
 }
  
 /* For Mobile Landscape View */

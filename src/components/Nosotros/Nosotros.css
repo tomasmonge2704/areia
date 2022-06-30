@@ -10,6 +10,11 @@
     width: 100%;
     height: 60px;
   }
+.nosotrosInfo strong{
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
 /* For Desktop View */
 @media screen and (min-width: 1824px) {
     .videoButtons{
@@ -43,6 +48,12 @@ and (max-width: 1024px) {
  .nosotrosInfo{
     text-align: center;
  }
+ .activeVideo {
+    position: absolute;
+    z-index: 999;
+    height: 75vh !important;
+    width: 90vw !important;
+  }
 }
  
 /* For Mobile Portrait View */
@@ -52,8 +63,56 @@ and (orientation: portrait) {
     min-height: 45vh;
 
  }
+ .nosotrosInfo strong {
+    font-size: 15px !important;
+  }
+  .nosotrosInfo p {
+    font-size: 16px !important;
+  }
+  .homeVideos video {
+    min-height: 25vh;
 }
- 
+.activeVideo {
+    position: absolute;
+    z-index: 999;
+    height: 75vh !important;
+    width: 90vw !important;
+  }
+.closeButton-active{
+    display: initial;
+    position: absolute;
+    z-index: 1000;
+    height: 40px;
+    width:40px;
+    top:83%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    filter:  invert(1) drop-shadow(3px 4px 6px black);
+    background-size: 100% 100%;
+  }
+}
+/* For Noteboock View */
+@media screen and (max-height: 800px)
+and (max-width: 1600px) and (orientation:landscape) {
+.homeVideos{
+max-height: 90vh;
+padding-top: 1% !important;
+}
+.homeVideos video{
+min-height: 70vh;
+}
+.nosotrosInfo{
+height: 16vw !important;
+}
+.carousel-item img{
+max-height: 70vh !important;
+}
+.videoButtons {
+    top: 45vw;
+}
+}
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px)
 and (orientation: landscape) {

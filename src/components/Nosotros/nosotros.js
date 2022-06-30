@@ -101,7 +101,7 @@ export default function Nosotros() {
             muted={isActive3 ? false : true}
           ></video>
           <div className="videoButtons">
-            <a href="https://www.youtube.com/shorts/2pFB6DUgnKA">
+            <a href="https://www.youtube.com/shorts/2pFB6DUgnKA" target="_blank">
               <button
                 id="bottone1"
                 className={isActive1 ? "videoButton1" : "displayNone"}
@@ -109,7 +109,7 @@ export default function Nosotros() {
                 <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
               </button>
             </a>
-            <a href="https://www.youtube.com/shorts/3pfezF8Ejsw">
+            <a href="https://www.youtube.com/shorts/3pfezF8Ejsw" target="_blank">
               <button
                 id="bottone1"
                 className={isActive2 ? "videoButton2" : "displayNone"}
@@ -117,7 +117,7 @@ export default function Nosotros() {
                 <strong style={{ fontWeight: "600" }}>Ir a YouTube</strong>
               </button>
             </a>
-            <a href="https://www.youtube.com/shorts/fAQLYpIoBB0">
+            <a href="https://www.youtube.com/shorts/fAQLYpIoBB0" target="_blank">
               <button
                 id="bottone1"
                 className={isActive3 ? "videoButton3" : "displayNone"}
@@ -184,7 +184,7 @@ export default function Nosotros() {
       </MobileView>
       <div
         className="nosotrosInfo"
-        style={{ backgroundColor: "white", height: "18vw" }}
+        style={{ backgroundColor: "white", height: "14vw" }}
       >
         <p>
           <strong>AREIA</strong> es más que un torneo de fútbol.<br></br> Es una
@@ -296,7 +296,7 @@ export default function Nosotros() {
               <br />
               -4 canchas de F5 Femenino (iluminadas)
             </p>
-            <a href="https://youtu.be/QHpJ-beyWYs">
+            <a href="https://youtu.be/QHpJ-beyWYs" target="_blank">
             <button id="bottone1">
               <strong>Ver mapa de canchas</strong>
             </button>

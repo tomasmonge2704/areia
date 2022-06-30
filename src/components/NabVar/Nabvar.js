@@ -44,7 +44,7 @@ export default function Nabvar({ section }) {
           </Link>
           <Nav>
             <Link
-              to={`/eventos`}
+              to={`/venue`}
               id="navEventos"
               style={{ textDecoration: "none" }}
             >
@@ -53,7 +53,7 @@ export default function Nabvar({ section }) {
                 className={section}
                 style={{ marginLeft: "4vh", marginRight: "2vh" }}
               >
-                EVENTOS
+                VENUE
               </Nav.Link>
             </Link>
             <Link

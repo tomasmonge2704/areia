@@ -1,7 +1,7 @@
 export default function ContactoFooter(){
    return(
     <footer>
-    <h1 className="footer" style={{marginLeft:"13%",fontSize:"30px",marginTop:"5rem"}}>CONTACTO</h1>
+    <h1 className="footer" style={{marginLeft:"11vw",fontSize:"30px",marginTop:"5rem"}}>CONTACTO</h1>
     <div className="contactoFooter">
     
         <div><h1>TEL.</h1> <p>03484218510</p></div>

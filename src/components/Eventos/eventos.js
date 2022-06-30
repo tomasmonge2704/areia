@@ -31,8 +31,7 @@ export default function Eventos() {
         SÓLO TENÉS QUE DISFRUTAR.
         </h1>
         <div style={{ display: "flex", alignItems: "baseline",alignContent:"center",flexDirection:"row" }}>
-          <img className="spanAeria" style={{ height: "20px" }} src={logo} />
-          <p style={{ color: "#C3D900", fontSize: "20px" }}>/eventos</p>
+          <p style={{ color: "#C3D900", fontSize: "20px" }}><img src={logo}></img>/venue</p>
         </div>
       </div>
       <div
@@ -70,23 +69,22 @@ export default function Eventos() {
           style={{
             height: "100%",
             display: "grid",
-            padding: "10%",
-            paddingLeft: "12%",
+            padding: "13% 10% 10% 12%",
             alignContent: "center",
             color: "white",
           }}
         >
-          <h2 style={{ fontSize: "15px", fontWeight: "500" }}>
+          <h2 style={{ fontSize: "1.13em", fontWeight: "500" }}>
             NUESTRO ESPACIO
           </h2>
-          <h1 style={{ fontSize: "32px", fontWeight: "200" }}>
+          <h1 style={{ fontSize: "2.5em", fontWeight: "200" }}>
             CONTAMOS CON UN<br/> AMBIENTE ATRACTIVO <br /> Y NATURAL.
           </h1>
-          <p style={{ fontSize: "15px", fontWeight: "200" }}>
+          <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
             Las mas de 5 hectareas de espacio verde son ideales para
             desconectarse de la rutina y vivir <br /> una experiencia unica.
           </p>
-          <p style={{ fontSize: "15px", fontWeight: "200" }}>
+          <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
             La versatilidad de nuestras instalaciones permite que nos podamos
             adaptar perfectamente al tamaño del evento a realizar.
           </p>
@@ -114,20 +112,19 @@ export default function Eventos() {
           style={{
             backgroundColor: "white",
             color: "black",
-            padding: "2vw 12vh 4vw 15vh",
             display: "grid",
             alignContent: "center",
           }}
         >
           <h2 style={{ fontSize: "15px", fontWeight: "600" }}>UBICACION</h2>
-          <h1 style={{ fontSize: "40px", fontWeight: "400" }}>
+          <h1 style={{ fontSize: "3em", fontWeight: "100" }}>
             AREIA SIEMPRE ESTUVO CERCA.
           </h1>
-          <p style={{ fontSize: "18px", fontWeight: "400", color: "black" }}>
+          <p style={{ fontSize: "1.4em", fontWeight: "400", color: "black" }}>
             A 35km de Capital Federal con facil y rapido acceso en una zona
             segura rodeada de barrios cerrados.
           </p>
-          <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1">
+          <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1" target="_blank">
           <button id="bottone1">
             <strong style={{ fontWeight: "600" }}>VER MAPA</strong>
           </button>
@@ -156,8 +153,8 @@ export default function Eventos() {
           <img src={img3x4}/>
           <img src={img4x4}/>
         </div>
-        <div style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
-          <a href="mailto: eventos@AREIA.com.ar" className="eventosButton">
+        <div className="botonEventosMail" style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
+          <a href="mailto: eventos@AREIA.com.ar" className="eventosButton" target="_blank">
         <button id="bottone1" style={{borderRadius:"0px"}}>
             <h1 style={{ fontWeight: "200",fontSize:"25px" }}>EVENTOS@AREIA.COM.AR</h1>
           </button>
