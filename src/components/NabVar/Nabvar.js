@@ -8,7 +8,7 @@ export default function Nabvar({ section }) {
       <Container>
         <Navbar.Brand href="#home" id="logoMobile" style={{ width: "100px" }}>
           <Link to={`/`} style={{ textDecoration: "none" }}>
-            <img id="navLogo" src={logo} />
+            <img id="navLogo" src={section == "venue" ? logoVenue : logo} />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
