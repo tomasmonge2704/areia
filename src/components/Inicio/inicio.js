@@ -20,10 +20,10 @@ export default function Inicio() {
       >
         <p style={{ color: "black", fontSize: "40px" }}>AREIA APP</p>
         <div className="storeButton">
-          <a href="https://apps.apple.com/ar/app/areia/id1437104821" style={{ marginRight: "10px" }}>
+          <a href="https://apps.apple.com/ar/app/areia/id1437104821" style={{ marginRight: "10px" }} target="_blank">
           <img src={appStore}/>
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.fansbury.AREIA&hl=es-419" style={{ marginLeft: "10px" }}>
+          <a href="https://play.google.com/store/apps/details?id=com.fansbury.AREIA&hl=es-419" style={{ marginLeft: "10px" }} target="_blank">
           <img src={playStore}  />
           </a>
         </div>

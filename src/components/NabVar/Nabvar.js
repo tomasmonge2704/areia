@@ -1,5 +1,6 @@
 import { Navbar, Container, Row, Col, Nav } from "react-bootstrap";
-import logo from "../../SELECCION DE FOTOS/Areia_Logotipo_Color.png";
+import logo from "../../SELECCION DE FOTOS/logo.png";
+import logoVenue from "../../SELECCION DE FOTOS/logo-AREIA-Venue.png";
 import { Link } from "react-router-dom";
 export default function Nabvar({ section }) {
   return (
@@ -36,9 +37,9 @@ export default function Nabvar({ section }) {
             <Nav id="navLogoA">
               <Navbar.Brand
                 href="#home"
-                style={{ width: "120px", height: "100px" }}
+                style={{ width: "12vw", height: "100px" }}
               >
-                <img id="navLogo" src={logo} />
+                <img id="navLogo" src={section == "venue" ? logoVenue : logo} />
               </Navbar.Brand>
             </Nav>
           </Link>

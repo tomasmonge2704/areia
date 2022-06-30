@@ -130,7 +130,7 @@ body {
 #navLogo {
   height: 100%;
   width: 100%;
-  transform: scale(4);
+  object-fit: contain;
 }
 .datos div:hover p {
   color: #c3d900;
@@ -146,7 +146,7 @@ body {
   flex-grow: unset !important;
 }
 .navbar-nav {
-  margin-left: 5vh;
+  margin-left: 3vw;
 }
 .navbar-light .navbar-toggler-icon {
   filter: invert(1);
@@ -348,7 +348,8 @@ a {
   }
   #logoMobile {
     display: initial;
-    margin-left: 2rem;
+    height: 80px;
+    width: 130px !important;
   }
   .nosotrosInfo p {
     margin-left: 2rem !important;
@@ -494,6 +495,9 @@ strong {
   }
   #bottone1{
     padding-top: 14px;
+  }
+  .navbar-nav {
+    margin-left: 0 !important;
   }
 }
 @media (max-height: 667px) {
