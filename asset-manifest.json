@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.569dce81.css",
-    "main.js": "./static/js/main.a879a1c7.js",
+    "main.js": "./static/js/main.68e91d47.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Areia editadas-45.jpg": "./static/media/Areia editadas-45.9d42ccaa5378fdb62452.jpg",
     "static/media/areia producto-3.jpg": "./static/media/areia producto-3.b140fb369b43a7441277.jpg",
@@ -44,11 +44,11 @@
     "static/media/available_on_google_play.png": "./static/media/available_on_google_play.356850f6726beb0563c6.png",
     "index.html": "./index.html",
     "main.569dce81.css.map": "./static/css/main.569dce81.css.map",
-    "main.a879a1c7.js.map": "./static/js/main.a879a1c7.js.map",
+    "main.68e91d47.js.map": "./static/js/main.68e91d47.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.569dce81.css",
-    "static/js/main.a879a1c7.js"
+    "static/js/main.68e91d47.js"
   ]
 }
