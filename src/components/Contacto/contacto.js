@@ -1,11 +1,13 @@
-import Imagen1 from "../../SELECCION DE FOTOS/fotoFooter2.png";
-import Imagen2 from "../../SELECCION DE FOTOS/fotoFooter1.png";
-import Imagen3 from "../../SELECCION DE FOTOS/fotoHome2.png";
-import Imagen4 from "../../SELECCION DE FOTOS/fotoHome1.png";
-import sponsor2 from "../../SELECCION DE FOTOS/sponsor.png";
-import sponsor from "../../SELECCION DE FOTOS/puma.png";
-import sponsor3 from "../../SELECCION DE FOTOS/budweiser.png";
-import imagenMapa from "../../SELECCION DE FOTOS/mapa.png"
+import Imagen1 from "../../SELECCION DE FOTOS/fotoFooter2.webp";
+import Imagen2 from "../../SELECCION DE FOTOS/fotoFooter1.webp";
+import Imagen3 from "../../SELECCION DE FOTOS/fotoHome2.webp";
+import Imagen4 from "../../SELECCION DE FOTOS/fotoHome1.webp";
+import sponsor2 from "../../SELECCION DE FOTOS/sponsor.webp";
+import sponsor from "../../SELECCION DE FOTOS/puma.webp";
+import sponsor3 from "../../SELECCION DE FOTOS/budweiser.webp";
+import sponsor5 from "../../SELECCION DE FOTOS/LOGOS TROWN.png";
+import sponsor4 from "../../SELECCION DE FOTOS/Logo_TromenAREIAweb.png";
+import imagenMapa from "../../SELECCION DE FOTOS/mapa.webp"
 import imagenMapa2 from "../../SELECCION DE FOTOS/mapa2.png"
 import './contacto.css'
 export default function Contacto() {
@@ -79,6 +81,13 @@ export default function Contacto() {
             src={sponsor2}
           />
           <img className="sponsor" src={sponsor3} />
+        </div>
+        <p style={{ marginTop: "3rem", marginBottom: "4rem" }}>
+          PARTNERS
+        </p>
+        <div>
+          <img className="sponsor" style={{ maxWidth: "140px",marginRight:"1.5rem" }} src={sponsor4} />
+          <img className="sponsor" style={{ maxWidth: "140px",marginLeft:"1.5rem" }} src={sponsor5} />
         </div>
       </div>
 

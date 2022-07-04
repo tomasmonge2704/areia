@@ -1,6 +1,5 @@
 import { Navbar, Container, Row, Col, Nav } from "react-bootstrap";
 import logo from "../../SELECCION DE FOTOS/logo.png";
-import logoVenue from "../../SELECCION DE FOTOS/logo-AREIA-Venue.png";
 import { Link } from "react-router-dom";
 export default function Nabvar({ section }) {
   return (
@@ -8,7 +7,7 @@ export default function Nabvar({ section }) {
       <Container>
         <Navbar.Brand href="#home" id="logoMobile" style={{ width: "100px" }}>
           <Link to={`/`} style={{ textDecoration: "none" }}>
-            <img id="navLogo" src={section == "venue" ? logoVenue : logo} />
+            <img id="navLogo" src={logo} />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -39,7 +38,7 @@ export default function Nabvar({ section }) {
                 href="#home"
                 style={{ width: "12vw", height: "100px" }}
               >
-                <img id="navLogo" src={section == "venue" ? logoVenue : logo} />
+                <img id="navLogo" src={logo} />
               </Navbar.Brand>
             </Nav>
           </Link>

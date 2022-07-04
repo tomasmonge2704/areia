@@ -1,6 +1,6 @@
 import ContactoFooter from "../contactoFooter";
 import imagenHome from "../../SELECCION DE FOTOS/eventosHome.png";
-import logo from "../../SELECCION DE FOTOS/spanAeria.png";
+import logoVenue from "../../SELECCION DE FOTOS/Areia-VENUE-01.png";
 import imagen2 from "../../SELECCION DE FOTOS/espacioAeria.png";
 import imagen3 from "../../SELECCION DE FOTOS/casamientoAeria.png";
 import imagen4 from "../../SELECCION DE FOTOS/fotoEventos1.png";
@@ -30,9 +30,7 @@ export default function Eventos() {
         <h1 style={{ color: "white", fontWeight: "200",margin:"0" }}>
         SÓLO TENÉS QUE DISFRUTAR.
         </h1>
-        <div style={{ display: "flex", alignItems: "baseline",alignContent:"center",flexDirection:"row" }}>
-          <p style={{ color: "#C3D900", fontSize: "20px" }}><img src={logo}></img>/venue</p>
-        </div>
+        <img src={logoVenue} />
       </div>
       <div
         className="eventosAbout"
@@ -154,7 +152,7 @@ export default function Eventos() {
           <img src={img4x4}/>
         </div>
         <div className="botonEventosMail" style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
-          <a href="mailto: eventos@AREIA.com.ar" className="eventosButton" target="_blank">
+          <a href="mailto: venue@AREIA.com.ar" className="eventosButton" target="_blank">
         <button id="bottone1" style={{borderRadius:"0px"}}>
             <h1 style={{ fontWeight: "200",fontSize:"25px" }}>EVENTOS@AREIA.COM.AR</h1>
           </button>

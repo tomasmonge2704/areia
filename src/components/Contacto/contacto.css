@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem;
+  height: 45rem;
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 58% 100%;
   background-position: left center, right center;
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem;
+  height: 45rem;
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 50% 100%;
   background-position: left center, right center;

@@ -16,7 +16,7 @@
   transform: translate(0%,6%);
 }
 .divEventosHome img{
-height: 18px;
+height: 3vw;
 }
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
@@ -113,6 +113,9 @@ height: 18px;
   .botonEventosMail{
     bottom: 29vw !important;
   }
+  .divEventosHome img{
+    height: 4vh;
+    }
 }
 /* For Noteboock View */
   @media screen and (max-height: 800px)
