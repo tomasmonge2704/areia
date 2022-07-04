@@ -1,14 +1,14 @@
 import ContactoFooter from "../contactoFooter";
-import imagenHome from "../../SELECCION DE FOTOS/eventosHome.png";
-import logoVenue from "../../SELECCION DE FOTOS/Areia-VENUE-01.png";
-import imagen2 from "../../SELECCION DE FOTOS/espacioAeria.png";
-import imagen3 from "../../SELECCION DE FOTOS/casamientoAeria.png";
-import imagen4 from "../../SELECCION DE FOTOS/fotoEventos1.png";
-import imagen5 from "../../SELECCION DE FOTOS/fotoEventos2.png";
-import img1x4 from "../../SELECCION DE FOTOS/foto1x4.png"
-import img3x4 from "../../SELECCION DE FOTOS/foto2x4.png"
-import img2x4 from "../../SELECCION DE FOTOS/foto3x4.png"
-import img4x4 from "../../SELECCION DE FOTOS/foto4x4.png"
+import imagenHome from "../../SELECCION DE FOTOS/eventosHome.webp";
+import logoVenue from "../../SELECCION DE FOTOS/Areia-VENUE-01.webp";
+import imagen2 from "../../SELECCION DE FOTOS/espacioAeria.webp";
+import imagen3 from "../../SELECCION DE FOTOS/casamientoAeria.webp";
+import imagen4 from "../../SELECCION DE FOTOS/fotoEventos1.webp";
+import imagen5 from "../../SELECCION DE FOTOS/fotoEventos2.webp";
+import img1x4 from "../../SELECCION DE FOTOS/foto1x4.webp"
+import img3x4 from "../../SELECCION DE FOTOS/foto2x4.webp"
+import img2x4 from "../../SELECCION DE FOTOS/foto3x4.webp"
+import img4x4 from "../../SELECCION DE FOTOS/foto4x4.webp"
 import './Eventos.css'
 export default function Eventos() {
   return (
