@@ -47,17 +47,17 @@ export default function Eventos() {
         <p style={{ fontSize: "17px", marginTop: "2%" }}>
           AREIA es una empresa con{" "}
           <strong style={{ fontSize: "17px" }}>
-            mas de 10 años de experiencia
+            más de 10 años de experiencia
           </strong>
           <br />
-          en la organizacion de eventos tanto sociales como corporativos.
+          en la organización de eventos tanto sociales como corporativos.
           <br />
           <br />
           Queremos que cada persona que nos visita <br /> se lleve de recuerdo
           una experiencia inolvidable.
           <br />
           <br />
-          Trabajamos en cada detalle y con dedicacion para que tu evento sea un
+          Trabajamos en cada detalle y con dedicación para que tu evento sea un
           exito.
         </p>
       </div>
@@ -79,7 +79,7 @@ export default function Eventos() {
             CONTAMOS CON UN<br/> AMBIENTE ATRACTIVO <br /> Y NATURAL.
           </h1>
           <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
-            Las mas de 5 hectareas de espacio verde son ideales para
+            Las más de 5 hectareas de espacio verde son ideales para
             desconectarse de la rutina y vivir <br /> una experiencia unica.
           </p>
           <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
@@ -114,12 +114,12 @@ export default function Eventos() {
             alignContent: "center",
           }}
         >
-          <h2 style={{ fontSize: "15px", fontWeight: "600" }}>UBICACION</h2>
+          <h2 style={{ fontSize: "15px", fontWeight: "600" }}>UBICACIÓN</h2>
           <h1 style={{ fontSize: "3em", fontWeight: "100" }}>
             AREIA SIEMPRE ESTUVO CERCA.
           </h1>
           <p style={{ fontSize: "1.4em", fontWeight: "400", color: "black" }}>
-            A 35km de Capital Federal con facil y rapido acceso en una zona
+            A 35km de Capital Federal con fácil y rápido acceso en una zona
             segura rodeada de barrios cerrados.
           </p>
           <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1" target="_blank">
@@ -135,14 +135,14 @@ export default function Eventos() {
             TENEMOS UN EQUIPO QUE SE ENCARGA <br/> DE TODOS LOS ASPECTOS DE TU EVENTO.
           </h1>
           <img src={imagen4} style={{ height:"31vw",width:"58%",objectFit:"cover",borderRadius:"5%",margin:"10px"}} />
-          <h1>LA ORGANIZACION, COORDINACION<br/> Y ASESORAMIENTO REQUERIDO.</h1>
+          <h1>LA ORGANIZACIÓN, COORDINACIÓN<br/> Y ASESORAMIENTO REQUERIDO.</h1>
           <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
         <img src={imagen5} className="contt2" style={{height:"100%",width:"53vw",objectFit:"cover"}}/>
       </div>
       <div className="ofrecemos" style={{display:"grid",textAlign:"center"}} >
         <h1>OFRECEMOS</h1>
-        <p>Estacionamiento privado para mas de 500 autos <br/>Seguridad privada<br/>Catering<br/>Tecnica/Iluminacion & DJs<br/>Servicio de cocteleria<br/>Event Planner</p>
+        <p>Estacionamiento privado para más de 500 autos <br/>Seguridad privada<br/>Catering<br/>Tecnica/Iluminación & DJs<br/>Servicio de coctelería<br/>Event Planner</p>
       </div>
       <div className="eventos4x4Cont" >
         <div className="fotos4x4"style={{width:"100%"}}>
@@ -154,7 +154,7 @@ export default function Eventos() {
         <div className="botonEventosMail" style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
           <a href="mailto: venue@AREIA.com.ar" className="eventosButton" target="_blank">
         <button id="bottone1" style={{borderRadius:"0px"}}>
-            <h1 style={{ fontWeight: "200",fontSize:"25px" }}>EVENTOS@AREIA.COM.AR</h1>
+            <h1 style={{ fontWeight: "200",fontSize:"25px" }}>venue@AREIA.com.ar</h1>
           </button>
           </a>
           </div>
