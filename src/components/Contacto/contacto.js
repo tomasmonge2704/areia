@@ -71,23 +71,23 @@ export default function Contacto() {
         }}
       >
         <p style={{ marginTop: "3rem", marginBottom: "4rem" }}>
-          NUESTROS SPONSORS
+          MAIN SPONSORS
         </p>
         <div>
-          <img className="sponsor" src={sponsor} />
+          <img className="sponsor" src={sponsor3} />
           <img
             className="sponsor"
             style={{ maxWidth: "140px" }}
             src={sponsor2}
           />
-          <img className="sponsor" src={sponsor3} />
+          <img className="sponsor" src={sponsor} />
         </div>
         <p style={{ marginTop: "3rem", marginBottom: "4rem" }}>
           PARTNERS
         </p>
         <div>
-          <img className="sponsor" style={{ maxWidth: "140px",marginRight:"1.5rem" }} src={sponsor4} />
-          <img className="sponsor" style={{ maxWidth: "140px",marginLeft:"1.5rem" }} src={sponsor5} />
+          <img className="sponsor" style={{ maxWidth: "110px",marginRight:"1.5rem" }} src={sponsor4} />
+          <img className="sponsor" style={{ maxWidth: "110px",marginLeft:"1.5rem" }} src={sponsor5} />
         </div>
       </div>
 

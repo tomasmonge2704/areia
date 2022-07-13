@@ -156,6 +156,22 @@ height: 54vw;
   bottom: 29vw  !important;
 }
   }
+/* For ultrawide screen View */
+@media screen and (min-width: 1920px){
+  .nuestroEspacio-img{
+    width: 105% !important;
+  }
+  .imgCasamiento{
+    height: 49vh;
+  } 
+  .divCasamiento{
+    margin: 9vh 10vw 9vh 49vw !important;
+    height: 55vh !important;
+  }
+  .divCasamiento div {
+    padding: 6vw 12vh 4vw 18vh;
+}
+}
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
 }

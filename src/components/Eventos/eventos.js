@@ -100,7 +100,7 @@ export default function Eventos() {
       <div
         className="divCasamiento"
         style={{
-          height: "42vh",
+          height: "50vh",
           margin: "9vh 10vw 9vh 46.5vw",
           alignItems: "center",
         }}

@@ -1,5 +1,5 @@
 import { Navbar, Container, Row, Col, Nav } from "react-bootstrap";
-import logo from "../../SELECCION DE FOTOS/logo.webp";
+import logo from "../../SELECCION DE FOTOS/logo.png";
 import { Link } from "react-router-dom";
 export default function Nabvar({ section }) {
   return (
