@@ -1,4 +1,4 @@
-import Imagen from "../../SELECCION DE FOTOS/fotoInicio.webp";
+import Imagen from "../../SELECCION DE FOTOS/areia 13_11-043.jpg";
 import appStore from "../../SELECCION DE FOTOS/available_on_app_store.webp";
 import playStore from "../../SELECCION DE FOTOS/available_on_google_play.webp";
 import ContactoFooter from "../contactoFooter";

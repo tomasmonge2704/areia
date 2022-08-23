@@ -5,7 +5,7 @@ import Imagen4 from "../../SELECCION DE FOTOS/fotoHome1.webp";
 import sponsor2 from "../../SELECCION DE FOTOS/sponsor.webp";
 import sponsor from "../../SELECCION DE FOTOS/puma.webp";
 import sponsor3 from "../../SELECCION DE FOTOS/budweiser.webp";
-import sponsor5 from "../../SELECCION DE FOTOS/LOGOS TROWN.webp";
+import sponsor5 from "../../SELECCION DE FOTOS/LOGOS TROWN.jpg";
 import sponsor4 from "../../SELECCION DE FOTOS/Logo_TromenAREIAweb.webp";
 import imagenMapa from "../../SELECCION DE FOTOS/mapa.webp"
 import imagenMapa2 from "../../SELECCION DE FOTOS/mapa2.png"
