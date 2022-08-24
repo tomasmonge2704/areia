@@ -242,7 +242,7 @@ a {
 }
 .divOrg {
   display: flex;
-  height: 90vh;
+  height: 96vh;
 }
 .divOrg h1 {
   font-size: 23px;
@@ -250,7 +250,7 @@ a {
 }
 .ofrecemos {
   color: white;
-  height: 30vh;
+  height: 35vh;
   padding-top: 5%;
 }
 .ofrecemos h1 {

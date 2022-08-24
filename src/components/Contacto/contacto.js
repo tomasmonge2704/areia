@@ -1,13 +1,14 @@
-import Imagen1 from "../../SELECCION DE FOTOS/fotoFooter2.webp";
-import Imagen2 from "../../SELECCION DE FOTOS/fotoFooter1.webp";
+import Imagen1 from "../../SELECCION DE FOTOS/fotoFooter2.png";
+import Imagen2 from "../../SELECCION DE FOTOS/fotoFooter1.png";
 import Imagen3 from "../../SELECCION DE FOTOS/fotoHome2.webp";
 import Imagen4 from "../../SELECCION DE FOTOS/fotoHome1.webp";
 import sponsor2 from "../../SELECCION DE FOTOS/sponsor.webp";
+import sponsor6 from "../../SELECCION DE FOTOS/Kia-Logo-KiaMidnightBlack.png";
 import sponsor from "../../SELECCION DE FOTOS/puma.webp";
 import sponsor3 from "../../SELECCION DE FOTOS/budweiser.webp";
 import sponsor5 from "../../SELECCION DE FOTOS/LOGOS TROWN.jpg";
 import sponsor4 from "../../SELECCION DE FOTOS/Logo_TromenAREIAweb.webp";
-import imagenMapa from "../../SELECCION DE FOTOS/mapa.webp"
+import imagenMapa from "../../SELECCION DE FOTOS/mapa.png"
 import imagenMapa2 from "../../SELECCION DE FOTOS/mapa2.png"
 import './contacto.css'
 export default function Contacto() {
@@ -70,19 +71,25 @@ export default function Contacto() {
           backgroundColor: "white",
         }}
       >
-        <p style={{ marginTop: "3rem", marginBottom: "4rem" }}>
+        <p style={{ marginTop: "3rem", marginBottom: "3rem" }}>
           MAIN SPONSORS
         </p>
         <div>
           <img className="sponsor" src={sponsor3} />
           <img
             className="sponsor"
-            style={{ maxWidth: "140px" }}
+           
             src={sponsor2}
           />
-          <img className="sponsor" src={sponsor} />
+          <img
+            className="sponsor"
+            style={{marginRight:"2vh" }}
+            src={sponsor}
+          />
+          <img className="sponsor" src={sponsor6} />
+          
         </div>
-        <p style={{ marginTop: "3rem", marginBottom: "4rem" }}>
+        <p style={{ marginTop: "3rem", marginBottom: "0px" }}>
           PARTNERS
         </p>
         <div>
