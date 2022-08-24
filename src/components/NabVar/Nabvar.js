@@ -70,10 +70,10 @@ export default function Nabvar({ section }) {
               </Nav.Link>
             </Link>
             <div id="socialIcons">
-              <a href="https://www.instagram.com/areiafutbol/">
+              <a href="https://www.instagram.com/areiafutbol/" target="_blank">
                 <i className="fa fa-instagram"></i>{" "}
               </a>
-              <a href="https://wa.link/u3nof1">
+              <a href={section == "venue" ? "https://wa.link/u3nof1" : "https://wa.link/yypgzp" } target="_blank">
                 <i className="fa fa-phone"></i>{" "}
               </a>
             </div>

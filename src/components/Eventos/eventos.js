@@ -159,7 +159,7 @@ export default function Eventos() {
           </a>
           </div>
       </div>
-      <ContactoFooter />
+      <ContactoFooter section="venue" />
     </>
   );
 }
