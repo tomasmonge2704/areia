@@ -20,7 +20,7 @@ and (max-device-width: 1024px) {
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
     .imgInicio {
-        height: 30vh !important;
+        height: 50vh !important;
       }
       .textInicio{
         font-size: 12px !important;
