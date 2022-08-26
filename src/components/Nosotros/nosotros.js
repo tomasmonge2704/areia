@@ -274,7 +274,7 @@ export default function Nosotros() {
               top: "16px",
             }}
           >
-            5 HECTAREAS
+            5 HECTÁREAS
           </h1>
           <div
             style={{
