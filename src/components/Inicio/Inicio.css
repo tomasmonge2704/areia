@@ -1,7 +1,10 @@
 .textInicio strong{
-    font-size: 20px;
+    font-size: 16px;
 }
 
+.storeButton img{
+    max-width: 200px;
+}
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
     
@@ -20,7 +23,7 @@ and (orientation: portrait) {
         height: 30vh !important;
       }
       .textInicio{
-        font-size: 13px !important;
+        font-size: 12px !important;
     }
       .textInicio strong{
         font-size: 12px !important;

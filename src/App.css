@@ -411,7 +411,7 @@ a {
   }
   .storeButton img {
     margin-right: 0 !important;
-    max-width: 140px;
+    max-width: 140px !important;
   }
   .contactoFooter {
     display: grid;
