@@ -1,7 +1,7 @@
 export default function ContactoFooter({section}){
     return(
      <footer>
-     <h1 className="footer" style={{marginLeft:"10vw",fontSize:"30px",marginTop:"5rem"}}>CONTACTO</h1>
+     <h1 className="footer">CONTACTO</h1>
      <div className="contactoFooter">
      
          <a href="tel:+03484218510" target="_blank"><div><h1>TEL.</h1> <p>03484218510</p></div></a>

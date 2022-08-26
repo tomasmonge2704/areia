@@ -2,6 +2,11 @@
     object-fit: cover;
     width: 100%;
 }
+.footer{
+  margin-left:10vw;
+  font-size:30px;
+  margin-top:5rem;
+}
 .videoButtons{
     position: absolute;
     display: flex;
@@ -67,6 +72,12 @@ and (orientation: portrait) {
     min-height: 45vh;
 
  }
+ .footer{
+  margin-left:13vw;
+  font-size:30px;
+  margin-top:3rem;
+  margin-bottom: 2rem;
+}
  .nosotrosInfo strong {
     font-size: 15px !important;
   }
