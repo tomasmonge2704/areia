@@ -93,8 +93,8 @@ export default function Contacto() {
           PARTNERS
         </p>
         <div>
-          <img className="sponsor" style={{ maxWidth: "95px",marginRight:"10px" }} src={sponsor4} />
-          <img className="sponsor" style={{ maxWidth: "95px",marginLeft:"10px",objectFit:"contain",marginTop:"11px" }} src={sponsor5} />
+          <img className="sponsor" style={{ maxWidth: "95px",marginRight:"10px",objectFit:"contain" }} src={sponsor4} />
+          <img className="sponsor" style={{ maxWidth: "90px",marginLeft:"10px",objectFit:"contain",marginTop:"11px" }} src={sponsor5} />
         </div>
       </div>
 
