@@ -1,15 +1,15 @@
-import Imagen1 from "../../SELECCION DE FOTOS/fotoFooter2.png";
-import Imagen2 from "../../SELECCION DE FOTOS/fotoFooter1.png";
-import Imagen3 from "../../SELECCION DE FOTOS/fotoHome2.webp";
-import Imagen4 from "../../SELECCION DE FOTOS/fotoHome1.webp";
-import sponsor2 from "../../SELECCION DE FOTOS/sponsor.webp";
-import sponsor6 from "../../SELECCION DE FOTOS/Kia-Logo-KiaMidnightBlack.png";
-import sponsor from "../../SELECCION DE FOTOS/puma.webp";
-import sponsor3 from "../../SELECCION DE FOTOS/budweiser.webp";
-import sponsor5 from "../../SELECCION DE FOTOS/LOGOS TROWN.jpg";
-import sponsor4 from "../../SELECCION DE FOTOS/Logo_TromenAREIAweb.webp";
-import imagenMapa from "../../SELECCION DE FOTOS/mapa.png"
-import imagenMapa2 from "../../SELECCION DE FOTOS/mapa2.png"
+import Imagen1 from "../../SELECCION_DE_FOTOS/fotoFooter2.png";
+import Imagen2 from "../../SELECCION_DE_FOTOS/fotoFooter1.png";
+import Imagen3 from "../../SELECCION_DE_FOTOS/fotoHome2.webp";
+import Imagen4 from "../../SELECCION_DE_FOTOS/fotoHome1.webp";
+import sponsor2 from "../../SELECCION_DE_FOTOS/sponsor.webp";
+import sponsor6 from "../../SELECCION_DE_FOTOS/Kia-Logo-KiaMidnightBlack.png";
+import sponsor from "../../SELECCION_DE_FOTOS/puma.webp";
+import sponsor3 from "../../SELECCION_DE_FOTOS/budweiser.webp";
+import sponsor5 from "../../SELECCION_DE_FOTOS/LOGOS TROWN.jpg";
+import sponsor4 from "../../SELECCION_DE_FOTOS/Logo_TromenAREIAweb.webp";
+import imagenMapa from "../../SELECCION_DE_FOTOS/mapa.png"
+import imagenMapa2 from "../../SELECCION_DE_FOTOS/mapa2.png"
 import './contacto.css'
 export default function Contacto() {
   return (
@@ -93,8 +93,8 @@ export default function Contacto() {
           PARTNERS
         </p>
         <div>
-          <img className="sponsor" style={{ maxWidth: "110px",marginRight:"1.5rem" }} src={sponsor4} />
-          <img className="sponsor" style={{ maxWidth: "110px",marginLeft:"1.5rem" }} src={sponsor5} />
+          <img className="sponsor" style={{ maxWidth: "95px",marginRight:"10px" }} src={sponsor4} />
+          <img className="sponsor" style={{ maxWidth: "95px",marginLeft:"10px",objectFit:"contain",marginTop:"11px" }} src={sponsor5} />
         </div>
       </div>
 

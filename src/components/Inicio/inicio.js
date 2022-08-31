@@ -1,6 +1,6 @@
-import Imagen from "../../SELECCION DE FOTOS/areia 13_11-043.jpg";
-import appStore from "../../SELECCION DE FOTOS/available_on_app_store.webp";
-import playStore from "../../SELECCION DE FOTOS/available_on_google_play.webp";
+import Imagen from "../../SELECCION_DE_FOTOS/areia 13_11-043.jpg";
+import appStore from "../../SELECCION_DE_FOTOS/available_on_app_store.webp";
+import playStore from "../../SELECCION_DE_FOTOS/available_on_google_play.webp";
 import ContactoFooter from "../contactoFooter";
 import './Inicio.css'
 export default function Inicio() {
