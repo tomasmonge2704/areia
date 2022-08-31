@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.c6b42047.css",
-    "main.js": "./static/js/main.dbe223b8.js",
+    "main.js": "./static/js/main.73092707.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/areia 13_11-043.jpg": "./static/media/areia 13_11-043.c6a26653c115cf5d97d6.jpg",
     "static/media/video3.mp4": "./static/media/video3.93d110a07ebc266f8953.mp4",
@@ -38,7 +38,7 @@
     "static/media/fotoEventos1.webp": "./static/media/fotoEventos1.b8045379525337959802.webp",
     "static/media/video2.webp": "./static/media/video2.7a3ca7bc7490608b1800.webp",
     "static/media/Areia-VENUE-01.webp": "./static/media/Areia-VENUE-01.af038ed29a023be0eba7.webp",
-    "static/media/LOGOS TROWN.jpg": "./static/media/LOGOS TROWN.3db815bd9eed0d55426f.jpg",
+    "static/media/LOGOS TROWN.jpg": "./static/media/LOGOS TROWN.ac6e1770d6a1c3bcca67.jpg",
     "static/media/video1.webp": "./static/media/video1.180fbf84822f67244f35.webp",
     "static/media/Logo_TromenAREIAweb.webp": "./static/media/Logo_TromenAREIAweb.27eb89d43d47d2ee7690.webp",
     "static/media/budweiser.webp": "./static/media/budweiser.82ea8523116fee287121.webp",
@@ -48,11 +48,11 @@
     "static/media/sponsor.webp": "./static/media/sponsor.bb5cb46d429b683d0eb6.webp",
     "index.html": "./index.html",
     "main.c6b42047.css.map": "./static/css/main.c6b42047.css.map",
-    "main.dbe223b8.js.map": "./static/js/main.dbe223b8.js.map",
+    "main.73092707.js.map": "./static/js/main.73092707.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6b42047.css",
-    "static/js/main.dbe223b8.js"
+    "static/js/main.73092707.js"
   ]
 }
