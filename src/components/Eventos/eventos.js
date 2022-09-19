@@ -10,7 +10,25 @@ import img3x4 from "../../SELECCION_DE_FOTOS/foto2x4.webp"
 import img2x4 from "../../SELECCION_DE_FOTOS/foto3x4.webp"
 import img4x4 from "../../SELECCION_DE_FOTOS/foto4x4.webp"
 import './Eventos.css'
+import Form from 'react-bootstrap/Form';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+
 export default function Eventos() {
+  const form = useRef();
+  const [show, setShow] = useState(true);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0wz35n1', 'template_zscz0t8', form.current, '_XsM333Nru3CR72JN')
+      .then((result) => {
+        setShow(false)
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
   return (
     <>
       <div
@@ -27,8 +45,8 @@ export default function Eventos() {
         }}
         className='divEventosHome'
       >
-        <h1 style={{ color: "white", fontWeight: "200",margin:"0" }}>
-        SÓLO TENÉS QUE DISFRUTAR.
+        <h1 style={{ color: "white", fontWeight: "200", margin: "0" }}>
+          SÓLO TENÉS QUE DISFRUTAR.
         </h1>
         <img src={logoVenue} />
       </div>
@@ -76,7 +94,7 @@ export default function Eventos() {
             NUESTRO ESPACIO
           </h2>
           <h1 style={{ fontSize: "2.5em", fontWeight: "200" }}>
-            CONTAMOS CON UN<br/> AMBIENTE ATRACTIVO <br /> Y NATURAL.
+            CONTAMOS CON UN<br /> AMBIENTE ATRACTIVO <br /> Y NATURAL.
           </h1>
           <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
             Las más de 5 hectareas de espacio verde son ideales para
@@ -123,41 +141,78 @@ export default function Eventos() {
             segura rodeada de barrios cerrados.
           </p>
           <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1" target="_blank">
-          <button id="bottone1">
-            <strong style={{ fontWeight: "600" }}>VER MAPA</strong>
-          </button>
+            <button id="bottone1">
+              <strong style={{ fontWeight: "600" }}>VER MAPA</strong>
+            </button>
           </a>
         </div>
       </div>
       <div className="divOrg">
-        <div className="contt" style={{height:"100%",display:"grid",backgroundColor:"white",color:"black",width:"47vw",alignItems:"center",justifyItems:"center",padding:"3%",textAlign:"center"}}>
+        <div className="contt" style={{ height: "100%", display: "grid", backgroundColor: "white", color: "black", width: "47vw", alignItems: "center", justifyItems: "center", padding: "3%", textAlign: "center" }}>
           <h1>
-            TENEMOS UN EQUIPO QUE SE ENCARGA <br/> DE TODOS LOS ASPECTOS DE TU EVENTO.
+            TENEMOS UN EQUIPO QUE SE ENCARGA <br /> DE TODOS LOS ASPECTOS DE TU EVENTO.
           </h1>
-          <img src={imagen4} style={{ height:"31vw",width:"58%",objectFit:"cover",borderRadius:"5%",margin:"10px"}} />
-          <h1>LA ORGANIZACIÓN, COORDINACIÓN<br/> Y ASESORAMIENTO REQUERIDO.</h1>
-          <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br/> propio acompaniando al cliente en todos los pasos a dar.</p>
+          <img src={imagen4} style={{ height: "31vw", width: "58%", objectFit: "cover", borderRadius: "5%", margin: "10px" }} />
+          <h1>LA ORGANIZACIÓN, COORDINACIÓN<br /> Y ASESORAMIENTO REQUERIDO.</h1>
+          <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br /> propio acompaniando al cliente en todos los pasos a dar.</p>
         </div>
-        <img src={imagen5} className="contt2" style={{height:"100%",width:"53vw",objectFit:"cover"}}/>
+        <img src={imagen5} className="contt2" style={{ height: "100%", width: "53vw", objectFit: "cover" }} />
       </div>
-      <div className="ofrecemos" style={{display:"grid",textAlign:"center"}} >
+      <div className="ofrecemos" style={{ display: "grid", textAlign: "center" }} >
         <h1>OFRECEMOS</h1>
-        <p>Estacionamiento privado para más de 500 autos <br/>Seguridad privada<br/>Catering<br/>Tecnica/Iluminación & DJs<br/>Servicio de coctelería<br/>Event Planner</p>
+        <p>Estacionamiento privado para más de 500 autos <br />Seguridad privada<br />Catering<br />Tecnica/Iluminación & DJs<br />Servicio de coctelería<br />Event Planner</p>
       </div>
       <div className="eventos4x4Cont" >
-        <div className="fotos4x4"style={{width:"100%"}}>
-          <img src={img1x4}/>
-          <img src={img2x4}/>
-          <img src={img3x4}/>
-          <img src={img4x4}/>
+        <div className="fotos4x4" style={{ width: "100%" }}>
+          <img src={img1x4} />
+          <img src={img2x4} />
+          <img src={img3x4} />
+          <img src={img4x4} />
         </div>
-        <div className="botonEventosMail" style={{position:"relative", bottom:"24vw",width:"100%",display:"flex",justifyContent:"center"}}>
-          <a href="mailto: venue@AREIA.com.ar" className="eventosButton" target="_blank">
-        <button id="bottone1" style={{borderRadius:"0px"}}>
-            <h1 style={{ fontWeight: "200",fontSize:"25px" }}>venue@AREIA.com.ar</h1>
+      </div>
+      <div className="divFormulario">
+        <div className="form">
+          {show ? (<>
+            <h1>CONTACTO</h1>
+            <p>Dejanos tu nombre, fecha solicitada, cantidad de personas y tipo de evento a realizar.</p>
+            <div>
+              <Form ref={form} onSubmit={sendEmail}>
+                <div style={{ display: 'flex', width: '100%', justifyContent: 'center', height: '100%' }}>
+                  <div style={{ width: '48%', marginRight: '2%', height: '100%' }}>
+                    <Form.Control className="mb-3" name="from_name" type="text" placeholder="Nombre" />
+                    <Form.Control className="mb-3" type="text" name="from_telefono" placeholder="Telefono" />
+                    <Form.Group controlId="formBasicEmail">
+                      <Form.Control type="email" pattern="[^ @]*@[^ @]*"
+                        required placeholder="Mail" name="user_email" />
+                    </Form.Group>
+                  </div>
+                  <div style={{ width: '48%' }}>
+                    <Form.Group className="h-100" controlId="exampleForm.ControlTextarea1">
+                      <Form.Control className="h-100" as="textarea" placeholder="Mensaje" rows={3} name="message" />
+                    </Form.Group>
+                  </div>
+                </div>
+                <button className="mt-4" id="bottone1">
+                  <strong>Enviar</strong>
+                </button>
+              </Form>
+            </div>
+          </>) : (<>
+            <h1>Mensaje enviado Correctamente!</h1>
+            <button className="mt-5" style={{marginLeft:'30%',marginRight:'30%'}} id="bottone1" onClick={() => setShow(true)}>
+                  <strong>Volver</strong>
+                </button>
+          </>)}
+
+        </div>
+        <div className="botonSeguinos" style={{ width: "100%", display: "flex", justifyContent: "center",backgroundColor:'white'}}>
+        <a href="https://www.instagram.com/areiavenue/" className="eventosButton" target="_blank">
+          <button id="bottone1" style={{ borderRadius: "0px", margin: '0' }}>
+            <p style={{ fontWeight: "200", fontSize: "18px", margin: '0' }}>Seguinos en instagram</p>
+            <strong style={{ fontSize: "15px" }}>@areiavenue</strong>
           </button>
-          </a>
-          </div>
+        </a>
+      </div>
       </div>
       <ContactoFooter section="venue" />
     </>
