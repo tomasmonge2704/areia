@@ -12,7 +12,7 @@ import Imagen11 from "../../SELECCION_DE_FOTOS/areia1812-163.webp";
 import Imagen12 from "../../SELECCION_DE_FOTOS/areia producto-4.webp";
 import Imagen13 from "../../SELECCION_DE_FOTOS/Areia editadas-8.webp";
 import Imagen14 from "../../SELECCION_DE_FOTOS/areia 13_11-088.webp";
-import closeButton from "../../SELECCION_DE_FOTOS/closeButton.png";
+import closeButton from "../../SELECCION_DE_FOTOS/closeButton.webp";
 import video1 from "../../videos/video1.mp4";
 import video2 from "../../videos/video2.mp4";
 import video3 from "../../videos/video3.mp4";

@@ -1,6 +1,6 @@
 import ContactoFooter from "../contactoFooter";
 import imagenHome from "../../SELECCION_DE_FOTOS/eventosHome.webp";
-import logoVenue from "../../SELECCION_DE_FOTOS/Areia-VENUE-01.webp";
+import logoVenue from "../../SELECCION_DE_FOTOS/Areia-VENUE-01.png";
 import imagen2 from "../../SELECCION_DE_FOTOS/espacioAeria.webp";
 import imagen3 from "../../SELECCION_DE_FOTOS/casamientoAeria.webp";
 import imagen4 from "../../SELECCION_DE_FOTOS/fotoEventos1.webp";
@@ -9,12 +9,23 @@ import img1x4 from "../../SELECCION_DE_FOTOS/foto1x4.webp"
 import img3x4 from "../../SELECCION_DE_FOTOS/foto2x4.webp"
 import img2x4 from "../../SELECCION_DE_FOTOS/foto3x4.webp"
 import img4x4 from "../../SELECCION_DE_FOTOS/foto4x4.webp"
+import Imagen7 from "../../SELECCION_DE_FOTOS/F&C-4.webp";
+import Imagen8 from "../../SELECCION_DE_FOTOS/F&C-310.webp";
+import Imagen9 from "../../SELECCION_DE_FOTOS/F&C-3.webp";
+import Imagen10 from "../../SELECCION_DE_FOTOS/DSC00896 (1).webp";
+import Imagen11 from "../../SELECCION_DE_FOTOS/DSC00872 (1).webp";
+import Imagen12 from "../../SELECCION_DE_FOTOS/DSC00857 (1).webp";
+import Imagen13 from "../../SELECCION_DE_FOTOS/DSC00845 (1).webp";
+import Imagen14 from "../../SELECCION_DE_FOTOS/areiaeventos-39.webp";
+import Imagen15 from "../../SELECCION_DE_FOTOS/areia1106-evento-18 (1).webp";
+import Imagen16 from "../../SELECCION_DE_FOTOS/areia1106-evento-16 (1).webp";
+import Imagen17 from "../../SELECCION_DE_FOTOS/areia1106-evento-01 (2).webp";
+import Imagen18 from "../../SELECCION_DE_FOTOS/areia0204-16.webp";
 import './Eventos.css'
 import Form from 'react-bootstrap/Form';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import { Carousel } from "react-bootstrap";
 
 export default function Eventos() {
   const form = useRef();
@@ -213,6 +224,155 @@ export default function Eventos() {
           </button>
         </a>
       </div>
+      </div>
+      <div style={{ textAlign: "center"}}>
+        <h1
+          style={{
+            paddingBottom: "5%",
+            paddingTop: "5%",
+            color: "rgb(243 255 51)",
+            fontWeight: "200",
+          }}
+        >
+          GALERÍA
+        </h1>
+        <Carousel
+          className="carouselDiv"
+          variant="dark"
+        >
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen7}
+              alt="First slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen8}
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen9}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen10}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen11}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen12}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen13}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen14}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen15}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen16}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "90vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen17}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{
+                maxHeight: "80vh",
+                filter: "drop-shadow(black 2px 4px 6px)",
+              }}
+              className="d-block w-100"
+              src={Imagen18}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+        </Carousel>
       </div>
       <ContactoFooter section="venue" />
     </>

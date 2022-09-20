@@ -1,5 +1,5 @@
-import imagenMapa from "../SELECCION_DE_FOTOS/mapa.png"
-import imagenMapa2 from "../SELECCION_DE_FOTOS/mapa2.png"
+import imagenMapa from "../SELECCION_DE_FOTOS/mapa.webp"
+import imagenMapa2 from "../SELECCION_DE_FOTOS/mapa2.webp"
 
 export default function Mapa() {
     return (

@@ -1,15 +1,15 @@
-import Imagen1 from "../../SELECCION_DE_FOTOS/fotoFooter2.png";
-import Imagen2 from "../../SELECCION_DE_FOTOS/fotoFooter1.png";
+import Imagen1 from "../../SELECCION_DE_FOTOS/fotoFooter2.webp";
+import Imagen2 from "../../SELECCION_DE_FOTOS/fotoFooter1.webp";
 import Imagen3 from "../../SELECCION_DE_FOTOS/fotoHome2.webp";
 import Imagen4 from "../../SELECCION_DE_FOTOS/fotoHome1.webp";
 import sponsor2 from "../../SELECCION_DE_FOTOS/sponsor.webp";
-import sponsor6 from "../../SELECCION_DE_FOTOS/Kia-Logo-KiaMidnightBlack.png";
+import sponsor6 from "../../SELECCION_DE_FOTOS/Kia-Logo-KiaMidnightBlack.webp";
 import sponsor from "../../SELECCION_DE_FOTOS/puma.webp";
 import sponsor3 from "../../SELECCION_DE_FOTOS/budweiser.webp";
 import sponsor5 from "../../SELECCION_DE_FOTOS/LOGOS TROWN.jpg";
 import sponsor4 from "../../SELECCION_DE_FOTOS/Logo_TromenAREIAweb.webp";
-import imagenMapa from "../../SELECCION_DE_FOTOS/mapa.png"
-import imagenMapa2 from "../../SELECCION_DE_FOTOS/mapa2.png"
+import imagenMapa from "../../SELECCION_DE_FOTOS/mapa.webp"
+import imagenMapa2 from "../../SELECCION_DE_FOTOS/mapa2.webp"
 import './contacto.css'
 export default function Contacto() {
   return (
