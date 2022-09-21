@@ -1,5 +1,5 @@
 .carousel-item img{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 .footer{
@@ -69,8 +69,9 @@ and (max-width: 1024px) {
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
  .carousel-item img{
+  object-fit: cover;
     min-height: 45vh;
-
+    max-height: 45vh !important;
  }
  .footer{
   margin-left:13vw;

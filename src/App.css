@@ -12,7 +12,28 @@ body {
 .padding {
   padding: 4rem;
 }
-
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon{
+  filter: none !important;
+}
+.carousel-control-next-icon{
+  background-color: black;
+  border-radius: 34%;
+  height: 2.5rem !important;
+  padding: 5%;
+}
+.carousel-control-prev-icon{
+  background-color: black;
+  border-radius: 34%;
+  height: 2.5rem !important;
+  padding: 5%;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+  border: 0.7px solid #ffffff0f;
+  border-radius: 18% !important;
+  height:1rem !important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
 /*rgb(243 255 51);*/
 .closeButton {
   display: none;

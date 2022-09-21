@@ -63,9 +63,16 @@ height: 3vw;
 
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .carousel-dark .carousel-indicators [data-bs-target]{
+    height: 14px !important;
+    width: 14px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border: none !important;
+  }
+
   .form{
-    width: 100%;
-    border-radius: 0%;
+    width: 95%;
     padding: 2%;
   }
   .botonSeguinos{

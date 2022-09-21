@@ -243,7 +243,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -254,7 +254,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -265,7 +265,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -276,7 +276,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -287,7 +287,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -298,7 +298,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -309,7 +309,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -320,7 +320,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -331,7 +331,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -342,7 +342,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -353,7 +353,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "90vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
@@ -364,7 +364,7 @@ export default function Eventos() {
           <Carousel.Item>
             <img
               style={{
-                maxHeight: "80vh",
+                maxHeight: "70vh",
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
