@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.2a117323.css",
-    "main.js": "./static/js/main.ef314599.js",
+    "main.js": "./static/js/main.c8566c38.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
-    "static/media/areia 13_11-043.jpg": "./static/media/areia 13_11-043.c6a26653c115cf5d97d6.jpg",
     "static/media/video3.mp4": "./static/media/video3.93d110a07ebc266f8953.mp4",
     "static/media/video1.mp4": "./static/media/video1.8a0b444cd3c0ba130c79.mp4",
     "static/media/video2.mp4": "./static/media/video2.6ae41b6d633eba4de2f1.mp4",
@@ -62,11 +61,11 @@
     "static/media/puma.webp": "./static/media/puma.5e11ca722e37c277c4d5.webp",
     "index.html": "./index.html",
     "main.2a117323.css.map": "./static/css/main.2a117323.css.map",
-    "main.ef314599.js.map": "./static/js/main.ef314599.js.map",
+    "main.c8566c38.js.map": "./static/js/main.c8566c38.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a117323.css",
-    "static/js/main.ef314599.js"
+    "static/js/main.c8566c38.js"
   ]
 }
