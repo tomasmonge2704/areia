@@ -209,7 +209,7 @@ export default function Eventos() {
               </Form>
             </div>
           </>) : (<>
-            <h1>Mensaje enviado Correctamente!</h1>
+            <p>¡Gracias por tu consulta! Nos estaremos comunicando a la brevedad...</p>
             <button className="mt-5" style={{marginLeft:'30%',marginRight:'30%'}} id="bottone1" onClick={() => setShow(true)}>
                   <strong>Volver</strong>
                 </button>
