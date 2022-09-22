@@ -9,7 +9,6 @@ import img1x4 from "../../SELECCION_DE_FOTOS/foto1x4.webp"
 import img3x4 from "../../SELECCION_DE_FOTOS/foto2x4.webp"
 import img2x4 from "../../SELECCION_DE_FOTOS/foto3x4.webp"
 import img4x4 from "../../SELECCION_DE_FOTOS/foto4x4.webp"
-import Imagen7 from "../../SELECCION_DE_FOTOS/F&C-4.webp";
 import Imagen8 from "../../SELECCION_DE_FOTOS/F&C-310.webp";
 import Imagen9 from "../../SELECCION_DE_FOTOS/F&C-3.webp";
 import Imagen10 from "../../SELECCION_DE_FOTOS/imagenAgrupada.webp";
@@ -238,17 +237,6 @@ export default function Eventos() {
           className="carouselDiv"
           variant="dark"
         >
-          <Carousel.Item>
-            <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
-              className="d-block w-100"
-              src={Imagen7}
-              alt="First slide"
-            />
-          </Carousel.Item>
           <Carousel.Item>
             <img
               style={{
