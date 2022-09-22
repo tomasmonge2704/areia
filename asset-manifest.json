@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.2a117323.css",
-    "main.js": "./static/js/main.da3ccc03.js",
+    "main.css": "./static/css/main.e28a2179.css",
+    "main.js": "./static/js/main.015da060.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/video3.mp4": "./static/media/video3.93d110a07ebc266f8953.mp4",
     "static/media/video1.mp4": "./static/media/video1.8a0b444cd3c0ba130c79.mp4",
@@ -14,24 +14,22 @@
     "static/media/Areia editadas-8.webp": "./static/media/Areia editadas-8.ed9c8e669f3bd2ddb28f.webp",
     "static/media/areia 13_11-043.webp": "./static/media/areia 13_11-043.53e90e3d58e303ddde49.webp",
     "static/media/F&C-3.webp": "./static/media/F&C-3.62e89b941a8decc5431e.webp",
+    "static/media/imagenAgrupada.webp": "./static/media/imagenAgrupada.5a073e8b02420034be85.webp",
     "static/media/fotoCancha.webp": "./static/media/fotoCancha.572f914533a5f8155099.webp",
     "static/media/AREIA FECHA3-29.webp": "./static/media/AREIA FECHA3-29.e025c2786655ea982c38.webp",
     "static/media/DSC00872 (1).webp": "./static/media/DSC00872 (1).1d051f8d3a3b1fd9f356.webp",
-    "static/media/DSC00896 (1).webp": "./static/media/DSC00896 (1).b8cb679a82b29919c896.webp",
     "static/media/areia1106-evento-16 (1).webp": "./static/media/areia1106-evento-16 (1).65c633a5872d9d78e181.webp",
     "static/media/eventosHome.webp": "./static/media/eventosHome.caa4d2234de8b0c1d00a.webp",
     "static/media/fotoHome2.webp": "./static/media/fotoHome2.97dfcfac6a569d824ac4.webp",
     "static/media/espacioAeria.webp": "./static/media/espacioAeria.4e45e66d6a677b9d7a47.webp",
     "static/media/DSC00845 (1).webp": "./static/media/DSC00845 (1).503d7650d343ea93a34c.webp",
     "static/media/fotoEventos2.webp": "./static/media/fotoEventos2.dee500df197924793ec6.webp",
-    "static/media/areiaeventos-39.webp": "./static/media/areiaeventos-39.96f2946bead6184a9df5.webp",
     "static/media/areia 13_11-088.webp": "./static/media/areia 13_11-088.77fa0b05f7ebe9281c89.webp",
     "static/media/areia1106-evento-01 (2).webp": "./static/media/areia1106-evento-01 (2).5b011bb66b372ac1cb9a.webp",
     "static/media/fotoFooter1.webp": "./static/media/fotoFooter1.764004e4bd9731485299.webp",
     "static/media/Areia-VENUE-01.png": "./static/media/Areia-VENUE-01.6ec94a26e56b177b6c5b.png",
     "static/media/areia1106-evento-18 (1).webp": "./static/media/areia1106-evento-18 (1).222da58377444dfea68c.webp",
     "static/media/fotoHome1.webp": "./static/media/fotoHome1.8a9c4f51df327b0247e6.webp",
-    "static/media/areia0204-16.webp": "./static/media/areia0204-16.fec5deec02ec1280e880.webp",
     "static/media/foto1x4.webp": "./static/media/foto1x4.ad7366aaa9577ddddcf5.webp",
     "static/media/areia1812-163.webp": "./static/media/areia1812-163.e52ccdf8fc2d8c5fb7bb.webp",
     "static/media/foto3x4.webp": "./static/media/foto3x4.0a4aa55ed0018303e720.webp",
@@ -60,12 +58,12 @@
     "static/media/sponsor.webp": "./static/media/sponsor.400ccba0ae76f324a50d.webp",
     "static/media/puma.webp": "./static/media/puma.5e11ca722e37c277c4d5.webp",
     "index.html": "./index.html",
-    "main.2a117323.css.map": "./static/css/main.2a117323.css.map",
-    "main.da3ccc03.js.map": "./static/js/main.da3ccc03.js.map",
+    "main.e28a2179.css.map": "./static/css/main.e28a2179.css.map",
+    "main.015da060.js.map": "./static/js/main.015da060.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a117323.css",
-    "static/js/main.da3ccc03.js"
+    "static/css/main.e28a2179.css",
+    "static/js/main.015da060.js"
   ]
 }
