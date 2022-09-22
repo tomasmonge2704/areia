@@ -12,15 +12,13 @@ import img4x4 from "../../SELECCION_DE_FOTOS/foto4x4.webp"
 import Imagen7 from "../../SELECCION_DE_FOTOS/F&C-4.webp";
 import Imagen8 from "../../SELECCION_DE_FOTOS/F&C-310.webp";
 import Imagen9 from "../../SELECCION_DE_FOTOS/F&C-3.webp";
-import Imagen10 from "../../SELECCION_DE_FOTOS/DSC00896 (1).webp";
+import Imagen10 from "../../SELECCION_DE_FOTOS/imagenAgrupada.webp";
 import Imagen11 from "../../SELECCION_DE_FOTOS/DSC00872 (1).webp";
 import Imagen12 from "../../SELECCION_DE_FOTOS/DSC00857 (1).webp";
 import Imagen13 from "../../SELECCION_DE_FOTOS/DSC00845 (1).webp";
-import Imagen14 from "../../SELECCION_DE_FOTOS/areiaeventos-39.webp";
 import Imagen15 from "../../SELECCION_DE_FOTOS/areia1106-evento-18 (1).webp";
 import Imagen16 from "../../SELECCION_DE_FOTOS/areia1106-evento-16 (1).webp";
 import Imagen17 from "../../SELECCION_DE_FOTOS/areia1106-evento-01 (2).webp";
-import Imagen18 from "../../SELECCION_DE_FOTOS/areia0204-16.webp";
 import './Eventos.css'
 import Form from 'react-bootstrap/Form';
 import React, { useRef, useState } from 'react';
@@ -324,17 +322,6 @@ export default function Eventos() {
                 filter: "drop-shadow(black 2px 4px 6px)",
               }}
               className="d-block w-100"
-              src={Imagen14}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
-              className="d-block w-100"
               src={Imagen15}
               alt="Third slide"
             />
@@ -358,17 +345,6 @@ export default function Eventos() {
               }}
               className="d-block w-100"
               src={Imagen17}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
-              className="d-block w-100"
-              src={Imagen18}
               alt="Third slide"
             />
           </Carousel.Item>
