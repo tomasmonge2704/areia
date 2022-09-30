@@ -239,10 +239,6 @@ export default function Eventos() {
         >
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen8}
               alt="Second slide"
@@ -250,10 +246,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen9}
               alt="Third slide"
@@ -261,10 +253,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen10}
               alt="Third slide"
@@ -272,10 +260,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen11}
               alt="Third slide"
@@ -283,10 +267,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen12}
               alt="Third slide"
@@ -294,10 +274,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen13}
               alt="Third slide"
@@ -305,10 +281,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen15}
               alt="Third slide"
@@ -316,10 +288,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen16}
               alt="Third slide"
@@ -327,10 +295,6 @@ export default function Eventos() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "70vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen17}
               alt="Third slide"

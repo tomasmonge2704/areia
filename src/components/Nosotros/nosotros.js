@@ -341,10 +341,6 @@ export default function Nosotros() {
         >
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen7}
               alt="First slide"
@@ -352,10 +348,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen8}
               alt="Second slide"
@@ -363,10 +355,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen9}
               alt="Third slide"
@@ -374,10 +362,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen10}
               alt="Third slide"
@@ -385,10 +369,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen11}
               alt="Third slide"
@@ -396,10 +376,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen12}
               alt="Third slide"
@@ -407,10 +383,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen13}
               alt="Third slide"
@@ -418,10 +390,6 @@ export default function Nosotros() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{
-                maxHeight: "90vh",
-                filter: "drop-shadow(black 2px 4px 6px)",
-              }}
               className="d-block w-100"
               src={Imagen14}
               alt="Third slide"
