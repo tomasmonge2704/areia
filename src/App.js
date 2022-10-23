@@ -57,6 +57,44 @@ function App() {
         }>
         </Route>
       </Routes>
+      <Routes>
+        <Route  path="/areia/" element={
+          <div>
+            <Nabvar section="/areia/inicio"/>
+            <Inicio/>
+          </div>
+        }>
+        </Route>
+        <Route  path="/areia/nosotros" element={
+          <div>
+            <Nabvar section="nosotros" />
+            <Nosotros/>
+          </div>
+        }>
+        </Route>
+        <Route  path="/areia/venue" element={
+          <div>
+            <Nabvar section="venue"/>
+            <Eventos/>
+          </div>
+        }>
+        </Route>
+        <Route  path="/areia/contacto" element={
+          <div>
+            <Nabvar section="contacto" />
+            <Contacto/>
+          </div>
+        }>
+        </Route>
+        <Route  path="/areia/asados" element={
+            <Asados/>
+        }>
+        </Route>
+        <Route  path="/areia/allin" element={
+            <Allin/>
+        }>
+        </Route>
+      </Routes>
       </BrowserRouter>
   );
 }
