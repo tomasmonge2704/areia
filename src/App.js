@@ -3,7 +3,7 @@ import Nabvar from './components/NabVar/Nabvar';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {BrowserRouter,Routes, Route } from "react-router-dom";
+import {BrowserRouter,Routes, Route} from "react-router-dom";
 import Inicio from './components/Inicio/inicio';
 import Nosotros from './components/Nosotros/nosotros';
 import Eventos from './components/Eventos/eventos';
@@ -20,75 +20,39 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={
+        <Route  path="/" element={
           <div>
             <Nabvar section="inicio"/>
             <Inicio/>
           </div>
         }>
         </Route>
-        <Route exact path="/nosotros" element={
+        <Route  path="/nosotros" element={
           <div>
             <Nabvar section="nosotros" />
             <Nosotros/>
           </div>
         }>
         </Route>
-        <Route exact path="/venue" element={
+        <Route  path="/venue" element={
           <div>
             <Nabvar section="venue"/>
             <Eventos/>
           </div>
         }>
         </Route>
-        <Route exact path="/contacto" element={
+        <Route  path="/contacto" element={
           <div>
             <Nabvar section="contacto" />
             <Contacto/>
           </div>
         }>
         </Route>
-        <Route exact path="/asados" element={
+        <Route  path="/asados" element={
             <Asados/>
         }>
         </Route>
-        <Route exact path="/allin" element={
-            <Allin/>
-        }>
-        </Route>
-        <Route exact path="/areia/" element={
-          <div>
-            <Nabvar section="/areia/inicio"/>
-            <Inicio/>
-          </div>
-        }>
-        </Route>
-        <Route exact path="/areia/nosotros" element={
-          <div>
-            <Nabvar section="nosotros" />
-            <Nosotros/>
-          </div>
-        }>
-        </Route>
-        <Route exact path="/areia/venue" element={
-          <div>
-            <Nabvar section="venue"/>
-            <Eventos/>
-          </div>
-        }>
-        </Route>
-        <Route exact path="/areia/contacto" element={
-          <div>
-            <Nabvar section="contacto" />
-            <Contacto/>
-          </div>
-        }>
-        </Route>
-        <Route exact path="/areia/asados" element={
-            <Asados/>
-        }>
-        </Route>
-        <Route exact path="/areia/allin" element={
+        <Route  path="/allin" element={
             <Allin/>
         }>
         </Route>
