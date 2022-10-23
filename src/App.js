@@ -56,8 +56,40 @@ function App() {
             <Allin/>
         }>
         </Route>
-        <Route exact path="/allin" element={
-            <></>
+        <Route exact path="/areia/" element={
+          <div>
+            <Nabvar section="/areia/inicio"/>
+            <Inicio/>
+          </div>
+        }>
+        </Route>
+        <Route exact path="/areia/nosotros" element={
+          <div>
+            <Nabvar section="nosotros" />
+            <Nosotros/>
+          </div>
+        }>
+        </Route>
+        <Route exact path="/areia/venue" element={
+          <div>
+            <Nabvar section="venue"/>
+            <Eventos/>
+          </div>
+        }>
+        </Route>
+        <Route exact path="/areia/contacto" element={
+          <div>
+            <Nabvar section="contacto" />
+            <Contacto/>
+          </div>
+        }>
+        </Route>
+        <Route exact path="/areia/asados" element={
+            <Asados/>
+        }>
+        </Route>
+        <Route exact path="/areia/allin" element={
+            <Allin/>
         }>
         </Route>
       </Routes>
