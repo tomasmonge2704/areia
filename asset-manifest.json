@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.e28a2179.css",
-    "main.js": "./static/js/main.015da060.js",
+    "main.css": "./static/css/main.1237ddd5.css",
+    "main.js": "./static/js/main.ebd4815a.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/video3.mp4": "./static/media/video3.93d110a07ebc266f8953.mp4",
     "static/media/video1.mp4": "./static/media/video1.8a0b444cd3c0ba130c79.mp4",
@@ -10,7 +10,6 @@
     "static/media/Areia editadas-45.webp": "./static/media/Areia editadas-45.4f59365862def3523bd6.webp",
     "static/media/areia producto-4.webp": "./static/media/areia producto-4.cda8ff0f9c76596109f5.webp",
     "static/media/F&C-310.webp": "./static/media/F&C-310.cc3eaa7cc976f199e1b0.webp",
-    "static/media/F&C-4.webp": "./static/media/F&C-4.357e74718949aeb69bb9.webp",
     "static/media/Areia editadas-8.webp": "./static/media/Areia editadas-8.ed9c8e669f3bd2ddb28f.webp",
     "static/media/areia 13_11-043.webp": "./static/media/areia 13_11-043.53e90e3d58e303ddde49.webp",
     "static/media/F&C-3.webp": "./static/media/F&C-3.62e89b941a8decc5431e.webp",
@@ -45,11 +44,14 @@
     "static/media/video3.webp": "./static/media/video3.de37d9e47f8b813a14a2.webp",
     "static/media/fotoEventos1.webp": "./static/media/fotoEventos1.efd540bab9f27719ce61.webp",
     "static/media/Scandia.woff": "./static/media/Scandia.c29d9a19f62e390e8ce0.woff",
+    "static/media/formasTop.png": "./static/media/formasTop.29442b734aa6066a62c0.png",
     "static/media/video1.webp": "./static/media/video1.375ecfa6bd35aa87d927.webp",
     "static/media/closeButton.webp": "./static/media/closeButton.d9cdbcff82d4b5ba1ec9.webp",
+    "static/media/formaBottom.png": "./static/media/formaBottom.39ea4738806d712b7546.png",
     "static/media/LOGOS TROWN.jpg": "./static/media/LOGOS TROWN.ac6e1770d6a1c3bcca67.jpg",
     "static/media/Kia-Logo-KiaMidnightBlack.webp": "./static/media/Kia-Logo-KiaMidnightBlack.af8e11d0cd15829b8d97.webp",
     "static/media/mapa2.webp": "./static/media/mapa2.fcba3bb45ec1a8af24ab.webp",
+    "static/media/imagenTop.png": "./static/media/imagenTop.9730b8f9b74253e8157e.png",
     "static/media/budweiser.webp": "./static/media/budweiser.393110486af1e32aeeae.webp",
     "static/media/available_on_google_play.webp": "./static/media/available_on_google_play.4a48599f24465ea52453.webp",
     "static/media/available_on_app_store.webp": "./static/media/available_on_app_store.a759a024f567f83eccdf.webp",
@@ -58,12 +60,12 @@
     "static/media/sponsor.webp": "./static/media/sponsor.400ccba0ae76f324a50d.webp",
     "static/media/puma.webp": "./static/media/puma.5e11ca722e37c277c4d5.webp",
     "index.html": "./index.html",
-    "main.e28a2179.css.map": "./static/css/main.e28a2179.css.map",
-    "main.015da060.js.map": "./static/js/main.015da060.js.map",
+    "main.1237ddd5.css.map": "./static/css/main.1237ddd5.css.map",
+    "main.ebd4815a.js.map": "./static/js/main.ebd4815a.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e28a2179.css",
-    "static/js/main.015da060.js"
+    "static/css/main.1237ddd5.css",
+    "static/js/main.ebd4815a.js"
   ]
 }
