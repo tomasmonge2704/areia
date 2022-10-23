@@ -1,0 +1,138 @@
+.menu h1{
+    color: rgb(243 254 52);
+    font-size: 23px;
+}
+.imgTop{
+    position: absolute;
+    height: 35vh;
+    top: 0;
+}
+.hashtag{
+    width: 100%;
+    padding:4vh 33vw 10vh 33vw
+}
+.imgBottom{
+    height:40vh;
+    position: absolute;
+     right: 0;
+}
+.menu p{
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+.adicionales{
+    padding: 1%;
+}
+.menu strong{
+    color: white;
+    font-size: 18px;
+}
+.tituloMenu{
+    font-size: 3rem !important;
+}
+.vinos{
+    width: 54%;
+    margin-left: 6%;
+}
+.stroke{
+-webkit-text-stroke: 1px rgb(243 254 52);
+overflow-wrap: break-word;
+font-size: 12vh;
+}
+.textoSobreBorde{
+    margin-top: -4vh;
+    background: rgb(40 40 39);
+    padding: 1%;
+}
+.seccionBebidas{
+    align-items: baseline;
+}
+.lineaAmarilla{
+    margin-top: 30vh;
+}
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+
+    
+  }
+  
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  }
+  
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+  }
+  /* For Noteboock View */
+    @media screen and (max-height: 800px)
+    and (max-width: 1600px) and (orientation:landscape)  {
+
+    }
+  /* For ultrawide screen View */
+  @media screen and (min-width: 1920px){
+
+  }
+  /* For Mobile Landscape View */
+  @media screen and (max-device-width: 640px) and (orientation: landscape) {
+  }
+  
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    .lineaAmarilla{
+        margin-top: 10vh;
+    }
+    .imgTop{
+        height: 18vh;
+    }
+    .imgBottom{
+        height: 13vh;
+    }
+    .hashtag{
+        width: 100%;
+        padding:2vh 8vh 4vh 8vh
+    }
+    .stroke{
+        font-size: 6vh;
+        }
+        .tituloMenu{
+            font-size: 2rem !important;
+        }
+        .menu p{
+            font-size: 8px;
+            margin-bottom: 6px !important;
+        }
+        .menu h1{
+            font-size: 13px;
+        }
+        .menu strong{
+            font-size: 8px !important;
+        }
+        .textoSobreBorde{
+            margin-top: -3vh;
+            padding: 3%;
+        }
+        .adicionales{
+            padding: 4%;
+        }
+        .vinos{
+            width: 54%;
+            margin-left: 4%;
+        }
+        .seccionBebidas{
+            align-items: center;
+        }
+  }
+  
+  /* For iPhone 4 Portrait or Landscape View */
+  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  }
+  
+  /* For iPhone 5 Portrait or Landscape View */
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  }
+  
+  /* For iPhone 6 and 6 plus Portrait or Landscape View */
+  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  }

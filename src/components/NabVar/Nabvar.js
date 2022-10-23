@@ -1,4 +1,4 @@
-import { Navbar, Container, Row, Col, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../../SELECCION_DE_FOTOS/logo.webp";
 import { Link } from "react-router-dom";
 export default function Nabvar({ section }) {
@@ -59,7 +59,7 @@ export default function Nabvar({ section }) {
             <Link
               to={`/contacto`}
               id="navContacto"
-              
+              className={section}
               style={{ textDecoration: "none" }}
             >
               <Nav.Link

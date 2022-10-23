@@ -1,0 +1,81 @@
+.menu h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.trago{
+    font-size: 19px !important;
+    font-weight: 900;
+
+}
+.allin .lineaAmarilla{
+    margin-top: 4vh !important;
+}
+.textoCombos{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:7rem;
+    margin: auto;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+}
+.imgBottom1{
+    position: absolute;
+    height: 40px;
+    bottom:52vw;
+    right: 0;
+}
+.imgBottom2{
+    position: absolute;
+    right: 0;
+    bottom:42vw;
+    height: 50px;
+}
+.textoY{
+position: absolute;
+margin-left: 40%;
+bottom: 65vw;
+background: rgb(40 40 39);
+}
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    .menu h3{
+        font-size: 0.8rem;
+    }
+    .textoCombos{
+        top:32%;
+    }
+    .imgBottom1{
+        height:40px;
+        bottom:24%;
+    }
+    .imgBottom2{
+        bottom:14%;
+        height:35px;
+    }
+    .textoY{
+        bottom: 28.5%;
+        
+
+    }
+}
+ /* For iPhone 4 Portrait or Landscape View */
+ @media screen and (max-device-width: 380px){
+    .textoY{
+        bottom: 10.5%;
+    }
+    .imgBottom1{
+        bottom:3%;
+    }
+    .imgBottom2{
+        height:30px;
+        bottom:-5%;
+    }
+    .hashtag {
+        padding: 2vh 12vh 4vh 12vh;
+    }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+}

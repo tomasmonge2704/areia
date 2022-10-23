@@ -3,11 +3,13 @@ import Nabvar from './components/NabVar/Nabvar';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {HashRouter,Routes, Route } from "react-router-dom";
+import {BrowserRouter,Routes, Route } from "react-router-dom";
 import Inicio from './components/Inicio/inicio';
 import Nosotros from './components/Nosotros/nosotros';
 import Eventos from './components/Eventos/eventos';
 import Contacto from './components/Contacto/contacto';
+import Asados from './components/asados/asados'
+import Allin from './components/allin/allin'
 function App() {
   useEffect(() => {
     AOS.init(
@@ -16,7 +18,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={
           <div>
@@ -46,29 +48,20 @@ function App() {
           </div>
         }>
         </Route>
-        <Route exact path="/Areia/nosotros" element={
-          <div>
-            <Nabvar />
-          
-          </div>
+        <Route exact path="/asados" element={
+            <Asados/>
         }>
         </Route>
-        <Route exact path="/Areia/eventos" element={
-          <div>
-            <Nabvar />
-            
-          </div>
+        <Route exact path="/allin" element={
+            <Allin/>
         }>
         </Route>
-        <Route exact path="/Areia/contacto" element={
-          <div>
-            <Nabvar />
-            
-          </div>
+        <Route exact path="/allin" element={
+            <></>
         }>
         </Route>
       </Routes>
-      </HashRouter>
+      </BrowserRouter>
   );
 }
 
