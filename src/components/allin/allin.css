@@ -47,14 +47,14 @@ background: rgb(40 40 39);
     }
     .imgBottom1{
         height:40px;
-        bottom:5rem;
+        top: 39rem;
     }
     .imgBottom2{
-        bottom:1rem;
+        top:45rem;
         height:40px;
     }
     .textoY{
-        bottom: 8rem;
+        top: 34rem;
     }
 }
  /* For iPhone 4 Portrait or Landscape View */
