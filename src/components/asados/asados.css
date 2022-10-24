@@ -19,7 +19,7 @@
 .menu p{
     color: white;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .adicionales{
     padding: 1%;
@@ -100,7 +100,7 @@ font-size: 12vh;
             font-size: 2rem !important;
         }
         .menu p{
-            font-size: 7px;
+            font-size: 6px;
             margin-bottom:1px !important;
         }
         .menu h1{

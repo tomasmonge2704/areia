@@ -3,7 +3,7 @@ import Nabvar from './components/NabVar/Nabvar';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {Routes, Route, HashRouter} from "react-router-dom";
+import {Routes, Route, HashRouter, BrowserRouter} from "react-router-dom";
 import Inicio from './components/Inicio/inicio';
 import Nosotros from './components/Nosotros/nosotros';
 import Eventos from './components/Eventos/eventos';
@@ -18,7 +18,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={
           <div>
@@ -57,7 +57,7 @@ function App() {
         }>
         </Route>
       </Routes>
-      </HashRouter>
+      </BrowserRouter>
   );
 }
 
