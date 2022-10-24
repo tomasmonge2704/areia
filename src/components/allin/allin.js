@@ -4,59 +4,10 @@ import imgTop from "../../SELECCION_DE_FOTOS/imagenTop.png"
 import imgBottom1 from "../../SELECCION_DE_FOTOS/formaBottom1.png"
 import imgBottom2 from "../../SELECCION_DE_FOTOS/formaBottom2.png"
 
-export default function Allin() {
-    const adicionales = [
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        }
-    ]
-    const combos = [
-        {
-            nombre: "BRANCA",
-            descripcion:"+ 6 botellas de Coca Cola",
-            precio: 500
-        },
-        {
-            nombre: "BARON B",
-            descripcion:"+ 6 botellas de Coca Cola",
-            precio: 500
-        },
-        {
-            nombre: "ABSOLUT",
-            descripcion:"+ 6 botellas de Coca Cola",
-            precio: 500
-        }, {
-            nombre: "TANQUERAY",
-            descripcion:"+ 6 botellas de Coca Cola",
-            precio: 500
-        }, {
-            nombre: "HAVANA C",
-            descripcion:"+ 6 botellas de Coca Cola",
-            precio: 500
-        }, {
-            nombre: "JAGGER",
-            descripcion:"+ 6 botellas de Coca Cola",
-            precio: 500
-        },
-    ]
-
+export default function Allin({productos}) {
+    let combos = productos.filter(e => e.categoria == "ALLIN-combos")
+    let bottles = productos.filter(e => e.categoria == "ALLIN-bottles")
+    let mixers = productos.filter(e => e.categoria == "ALLIN-mixers")
     return (
         <div className="menu allin">
             <img src={imgTop} className="imgTop" />
@@ -84,7 +35,7 @@ export default function Allin() {
                 </div>
                 <div style={{ border: "1px solid", borderColor: "rgb(243 254 52)", width: "47%", display: 'flex', flexWrap: "wrap",justifyContent:"center" }} className="adicionales">
                     <h1 className='textoSobreBorde'>BOTTLES</h1>
-                    {adicionales.map((e) => (
+                    {bottles.map((e) => (
                         <>
                             <p style={{ width: "80%" }}>{e.nombre}</p>
                             <p style={{ width: "20%" }}>${e.precio}</p>
@@ -95,14 +46,15 @@ export default function Allin() {
                 <div style={{
                     border: "1px solid", borderColor: "rgb(243 254 52)", width: "53%", display: 'flex', flexWrap: "wrap",justifyContent:"center" }} className="adicionales">
                     <h1 className='textoSobreBorde'>MIXERS</h1>
-                    {adicionales.map((e) => (
+                    {mixers.map((e) => (
                         <>
                             <p style={{ width: "70%" }}>{e.nombre}</p>
                             <p style={{ width: "10%" }}>${e.precio}</p>
                         </>
                     ))}
+                    <img src={imgBottom1} className="imgBottom1"/>
                 </div>
-                <img src={imgBottom1} className="imgBottom1"/>
+                
                 <img src={imgBottom2} className="imgBottom2"/>
                 <div className='lineaAmarilla' style={{ borderTop: "1px solid", color: "rgb(243 254 52)", width: "100%", marginBottom: "0.7vh" }}></div>
                 <div style={{ borderTop: "1px solid", color: "rgb(243 254 52)", width: "100%" }}></div>

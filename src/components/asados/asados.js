@@ -4,96 +4,15 @@ import imgTop from "../../SELECCION_DE_FOTOS/formasTop.png"
 import imgBottom from "../../SELECCION_DE_FOTOS/formaBottom.png"
 import linea from "../../SELECCION_DE_FOTOS/linea.png"
 
-export default function Asados() {
-    const adicionales = [
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        },
-        {
-            nombre: "Ensalada de papa y huevo",
-            precio: 500
-        }
-    ]
-    const cervezas = [
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        }
-    ]
-    const combos = [
-        {
-            nombre: "Gin Tanqueray + 6 latas tónica",
-            precio: 500
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        }
-    ]
-    const vinos = [
-        {
-            nombre: "Stella Artois",
-            precio: 3200
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        }, {
-            nombre: "Stella Artois",
-            precio: 500
-        },
-        {
-            nombre: "Stella Artois",
-            precio: 500
-        },
-        {
-            nombre: "Cosecha Tardía Chardonnay",
-            precio: 500
-        },
-        {
-            nombre: "Cosecha Tardía Chardonnay",
-            precio: 500
-        },
-        {
-            nombre: "Cosecha Tardía Chardonnay",
-            precio: 500
-        }
-    ]
+export default function Asados({productos}) {
+    let  adicionales = productos.filter(e => e.categoria == "ASADOS-adicionales")
+    let postres = productos.filter(e => e.categoria == "ASADOS-postres")
+    let cervezas = productos.filter(e => e.categoria == "ASADOS-cervezas")
+    let combos = productos.filter(e => e.categoria == "ASADOS-combos bebidas")
+    let vinos = productos.filter(e => e.categoria == "ASADOS-vinos")
+    
     return (
-        <div className="menu">
+            <div className="menu">
             <img src={imgTop} className="imgTop"/>
             <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",marginRight:"4%",marginTop:"4%"}}>
             <a href="https://www.instagram.com/areiafutbol/" target="_blank">
@@ -120,7 +39,7 @@ export default function Asados() {
                 <div style={{ border: "1px solid", borderColor: "rgb(243 254 52)", width: "47%", display: 'flex', flexWrap: "wrap"
             }} className="adicionales">
                     <h1 className='textoSobreBorde'>POSTRES</h1>
-                    {adicionales.map((e) => (
+                    {postres.map((e) => (
                         <>
                             <p style={{ width: "90%" }}>{e.nombre}</p>
                             <p style={{ width: "10%" }}>${e.precio}</p>
@@ -133,38 +52,38 @@ export default function Asados() {
                         <h1 style={{marginBottom:"0px"}}>CERVEZAS</h1>
                         <img src={linea} style={{width:"82%",marginBottom:"2%"}}/>
                         <div style={{ display: 'flex', flexWrap: "wrap", padding: "1%" }}>
-                            {cervezas.map((e) => (
-                                <>
-                                    <p style={{ width: "70%" }}>{e.nombre}</p>
-                                    <p style={{ width: "30%" }}>${e.precio}</p>
-                                </>
-                            ))}
+                        {cervezas.map((e) => (
+                        <>
+                            <p style={{ width: "70%" }}>{e.nombre}</p>
+                            <p style={{ width: "30%" }}>${e.precio}</p>
+                        </>
+                    ))}
                         </div>
 
                     </div>
                     <div className="vinos">
                         <h1>VINOS</h1>
                         <div style={{ display: 'flex', flexWrap: "wrap", padding: "1%" }}>
-                            {vinos.map((e) => (
-                                <>
-                                    <p style={{ width: "90%" }}>{e.nombre}</p>
-                                    <p style={{ width: "10%" }}>${e.precio}</p>
-                                </>
-                            ))}
-                        </div>
+                        {vinos.map((e) => (
+                        <>
+                            <p style={{ width: "90%" }}>{e.nombre}</p>
+                            <p style={{ width: "10%" }}>${e.precio}</p>
+                        </>
+                    ))}
+                    </div>
 
                     </div>
                 </div>
-                <div style={{ width: "100%", marginTop: "2%",display:"flex"}}>
+                <div style={{ width: "70%", marginTop: "2%",display:"flex"}}>
                     <div>
                         <h1>COMBOS BEBIDAS</h1>
                         <div style={{ display: 'flex', flexWrap: "wrap", padding: "1%" }}>
-                            {combos.map((e) => (
-                                <>
-                                    <p style={{ width: "65%" }}>{e.nombre}</p>
-                                    <p style={{ width: "35%" }}>${e.precio}</p>
-                                </>
-                            ))}
+                        {combos.map((e) => (
+                        <>
+                            <p style={{ width: "65%" }}>{e.nombre}</p>
+                            <p style={{ width: "35%" }}>${e.precio}</p>
+                        </>
+                    ))}
                         </div>
                     </div>
                     <img src={imgBottom} className="imgBottom"/>

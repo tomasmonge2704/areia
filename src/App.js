@@ -3,13 +3,13 @@ import Nabvar from './components/NabVar/Nabvar';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {BrowserRouter,Routes, Route} from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 import Inicio from './components/Inicio/inicio';
 import Nosotros from './components/Nosotros/nosotros';
 import Eventos from './components/Eventos/eventos';
 import Contacto from './components/Contacto/contacto';
-import Asados from './components/asados/asados'
-import Allin from './components/allin/allin'
+import AsadosContenedor from './components/asados/asadosContenedor'
+import AllinContenedor from './components/allin/allinContenedor'
 function App() {
   useEffect(() => {
     AOS.init(
@@ -18,84 +18,46 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route  path="/" element={
+        <Route exact path="/" element={
           <div>
-            <Nabvar section="inicio"/>
+            <Nabvar exact section="inicio"/>
             <Inicio/>
           </div>
         }>
         </Route>
-        <Route  path="/nosotros" element={
+        <Route exact path="/nosotros" element={
           <div>
             <Nabvar section="nosotros" />
             <Nosotros/>
           </div>
         }>
         </Route>
-        <Route  path="/venue" element={
+        <Route exact path="/venue" element={
           <div>
             <Nabvar section="venue"/>
             <Eventos/>
           </div>
         }>
         </Route>
-        <Route  path="/contacto" element={
+        <Route exact path="/contacto" element={
           <div>
             <Nabvar section="contacto" />
             <Contacto/>
           </div>
         }>
         </Route>
-        <Route  path="/asados" element={
-            <Asados/>
+        <Route exact path="/asados" element={
+            <AsadosContenedor/>
         }>
         </Route>
-        <Route  path="/allin" element={
-            <Allin/>
-        }>
-        </Route>
-      </Routes>
-      <Routes>
-        <Route  path="/areia/" element={
-          <div>
-            <Nabvar section="/areia/inicio"/>
-            <Inicio/>
-          </div>
-        }>
-        </Route>
-        <Route  path="/areia/nosotros" element={
-          <div>
-            <Nabvar section="nosotros" />
-            <Nosotros/>
-          </div>
-        }>
-        </Route>
-        <Route  path="/areia/venue" element={
-          <div>
-            <Nabvar section="venue"/>
-            <Eventos/>
-          </div>
-        }>
-        </Route>
-        <Route  path="/areia/contacto" element={
-          <div>
-            <Nabvar section="contacto" />
-            <Contacto/>
-          </div>
-        }>
-        </Route>
-        <Route  path="/areia/asados" element={
-            <Asados/>
-        }>
-        </Route>
-        <Route  path="/areia/allin" element={
-            <Allin/>
+        <Route exact path="/allin" element={
+            <AllinContenedor/>
         }>
         </Route>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 

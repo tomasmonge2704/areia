@@ -3,7 +3,7 @@
     margin-top: 1rem;
 }
 .trago{
-    font-size: 19px !important;
+    font-size: 22px !important;
     font-weight: 900;
 
 }
@@ -20,10 +20,10 @@
     -moz-transform: rotate(-90deg);
 }
 .imgBottom1{
-    position: absolute;
+    position: relative;
     height: 40px;
-    bottom:52vw;
-    right: 0;
+    top:35%;
+    left: 50%;
 }
 .imgBottom2{
     position: absolute;
@@ -43,7 +43,7 @@ background: rgb(40 40 39);
         font-size: 0.8rem;
     }
     .textoCombos{
-        top:32%;
+        top:26%;
     }
     .imgBottom1{
         height:40px;
@@ -55,14 +55,15 @@ background: rgb(40 40 39);
     }
     .textoY{
         bottom: 28.5%;
-        
-
+    }
+    .stroke {
+        font-size: 5vh !important;
     }
 }
  /* For iPhone 4 Portrait or Landscape View */
  @media screen and (max-device-width: 380px){
     .textoY{
-        bottom: 10.5%;
+        bottom: 16.5%;
     }
     .imgBottom1{
         bottom:3%;
