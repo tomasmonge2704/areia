@@ -30,7 +30,7 @@ export default function Asados({productos}) {
                     <h1 className='textoSobreBorde'>ADICIONALES</h1>
                     {adicionales.map((e) => (
                         <>
-                            <p style={{ width: "90%" }}>{e.nombre}</p>
+                            <p style={{ width: "86%" }}>{e.nombre}</p>
                             <p style={{ width: "10%" }}>${e.precio}</p>
                         </>
                     ))}
@@ -41,7 +41,7 @@ export default function Asados({productos}) {
                     <h1 className='textoSobreBorde'>POSTRES</h1>
                     {postres.map((e) => (
                         <>
-                            <p style={{ width: "90%" }}>{e.nombre}</p>
+                            <p style={{ width: "86%" }}>{e.nombre}</p>
                             <p style={{ width: "10%" }}>${e.precio}</p>
                         </>
                     ))}

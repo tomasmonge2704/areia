@@ -100,7 +100,7 @@ font-size: 12vh;
             font-size: 2rem !important;
         }
         .menu p{
-            font-size: 6px;
+            font-size:10px;
             margin-bottom:1px !important;
         }
         .menu h1{
@@ -114,7 +114,7 @@ font-size: 12vh;
             padding: 3%;
         }
         .adicionales{
-            padding: 4%;
+            padding: 3.5%;
         }
         .vinos{
             width: 54%;
