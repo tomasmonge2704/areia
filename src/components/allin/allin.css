@@ -56,7 +56,7 @@ background: rgb(40 40 39);
     .textoY{
         bottom: 28.5%;
     }
-    .stroke {
+    .allin .stroke {
         font-size: 5vh !important;
     }
 }

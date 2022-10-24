@@ -19,7 +19,7 @@
 .menu p{
     color: white;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 600;
 }
 .adicionales{
     padding: 1%;
@@ -94,13 +94,13 @@ font-size: 12vh;
         padding:2vh 8vh 4vh 8vh
     }
     .stroke{
-        font-size: 6vh;
+        font-size: 7vh;
         }
         .tituloMenu{
             font-size: 2rem !important;
         }
         .menu p{
-            font-size: 8px;
+            font-size: 7px;
             margin-bottom:1px !important;
         }
         .menu h1{
