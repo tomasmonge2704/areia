@@ -43,21 +43,18 @@ background: rgb(40 40 39);
         font-size: 0.8rem;
     }
     .textoCombos{
-        top:26%;
+        top:37%;
     }
     .imgBottom1{
         height:40px;
-        bottom:25vh;
+        bottom:3%;
     }
     .imgBottom2{
-        bottom:15vh;
+        bottom:-8%;
         height:40px;
     }
     .textoY{
-        bottom: 30.5%;
-    }
-    .allin .stroke {
-        font-size: 5vh !important;
+        bottom: 9.5%;
     }
 }
  /* For iPhone 4 Portrait or Landscape View */
