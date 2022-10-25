@@ -2,10 +2,35 @@
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+.neonText {
+    animation: flicker 3s infinite alternate;
+  }
+  
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px black,
+        0 0 11px black,
+        0 0 19px black,
+        0 0 30px rgb(243 254 52),
+        0 0 60px rgb(243 254 52),
+        0 0 70px rgb(243 254 52),
+        0 0 80px rgb(243 254 52),
+        0 0 100px rgb(243 254 52);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
 .trago{
     font-size: 22px !important;
     font-weight: 900;
-
 }
 .allin .lineaAmarilla{
     margin-top: 4vh !important;
@@ -21,21 +46,45 @@
 }
 .imgBottom1{
     position: absolute;
-    height: 40px;
-    bottom:35%;
+    height: 7rem;
+    top:75rem;
     right:0;
 }
 .imgBottom2{
     position: absolute;
     right: 0;
-    bottom:42vw;
-    height: 50px;
+    top:85rem;
+    height: 6rem;
 }
 .textoY{
 position: absolute;
 margin-left: 40%;
 bottom: 65vw;
 background: rgb(40 40 39);
+}
+@media screen and (min-width: 1024px) {
+    .textoSobreBorde{
+        position: absolute;
+        margin-top: -6vh;
+        font-size: 50px !important;
+    }
+    .textoY {
+        bottom: -40rem;
+    }
+    .trago{
+        font-size: 5rem !important;
+    }
+    .allin p{
+        font-size: 30px;
+    }
+    .imgBottom1 {
+        height: 7rem;
+        top: 112rem;
+    }
+    .imgBottom2 {
+        height: 6rem;
+        top: 125rem;
+    }
 }
   /* For Mobile Phones Portrait or Landscape View */
   @media screen and (max-device-width: 640px) {

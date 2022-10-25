@@ -8,6 +8,7 @@ export default function Allin({productos}) {
     let combos = productos.filter(e => e.categoria == "ALLIN-combos")
     let bottles = productos.filter(e => e.categoria == "ALLIN-bottles")
     let mixers = productos.filter(e => e.categoria == "ALLIN-mixers")
+    document.body.style.backgroundColor = "rgb(40 40 39)" ;
     return (
         <div className="menu allin">
             <img src={imgTop} className="imgTop" />
@@ -19,17 +20,17 @@ export default function Allin({productos}) {
             </div>
             <div style={{ display: "grid", justifyContent: "center", textAlign: "center", marginTop: "2vh",marginBottom:"6vh" }}>
                 <h1 className='tituloMenu'>MENÚ</h1>
-                <h2 className="stroke">ALL IN</h2>
+                <h2 className="stroke neonText">ALL IN</h2>
                 <h3 style={{ color: "white" }}>MENÚ EXCLUSIVO PARA MESAS CON RESERVA <br></br> & CON SERVICIO DE MOZO</h3>
             </div>
             <div style={{ margin: "4%", display: "flex", flexWrap: "wrap", marginTop: "5%" }}>
                 <div style={{width:"100%",display:"flex",flexWrap:"wrap",marginBottom:"12%"}}>
                 <h2 className="stroke textoCombos">COMBOS</h2>
                 {combos.map((e) => (
-                        <div style={{display:"grid",justifyContent:"center",justifyItems:"center",width:"50%",textAlign:"center"}}>
+                        <div style={{display:"grid",justifyContent:"center",justifyItems:"center",width:"50%",textAlign:"center"}} >
                             <h1 className='trago'>{e.nombre}</h1>
-                            <p>{e.descripcion}</p>
-                            <p>${e.precio}</p>
+                            <p >{e.descripcion}</p>
+                            <p data-aos="fade-left">${e.precio}</p>
                         </div>
                     ))}
                 </div>
@@ -38,7 +39,7 @@ export default function Allin({productos}) {
                     {bottles.map((e) => (
                         <>
                             <p style={{ width: "80%" }}>{e.nombre}</p>
-                            <p style={{ width: "20%" }}>${e.precio}</p>
+                            <p style={{ width: "20%" }} data-aos="fade-left">${e.precio}</p>
                         </>
                     ))}
                 </div>
@@ -48,8 +49,8 @@ export default function Allin({productos}) {
                     <h1 className='textoSobreBorde'>MIXERS</h1>
                     {mixers.map((e) => (
                         <>
-                            <p style={{ width: "70%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }}>${e.precio}</p>
+                            <p style={{ width: "70%" }} >{e.nombre}</p>
+                            <p style={{ width: "10%" }} data-aos="fade-left">${e.precio}</p>
                         </>
                     ))}
                     <img src={imgBottom1} className="imgBottom1"/>

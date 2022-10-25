@@ -17,6 +17,7 @@ function App() {
     );
     AOS.refresh();
   }, []);
+  document.body.style.backgroundColor = "rgb(23 23 24)" ;
   return (
     <BrowserRouter>
       <Routes>

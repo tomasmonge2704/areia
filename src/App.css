@@ -4,7 +4,6 @@
   src: url("./Scandia/Scandia.woff") format("woff");
 }
 body {
-  background-color: rgb(40 40 39) !important;
   font-family: Scandia web Regular !important;
   font-style: normal;
   font-weight: normal;

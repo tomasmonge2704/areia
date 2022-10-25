@@ -10,7 +10,7 @@ export default function Asados({productos}) {
     let cervezas = productos.filter(e => e.categoria == "ASADOS-cervezas")
     let combos = productos.filter(e => e.categoria == "ASADOS-combos bebidas")
     let vinos = productos.filter(e => e.categoria == "ASADOS-vinos")
-    
+    document.body.style.backgroundColor = "rgb(40 40 39)" ;
     return (
             <div className="menu">
             <img src={imgTop} className="imgTop"/>
@@ -22,7 +22,7 @@ export default function Asados({productos}) {
             </div>
             <div style={{ display: "grid", justifyContent: "center", textAlign: "center", marginTop: "2vh" }}>
                 <h1 className='tituloMenu'>MENÚ</h1>
-                <h2 className="stroke">ASADOS</h2>
+                <h2 className="stroke neonText">ASADOS</h2>
             </div>
             <div style={{ margin: "4%", display: "flex", flexWrap: "wrap", marginTop: "5%" }}>
 
@@ -30,8 +30,8 @@ export default function Asados({productos}) {
                     <h1 className='textoSobreBorde'>ADICIONALES</h1>
                     {adicionales.map((e) => (
                         <>
-                            <p style={{ width: "86%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }}>${e.precio}</p>
+                            <p style={{ width: "85%" }}>{e.nombre}</p>
+                            <p style={{ width: "10%" }} data-aos="zoom-out-right">${e.precio}</p>
                         </>
                     ))}
                 </div>
@@ -41,21 +41,21 @@ export default function Asados({productos}) {
                     <h1 className='textoSobreBorde'>POSTRES</h1>
                     {postres.map((e) => (
                         <>
-                            <p style={{ width: "86%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }}>${e.precio}</p>
+                            <p style={{ width: "85%" }}>{e.nombre}</p>
+                            <p style={{ width: "10%" }} data-aos="zoom-out-right">${e.precio}</p>
                         </>
                     ))}
                 </div>
                 <div className='seccionBebidas' style={{ marginTop: "2%", display: 'flex', flexWrap: "wrap", width: "100%"}}>
                     <div style={{ width: "40%" }}>
-                        <h2 className="stroke">BEBIDAS</h2>
+                        <h2 className="stroke ">BEBIDAS</h2>
                         <h1 style={{marginBottom:"0px"}}>CERVEZAS</h1>
                         <img src={linea} style={{width:"82%",marginBottom:"2%"}}/>
                         <div style={{ display: 'flex', flexWrap: "wrap", padding: "1%" }}>
                         {cervezas.map((e) => (
                         <>
                             <p style={{ width: "70%" }}>{e.nombre}</p>
-                            <p style={{ width: "30%" }}>${e.precio}</p>
+                            <p style={{ width: "30%" }} data-aos="zoom-out-right">${e.precio}</p>
                         </>
                     ))}
                         </div>
@@ -67,7 +67,7 @@ export default function Asados({productos}) {
                         {vinos.map((e) => (
                         <>
                             <p style={{ width: "90%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }}>${e.precio}</p>
+                            <p style={{ width: "10%" }} data-aos="zoom-out-right">${e.precio}</p>
                         </>
                     ))}
                     </div>
@@ -81,7 +81,7 @@ export default function Asados({productos}) {
                         {combos.map((e) => (
                         <>
                             <p style={{ width: "65%" }}>{e.nombre}</p>
-                            <p style={{ width: "35%" }}>${e.precio}</p>
+                            <p style={{ width: "35%" }} data-aos="zoom-out-right">${e.precio}</p>
                         </>
                     ))}
                         </div>
