@@ -38,7 +38,8 @@
 .stroke{
 z-index: 1000;
 -webkit-text-stroke: 1px rgb(243 254 52);
-overflow-wrap: break-word;
+word-break: normal;
+overflow-wrap: anywhere;
 font-size: 12vh;
 }
 .textoSobreBorde{

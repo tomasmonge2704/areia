@@ -30,7 +30,7 @@ export default function Allin({productos}) {
                         <div style={{display:"grid",justifyContent:"center",justifyItems:"center",width:"50%",textAlign:"center"}} >
                             <h1 className='trago'>{e.nombre}</h1>
                             <p >{e.descripcion}</p>
-                            <p data-aos="fade-left">${e.precio}</p>
+                            <p >${e.precio}</p>
                         </div>
                     ))}
                 </div>
@@ -39,7 +39,7 @@ export default function Allin({productos}) {
                     {bottles.map((e) => (
                         <>
                             <p style={{ width: "80%" }}>{e.nombre}</p>
-                            <p style={{ width: "20%" }} data-aos="fade-left">${e.precio}</p>
+                            <p style={{ width: "20%" }} >${e.precio}</p>
                         </>
                     ))}
                 </div>
@@ -50,7 +50,7 @@ export default function Allin({productos}) {
                     {mixers.map((e) => (
                         <>
                             <p style={{ width: "70%" }} >{e.nombre}</p>
-                            <p style={{ width: "10%" }} data-aos="fade-left">${e.precio}</p>
+                            <p style={{ width: "10%" }}  >${e.precio}</p>
                         </>
                     ))}
                     <img src={imgBottom1} className="imgBottom1"/>

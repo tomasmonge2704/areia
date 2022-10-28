@@ -31,7 +31,7 @@ export default function Asados({productos}) {
                     {adicionales.map((e) => (
                         <>
                             <p style={{ width: "85%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }} data-aos="zoom-out-right">${e.precio}</p>
+                            <p style={{ width: "10%" }} >${e.precio}</p>
                         </>
                     ))}
                 </div>
@@ -42,7 +42,7 @@ export default function Asados({productos}) {
                     {postres.map((e) => (
                         <>
                             <p style={{ width: "85%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }} data-aos="zoom-out-right">${e.precio}</p>
+                            <p style={{ width: "10%" }} >${e.precio}</p>
                         </>
                     ))}
                 </div>
@@ -55,7 +55,7 @@ export default function Asados({productos}) {
                         {cervezas.map((e) => (
                         <>
                             <p style={{ width: "70%" }}>{e.nombre}</p>
-                            <p style={{ width: "30%" }} data-aos="zoom-out-right">${e.precio}</p>
+                            <p style={{ width: "30%" }} >${e.precio}</p>
                         </>
                     ))}
                         </div>
@@ -67,7 +67,7 @@ export default function Asados({productos}) {
                         {vinos.map((e) => (
                         <>
                             <p style={{ width: "90%" }}>{e.nombre}</p>
-                            <p style={{ width: "10%" }} data-aos="zoom-out-right">${e.precio}</p>
+                            <p style={{ width: "10%" }} >${e.precio}</p>
                         </>
                     ))}
                     </div>
@@ -81,7 +81,7 @@ export default function Asados({productos}) {
                         {combos.map((e) => (
                         <>
                             <p style={{ width: "65%" }}>{e.nombre}</p>
-                            <p style={{ width: "35%" }} data-aos="zoom-out-right">${e.precio}</p>
+                            <p style={{ width: "35%" }} >${e.precio}</p>
                         </>
                     ))}
                         </div>
