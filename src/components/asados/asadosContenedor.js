@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react'
 import Asados from './asados';
 import LoadingSpinner from '../spinner/spinner'
 export default function AsadosContenedor(){
-    const HOST = "https://proyecto-areia.herokuapp.com/";
+    const HOST = "https://areia-backend.onrender.com/";
     let [productos, setProductos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
