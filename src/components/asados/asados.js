@@ -22,7 +22,7 @@ export default function Asados({productos}) {
             </div>
             <div style={{ display: "grid", justifyContent: "center", textAlign: "center", marginTop: "2vh" }}>
                 <h1 className='tituloMenu'>MENÚ</h1>
-                <h2 className="stroke neonText">ASADOS</h2>
+                <h2 className="stroke">ASADOS</h2>
             </div>
             <div style={{ margin: "4%", display: "flex", flexWrap: "wrap", marginTop: "5%" }}>
 

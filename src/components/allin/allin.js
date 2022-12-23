@@ -20,7 +20,7 @@ export default function Allin({productos}) {
             </div>
             <div style={{ display: "grid", justifyContent: "center", textAlign: "center", marginTop: "2vh",marginBottom:"6vh" }}>
                 <h1 className='tituloMenu'>MENÚ</h1>
-                <h2 className="stroke neonText">ALL IN</h2>
+                <h2 className="stroke">ALL IN</h2>
                 <h3 style={{ color: "white" }}>MENÚ EXCLUSIVO PARA MESAS CON RESERVA <br></br> & CON SERVICIO DE MOZO</h3>
             </div>
             <div style={{ margin: "4%", display: "flex", flexWrap: "wrap", marginTop: "5%" }}>
