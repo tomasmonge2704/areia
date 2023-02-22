@@ -1,12 +1,20 @@
-import Imagen from "../../SELECCION_DE_FOTOS/areia 13_11-043.webp";
+import video from "../../videos/video_enero.mp4";
+import fotoInicio from "../../SELECCION_DE_FOTOS/FotoInicioAREIAweb.jpg";
 import appStore from "../../SELECCION_DE_FOTOS/available_on_app_store.webp";
 import playStore from "../../SELECCION_DE_FOTOS/available_on_google_play.webp";
 import ContactoFooter from "../contactoFooter";
+import Sponsors from "./Sponsors";
+import img1 from "../../SELECCION_DE_FOTOS/imgInicio1AREIAweb.jpg";
+import img2 from "../../SELECCION_DE_FOTOS/imgInicio2AREIAweb.jpg";
+import img3 from "../../SELECCION_DE_FOTOS/imgInicio3AREIAweb.jpg";
+
 import './Inicio.css'
 export default function Inicio() {
   return (
     <div>
-      <img className="imgInicio" src={Imagen} style={{ width: "100%",maxHeight:"70vh",objectFit:"cover" }} />
+      <video className="videoInicio" autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+      </video>
       <div
         style={{
           backgroundColor: "white",
@@ -15,6 +23,7 @@ export default function Inicio() {
           justifyContent: "space-around",
           textAlign: "center",
           alignContent: "center",
+          marginTop:"-10px"
         }}
         className='divInicio'
       >
@@ -36,6 +45,12 @@ export default function Inicio() {
           <strong>¡Descargá la app y enterate de todo!</strong>
         </p>
       </div>
+      <div className="contenedorImagenesInicio" style={{backgroundImage: `url(${fotoInicio})`,backgroundSize:"100% 100%"}} >
+      <img src={img1} className="imagenesInicio"/>
+      <img src={img2} className="imagenesInicio"/>
+      <img src={img3} className="imagenesInicio"/>
+      </div>
+      <Sponsors/>
       <ContactoFooter />
     </div>
   );

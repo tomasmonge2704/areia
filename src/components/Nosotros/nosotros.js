@@ -57,6 +57,7 @@ export default function Nosotros() {
     // 👇️ toggle isActive state on click
     setIsActive3((current) => !current);
   };
+  const imagenesCarousel = [Imagen7,Imagen8,Imagen9,Imagen10,Imagen11,Imagen12,Imagen13,Imagen14,]
   return (
     <>
       <div
@@ -339,62 +340,15 @@ export default function Nosotros() {
           className="carouselDiv"
           variant="dark"
         >
-          <Carousel.Item>
+          {imagenesCarousel.map((img) => (
+            <Carousel.Item>
             <img
               className="d-block w-100"
-              src={Imagen7}
+              src={img}
               alt="First slide"
             />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen8}
-              alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen9}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen10}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen11}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen12}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen13}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen14}
-              alt="Third slide"
-            />
-          </Carousel.Item>
+            </Carousel.Item>
+          ))}
         </Carousel>
       </div>
       <ContactoFooter />

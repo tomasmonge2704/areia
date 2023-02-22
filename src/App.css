@@ -245,11 +245,7 @@ a {
 #socialIcons a {
   padding-left: 5px;
 }
-.sponsor {
-  filter: grayscale(1);
-  max-height: 150px;
-  max-width: 100px;
-}
+
 .contenedor {
   padding-top: 8rem;
   padding-left: 12rem;
