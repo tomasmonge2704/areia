@@ -1,4 +1,5 @@
 import video from "../../videos/video_enero.mp4";
+import posterVideoInicio from "../../SELECCION_DE_FOTOS/posterVideoInicio.png"
 import fotoInicio from "../../SELECCION_DE_FOTOS/FotoInicioAREIAweb.jpg";
 import appStore from "../../SELECCION_DE_FOTOS/available_on_app_store.webp";
 import playStore from "../../SELECCION_DE_FOTOS/available_on_google_play.webp";
@@ -12,9 +13,7 @@ import './Inicio.css'
 export default function Inicio() {
   return (
     <div>
-      <video className="videoInicio" autoPlay muted loop>
-        <source src={video} type="video/mp4" />
-      </video>
+      <video className="videoInicio" autoPlay controls muted loop src={video} poster={posterVideoInicio} />
       <div
         style={{
           backgroundColor: "white",

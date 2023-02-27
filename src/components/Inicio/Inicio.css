@@ -52,6 +52,14 @@ and (orientation: portrait) {
         font-size: 12px !important;
         font-weight: 600;
     }
+    .sponsor {
+        max-height: 90px;
+        width: 80px;
+      }
+    .partners {
+        max-height: 70px;
+        width: 65px;
+    }
 }
  
 /* For Mobile Landscape View */

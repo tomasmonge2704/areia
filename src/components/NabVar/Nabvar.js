@@ -36,7 +36,7 @@ export default function Nabvar({ section }) {
             <Nav id="navLogoA">
               <Navbar.Brand
                 href="#home"
-                style={{ width: "12vw", height: "100px" }}
+                style={{ width: "12vw", height: "100px",display:"flex",alignItems:"center" }}
               >
                 <img id="navLogo" src={logo} />
               </Navbar.Brand>
