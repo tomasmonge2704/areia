@@ -3,6 +3,9 @@ import sponsor3 from "../../SELECCION_DE_FOTOS/budweiser.webp";
 import sponsor4 from "../../SELECCION_DE_FOTOS/Logo_TromenAREIAweb.webp";
 import sponsor5 from "../../SELECCION_DE_FOTOS/LOGOS TROWN.jpg";
 import redBull from "../../SELECCION_DE_FOTOS/redBull.png"
+import tblon from "../../SELECCION_DE_FOTOS/logoTblon.png"
+import osde from "../../SELECCION_DE_FOTOS/osde.png"
+
 export default function Sponsors(){
     return(
         <div
@@ -19,15 +22,17 @@ export default function Sponsors(){
           MAIN SPONSORS
         </p>
         <div className="contenedorSponsors">
-          <img className="sponsor" src={sponsor2} />
-          <img className="sponsor" src={redBull} />
           <img className="sponsor" src={sponsor3} />
+          <img className="sponsor" src={sponsor2} />
+          <img className="sponsor" src={osde} />
+          <img className="sponsor" src={redBull} />
         </div>
         <p style={{ marginTop: "3rem", marginBottom: "0px" }}>
           PARTNERS
         </p>
         <div>
           <img className="partners" style={{ maxWidth: "95px",marginRight:"10px",objectFit:"contain" }} src={sponsor4} />
+          <img className="partners" style={{ maxWidth: "90px",marginLeft:"10px",objectFit:"contain",marginTop:"11px" }} src={tblon} />
           <img className="partners" style={{ maxWidth: "90px",marginLeft:"10px",objectFit:"contain",marginTop:"11px" }} src={sponsor5} />
         </div>
       </div>
