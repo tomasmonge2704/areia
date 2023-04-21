@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react'
 import Allin from './allin';
 import LoadingSpinner from '../spinner/spinner'
 export default function AllinContenedor(){
-    const HOST = "https://areia.up.railway.app/";
+    const HOST = "https://areia-backend.onrender.com/";
     let [productos, setProductos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
