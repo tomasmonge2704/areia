@@ -2,9 +2,10 @@ import sponsor2 from "../../SELECCION_DE_FOTOS/sponsor.png";
 import sponsor3 from "../../SELECCION_DE_FOTOS/budweiser.webp";
 import sponsor4 from "../../SELECCION_DE_FOTOS/Logo_TromenAREIAweb.webp";
 import sponsor5 from "../../SELECCION_DE_FOTOS/LOGOS TROWN.jpg";
-import redBull from "../../SELECCION_DE_FOTOS/redBull.png"
+import bplay from "../../SELECCION_DE_FOTOS/bplay.png"
 import tblon from "../../SELECCION_DE_FOTOS/logoTblon.png"
-import osde from "../../SELECCION_DE_FOTOS/osde.png"
+import osde from "../../SELECCION_DE_FOTOS/osde.png";
+import umbro from "../../SELECCION_DE_FOTOS/umbro.png";
 
 export default function Sponsors(){
     return(
@@ -25,7 +26,9 @@ export default function Sponsors(){
           <img className="sponsor" src={sponsor3} />
           <img className="sponsor" src={sponsor2} />
           <img className="sponsor" src={osde} />
-          <img className="sponsor" src={redBull} />
+          <img className="sponsor" src={bplay} />
+          <img className="sponsor" src={umbro} />
+
         </div>
         <p style={{ marginTop: "3rem", marginBottom: "0px" }}>
           PARTNERS
