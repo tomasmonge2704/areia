@@ -24,11 +24,11 @@ export default function Sponsors() {
         <a href="https://www.budweiser.com.ar/" target="_blank">
           <img className="sponsor" src={sponsor3} alt="Sponsor 1" />
         </a>
-        <a href="https://gatorade.lat/ar/" target="_blank">
-          <img className="sponsor" src={sponsor2} alt="Sponsor 2" />
-        </a>
         <a href="https://www.osde.com.ar/conoce-osde" target="_blank">
           <img className="sponsor" src={osde} alt="Sponsor 3" />
+        </a>
+        <a href="https://gatorade.lat/ar/" target="_blank">
+          <img className="sponsor" src={sponsor2} alt="Sponsor 2" />
         </a>
         <a href="https://www.bplay.bet.ar/" target="_blank">
           <img className="sponsor" src={bplay} alt="Sponsor 4" />
