@@ -1,4 +1,4 @@
-import video from "../../videos/video_enero.mp4";
+import video from "../../videos/video_web_nuevo.mov";
 import posterVideoInicio from "../../SELECCION_DE_FOTOS/posterVideoInicio.png"
 import fotoInicio from "../../SELECCION_DE_FOTOS/FotoInicioAREIAweb.jpg";
 import appStore from "../../SELECCION_DE_FOTOS/available_on_app_store.webp";
