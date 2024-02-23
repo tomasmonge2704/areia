@@ -28,10 +28,10 @@ export default function Inicio() {
       >
         <p style={{ color: "black", fontSize: "30px" }}>AREIA APP</p>
         <div className="storeButton">
-          <a href="https://apps.apple.com/ar/app/areia/id1437104821" style={{ marginRight: "10px"}} target="_blank">
+          <a href="https://apps.apple.com/app/areia/id6478087598" style={{ marginRight: "10px"}} target="_blank">
           <img src={appStore}/>
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.fansbury.AREIA&hl=es-419" style={{ marginLeft: "10px"}} target="_blank">
+          <a href="https://play.google.com/store/apps/details?id=com.ibaires.areia" style={{ marginLeft: "10px"}} target="_blank">
           <img src={playStore}/>
           </a>
         </div>
@@ -51,6 +51,7 @@ export default function Inicio() {
       </div>
       <Sponsors/>
       <ContactoFooter />
+      <div style={{color:"white", textAlign:"center", margin:"3%",marginBottom:"2rem"}}>Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados</div>
     </div>
   );
 }
