@@ -1,238 +1,119 @@
-.divCasamiento div {
-  height: 100%;
-  grid-gap: 16px;
-  justify-items: start;
-  width: 100%;
-  align-items: center;
-  align-content: center;
-}
-.divEventosHome h1{
-  font-size: 35px;
-}
-.divCasamiento img {
-  position: absolute;
-  left: 12vw;
-  width: 41vw;
-  transform: translate(0%,6%);
-}
-.divEventosHome img{
-height: 3vw;
-}
-.divFormulario{
-  width: 100%;
-  height: 70vh;
-  background-color: white;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-}
-.form{
-  margin: 0%;
-  width: 140%;
-  border-radius: 0% 45px 0% 45px;
-  background-color: rgb(23 23 24) !important;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-.form h1{
+/* Asegúrate de que las imágenes se ajusten correctamente */
+.eventos-section {
   color: white;
+  padding: 0;
 }
-.form p{
+.bold {
+  font-weight: bold;
+}
+.tituloVenue {
+  font-size: 4.7rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.tituloVenue2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.distintos {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.eventos-descripcion {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  padding: 2px;
+}
+.borde {
+  border-radius: 10px;
+}
+.carrousel-descripcion {
+  font-size: 2.5rem;
+}
+.seccion-blanco {
+  background-color: #fff;
+  color: black;
+}
+.eventos-boton {
+  background-color: #fae94e; /* Ajusta el color si es necesario */
+  border: none;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.eventos-boton:hover {
+  background-color: #ffdd00; /* Cambia ligeramente el color al pasar por encima */
+}
+
+.eventos-logo {
+  scale: 180%;
+  width: 20%;
+  height: auto; /* Ajusta la altura según necesites */
+}
+
+/* Contenedor de la imagen de fondo */
+.eventos-imagen-container {
+  padding: 0px;
+}
+
+.eventos-imagen {
+  width: 100%;
+  height: auto;
+}
+
+/* Tamaño proporcional al ancho de la pantalla */
+.tituloVenue {
+  font-size: 5vw; /* Ajusta dinámicamente según el ancho de la ventana */
+}
+
+/* Corrige el tamaño para pantallas más grandes */
+@media (max-width: 900px) {
+  .tituloVenue {
+    font-size: 4rem;
+  }
+  .eventos-descripcion {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+  .eventos-boton {
+    margin-top: 10px;
+    height: 4rem;
+  }
+}
+
+/* Nueva Sección "Coleccioná momentos" */
+.momentos-section {
+  position: relative;
+  background-image: url('/public/momentos.webp'); /* Ajusta la ruta según corresponda */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
   color: white;
-}
-.botonSeguinos{
-  bottom: 6.95vw;
-}
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-  .nuestroEspacio {
-    display: flex;
-    justify-content: space-between;
-  }
-  .divCasamiento div {
-    padding: 6vw 12vh 4vw 15vh;
-  }
-  
+  text-align: left;
 }
 
-/* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+.social-icon {
+  color: white;
+  font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+  margin: 0 10px; /* Espacio horizontal entre iconos */
+  text-decoration: none; /* Elimina subrayado en enlaces */
 }
 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .carousel-dark .carousel-indicators [data-bs-target]{
-    height: 14px !important;
-    width: 14px !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-    border: none !important;
-  }
-
-  .form{
-    width: 95%;
-    padding: 2%;
-  }
-  .botonSeguinos{
-    bottom: 3.2vh;
-  }
-  .divEventosHome {
-    height: 50vh !important;
-  }
-  .nuestroEspacio {
-    height: 64vh !important;
-  }
-  .eventosAbout {
-    height: 90vw !important;
-    padding: 5%;
-  }
-  .nuestroEspacio-img {
-    position: absolute;
-    opacity: 0.4;
-    background-size: 100% 100% !important;
-    height: 64vh !important;
-    width: 100% !important;
-    object-fit: cover;
-  }
-  .divCasamiento {
-    height: 64vh !important;
-    margin: 0 8% 0% 8% !important;
-  }
-  .imgCasamiento {
-    position: absolute !important;
-    z-index: -1;
-    width: 100% !important;
-    height: 64vh;
-    left: 0 !important;
-    top: initial !important;
-    opacity: 0.4;
-    transform: translate(0%, 0%) !important;
-    object-fit: cover;
-  }
-  .divCasamiento div {
-    color: white !important;
-    z-index: 10;
-    background-color: unset !important;
-    padding: 0 0 0 0 !important;
-  }
-  .divOrg {
-    height: 130vh;
-    display: grid !important;
-    width: 100%;
-  }
-  .contt2 {
-    width: 100% !important;
-    height: 50vh !important;
-  }
-  .contt img {
-    height: 80vw !important;
-    width: 80% !important;
-    border-radius: 6%;
-  }
-  .nuestroEspacio-text h1{
-    font-size: 25px !important;
-  }
-  .nuestroEspacio-text p{
-    font-size: 14px !important;
-  }
-  .contt h1 {
-    font-size: 15px;
-  }
-  .divEventosHome h1{
-    font-size: 20px;
-  }
-  .divCasamiento div {
-    padding: 2vw 12vh 4vw 15vh;
-  }
-  .divEventosHome img{
-    height: 16px;
-    }
-    .nuestroEspacio-text{
-      padding: 13% 8% 10% 8% !important;
-    }
-  .botonEventosMail{
-    bottom: 29vw !important;
-  }
-  .divEventosHome img{
-    height: 4vh;
-    }
-}
-/* For Noteboock View */
-  @media screen and (max-height: 800px)
-  and (max-width: 1600px) and (orientation:landscape)  {
-  .divEventosHome{
-    height: 65vh !important;
-  }
-  .divCasamiento{
-    height: 65vh !important;
-  }
-  .imgCasamiento{
-    height: 57vh;
-    left: 10vw !important;
-  }
-  .nuestroEspacio-text p{
-    font-size: 14px !important;
-  }
-  .nuestroEspacio-text h2{
-    font-size: 16px !important;
-  }
-  .nuestroEspacio-text h1{
-    font-size: 32px !important;
-  }
-  .divOrg {
-    height: 107vh !important;
-    
-}
-.ofrecemos{
-  height: 50vh;
-}
-.fotos4x4{
-  padding: 9%;
-}
-.eventos4x4Cont {
-height: 54vw;
-}
-.botonEventosMail{
-  bottom: 29vw  !important;
-}
-.botonSeguinos{
-  bottom: 6.9vw;
-}
-  }
-/* For ultrawide screen View */
-@media screen and (min-width: 1920px){
-  .nuestroEspacio-img{
-    width: 105% !important;
-  }
-  .imgCasamiento{
-    height: 49vh;
-  } 
-  .divCasamiento{
-    margin: 9vh 10vw 9vh 49vw !important;
-    height: 55vh !important;
-  }
-  .divCasamiento div {
-    padding: 6vw 12vh 4vw 18vh;
-}
-}
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
+.social-icon i {
+  transition: color 0.3s; /* Transición suave al cambiar de color */
 }
 
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+.social-icon:hover i {
+  color: #ccc; /* Cambia el color al pasar el cursor */
 }

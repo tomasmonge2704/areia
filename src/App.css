@@ -1,7 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @font-face {
-  font-family: "Scandia web Regular";
-  src: url("./Scandia/Scandia.woff") format("woff");
+  font-family: 'Scandia web Regular';
+  src: url('./Scandia/Scandia.woff') format('woff');
 }
 body {
   font-family: Scandia web Regular !important;
@@ -11,25 +11,26 @@ body {
 .padding {
   padding: 4rem;
 }
-.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon{
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
   filter: none !important;
 }
-.carousel-control-next-icon{
+.carousel-control-next-icon {
   background-color: black;
   border-radius: 34%;
   height: 2.5rem !important;
   padding: 5%;
 }
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
   background-color: black;
   border-radius: 34%;
   height: 2.5rem !important;
   padding: 5%;
 }
-.carousel-dark .carousel-indicators [data-bs-target]{
+.carousel-dark .carousel-indicators [data-bs-target] {
   border: 0.7px solid #ffffff0f;
   border-radius: 18% !important;
-  height:1rem !important;
+  height: 1rem !important;
   margin-left: 8px !important;
   margin-right: 8px !important;
 }
@@ -43,8 +44,14 @@ body {
   align-items: center;
   height: 40rem;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 34% 100%, 34% 100%, 34% 100%;
-  background-position: left center, center center, right center;
+  background-size:
+    34% 100%,
+    34% 100%,
+    34% 100%;
+  background-position:
+    left center,
+    center center,
+    right center;
 }
 .nosotrosGaleria {
   display: flex;
@@ -52,8 +59,14 @@ body {
   align-items: center;
   height: 40rem;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 25% 100%, 50% 100%, 25% 100%;
-  background-position: left center, center center, right center;
+  background-size:
+    25% 100%,
+    50% 100%,
+    25% 100%;
+  background-position:
+    left center,
+    center center,
+    right center;
 }
 .titulo {
   font-size: 78px;
@@ -191,7 +204,7 @@ strong {
 a {
   text-decoration: none !important;
 }
-.fa-instagram {
+.instagram {
   color: rgb(23 23 24);
   background-color: #c3d900;
   height: 30px;
@@ -210,7 +223,9 @@ a {
 .homeVideos video {
   object-fit: cover;
   border-radius: 25px;
-  box-shadow: 16px 16px 32px #181818, -16px -16px 32px #202020;
+  box-shadow:
+    16px 16px 32px #181818,
+    -16px -16px 32px #202020;
   width: 30%;
   filter: grayscale(1);
   border: 3.5px solid rgb(245, 255, 53);
@@ -231,7 +246,7 @@ a {
   align-items: center;
   border-radius: 50px;
 }
-.fa-instagram:hover {
+.instagram:hover {
   background-color: white;
 }
 .fa-phone:hover {
@@ -379,12 +394,24 @@ a {
     margin: 0 !important;
   }
   .nosotrosHome {
-    background-size: 100% 34%, 100% 34%, 100% 34%;
-    background-position: top center, center center, bottom center;
+    background-size:
+      100% 34%,
+      100% 34%,
+      100% 34%;
+    background-position:
+      top center,
+      center center,
+      bottom center;
   }
   .nosotrosGaleria {
-    background-size: 100% 34%, 100% 34%, 100% 34%;
-    background-position: top center, center center, bottom center;
+    background-size:
+      100% 34%,
+      100% 34%,
+      100% 34%;
+    background-position:
+      top center,
+      center center,
+      bottom center;
   }
   .datos {
     height: 20rem;
@@ -469,7 +496,9 @@ a {
 }
 #contact-form {
   border-radius: 37px;
-  box-shadow: 16px 16px 32px #181818, -16px -16px 32px #202020;
+  box-shadow:
+    16px 16px 32px #181818,
+    -16px -16px 32px #202020;
 }
 .nosotrosInfo p,
 strong {
@@ -504,7 +533,7 @@ strong {
     padding: 9% 2% 9% 2%;
     bottom: 20vw;
   }
-  #bottone1{
+  #bottone1 {
     padding-top: 14px;
   }
   .navbar-nav {

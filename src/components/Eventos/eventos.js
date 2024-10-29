@@ -1,308 +1,358 @@
-import ContactoFooter from "../contactoFooter";
-import imagenHome from "../../SELECCION_DE_FOTOS/eventosHome.webp";
-import logoVenue from "../../SELECCION_DE_FOTOS/Areia-VENUE-01.png";
-import imagen2 from "../../SELECCION_DE_FOTOS/espacioAeria.webp";
-import imagen3 from "../../SELECCION_DE_FOTOS/casamientoAeria.webp";
-import imagen4 from "../../SELECCION_DE_FOTOS/fotoEventos1.webp";
-import imagen5 from "../../SELECCION_DE_FOTOS/fotoEventos2.webp";
-import img1x4 from "../../SELECCION_DE_FOTOS/foto1x4.webp"
-import img3x4 from "../../SELECCION_DE_FOTOS/foto2x4.webp"
-import img2x4 from "../../SELECCION_DE_FOTOS/foto3x4.webp"
-import img4x4 from "../../SELECCION_DE_FOTOS/foto4x4.webp"
-import Imagen8 from "../../SELECCION_DE_FOTOS/F&C-310.webp";
-import Imagen9 from "../../SELECCION_DE_FOTOS/F&C-3.webp";
-import Imagen10 from "../../SELECCION_DE_FOTOS/imagenAgrupada.webp";
-import Imagen11 from "../../SELECCION_DE_FOTOS/DSC00872 (1).webp";
-import Imagen12 from "../../SELECCION_DE_FOTOS/DSC00857 (1).webp";
-import Imagen13 from "../../SELECCION_DE_FOTOS/DSC00845 (1).webp";
-import Imagen15 from "../../SELECCION_DE_FOTOS/areia1106-evento-18 (1).webp";
-import Imagen16 from "../../SELECCION_DE_FOTOS/areia1106-evento-16 (1).webp";
-import Imagen17 from "../../SELECCION_DE_FOTOS/areia1106-evento-01 (2).webp";
-import './Eventos.css'
-import Form from 'react-bootstrap/Form';
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { Carousel } from "react-bootstrap";
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import './Eventos.css';
+
+const importAll = (requireContext) => requireContext.keys().map(requireContext);
+const images = importAll(
+  require.context('../../../public/Carrousell', false, /\.(jpg|jpeg|png)$/)
+);
 
 export default function Eventos() {
-  const form = useRef();
-  const [show, setShow] = useState(true);
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_0wz35n1', 'template_zscz0t8', form.current, '_XsM333Nru3CR72JN')
-      .then((result) => {
-        setShow(false)
-      }, (error) => {
-        console.log(error.text);
-      });
-  };
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${imagenHome})`,
-          backgroundSize: "cover",
-          height: "55vh",
-          display: "grid",
-          justifyContent: "space-around",
-          alignItems: "center",
-          alignContent: "center",
-          justifyItems: "center",
-          textAlign: "center",
-        }}
-        className='divEventosHome'
-      >
-        <h1 style={{ color: "white", fontWeight: "200", margin: "0" }}>
-          SÓLO TENÉS QUE DISFRUTAR.
-        </h1>
-        <img src={logoVenue} />
-      </div>
-      <div
-        className="eventosAbout"
-        style={{
-          backgroundColor: "white",
-          height: "25vw",
-          display: "grid",
-          textAlign: "center",
-          alignItems: "center",
-          alignContent: "center",
-        }}
-      >
-        <strong style={{ fontSize: "15px" }}>ABOUT US</strong>
-        <p style={{ fontSize: "17px", marginTop: "2%" }}>
-          AREIA es una empresa con{" "}
-          <strong style={{ fontSize: "17px" }}>
-            más de 10 años de experiencia
-          </strong>
-          <br />
-          en la organización de eventos tanto sociales como corporativos.
-          <br />
-          <br />
-          Queremos que cada persona que nos visita <br /> se lleve de recuerdo
-          una experiencia inolvidable.
-          <br />
-          <br />
-          Trabajamos en cada detalle y con dedicación para que tu evento sea un
-          exito.
-        </p>
-      </div>
-      <div className="nuestroEspacio">
-        <div
-          className="nuestroEspacio-text"
+      <section className="eventos-section">
+        <Container fluid className="text-center">
+          <Row className="justify-content-center align-items-center">
+            <Col
+              xs={12}
+              md={6}
+              className="d-flex flex-column align-items-center mb-3 mb-md-0"
+            >
+              <img
+                src="/logoVenue.webp"
+                alt="logo en Areia Venue"
+                className="eventos-logo"
+              />
+              <h1 className="tituloVenue">
+                EVENTOS <span className="distintos">DISTINTOS</span>
+              </h1>
+              <h2 className="eventos-descripcion">
+                Trabajamos con dedicación en cada detalle
+                <br />
+                para que tu evento sea único.
+              </h2>
+              <button className="eventos-boton" style={{ marginTop: '15px' }}>
+                más información
+              </button>
+            </Col>
+            <Col xs={12} md={6} className="p-0">
+              <div className="eventos-imagen-container">
+                <img
+                  src="/1.png"
+                  alt="Evento en Areia Venue"
+                  className="eventos-imagen"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="momentos-section">
+        <Container fluid className="p-5">
+          <Row className="justify-content-start">
+            <Col xs={12} md={6}>
+              <h1 className="tituloVenue2">
+                Coleccioná <br /> momentos, no cosas.
+              </h1>
+            </Col>
+          </Row>
+          <Row className="justify-content-end mt-4">
+            <Col xs={12} md={6}>
+              <p className="eventos-descripcion">
+                AREIA es una empresa con más de 10 <br /> años de experiencia en
+                la organización de eventos <br /> tanto sociales como
+                corporativos.
+              </p>
+              <button style={{ marginTop: '10px' }} className="eventos-boton">
+                Pedir presupuesto
+              </button>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="seccion-blanco">
+        <Container fluid className="p-5 text-center">
+          <Row>
+            <h2 className="carrousel-descripcion">
+              Un espacio en medio de la naturaleza{' '}
+              <strong className="carrousel-descripcion">
+                a solo 35 km de CABA
+              </strong>{' '}
+              que te ofrece todo lo que necesitás: propuesta gastronómica,
+              barra, ambientación, planner de AREIA a cargo del evento ¡y mucho
+              más!
+            </h2>
+          </Row>
+          <Row className="mt-4" style={{ padding: '3%' }}>
+            <Carousel style={{ maxHeight: '50vh', overflow: 'hidden' }}>
+              {images.map((image, index) => (
+                <Carousel.Item key={image} style={{ height: '50vh' }}>
+                  <img
+                    className="d-block w-100"
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    style={{ height: '100%', objectFit: 'cover' }}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </Row>
+        </Container>
+      </section>
+      <section className="seccion-blanco">
+        <Container fluid style={{ padding: '6%' }}>
+          <Row className="w-100">
+            <Col xs={12} md={4}>
+              <img
+                src="/eventos1.jpg"
+                alt="Evento en Areia Venue"
+                className="eventos-imagen borde"
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <img
+                src="/eventos2.jpg "
+                alt="Evento en Areia Venue"
+                className="eventos-imagen borde"
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <img
+                src="/eventos3.jpg"
+                alt="Evento en Areia Venue"
+                className="eventos-imagen borde"
+              />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="seccion-blanco">
+        <Container fluid className="text-center">
+          <Row>
+            <Col
+              xs={12}
+              md={5}
+              style={{
+                backgroundColor: '#807046',
+                color: 'white',
+                padding: '4%',
+              }}
+            >
+              <h1 className="tituloVenue2">Corporativo</h1>
+              <img
+                src="/2.png"
+                alt="Evento en Areia Venue"
+                style={{ width: '100%', objectFit: 'cover' }}
+              />
+              <Row className="text-start p-4">
+                <h2 className="eventos-descripcion bold">TEAM BUILDING</h2>
+                <p style={{ width: '80%' }}>
+                  Actividades divertidas y distendidas para tu empresa. El
+                  objetivo es fomentar el trabajo en equipo y mejorar las
+                  relaciones interpersonales.
+                </p>
+              </Row>
+            </Col>
+            <Col xs={12} md={7} className="text-start">
+              <Row style={{ alignItems: 'center' }}>
+                <Col>
+                  <img
+                    src="/3.png"
+                    alt="Evento en Areia Venue"
+                    style={{ width: '100%', objectFit: 'cover' }}
+                  />
+                </Col>
+                <Col>
+                  <h2 className="eventos-descripcion bold">ACTIVIDADES</h2>
+                  <p style={{ width: '70%' }}>
+                    Actividades deportivas coordinadas por miembros de nuestro
+                    staff + distintas actividades recreativas disponibles
+                    durante todo el evento.
+                  </p>
+                </Col>
+              </Row>
+              <Row style={{ alignItems: 'center' }}>
+                <Col>
+                  <img
+                    src="/4.png"
+                    alt="Evento en Areia Venue"
+                    style={{ width: '100%', objectFit: 'cover' }}
+                  />
+                </Col>
+                <Col>
+                  <h2 className="eventos-descripcion bold">CATERING & BARRA</h2>
+                  <p style={{ width: '70%' }}>
+                    Nuestra propuesta incluye catering a lo largo de todo el
+                    evento, y un after party opcional.
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="seccion-blanco">
+        <Container fluid style={{ padding: '10%' }}>
+          <Row>
+            <h2
+              style={{
+                position: 'relative',
+                top: '45px',
+                fontSize: '6rem',
+                fontWeight: '1000',
+              }}
+            >
+              Sociales
+            </h2>
+          </Row>
+          <Row>
+            <Col
+              xs={12}
+              md={6}
+              style={{ display: 'grid', justifyItems: 'center' }}
+            >
+              <img
+                src="/boda.jpg"
+                alt="Evento en Areia Venue"
+                style={{
+                  width: '100%',
+                  height: '70vh',
+                  objectFit: 'cover',
+                  borderRadius: '7%',
+                }}
+              />
+              <Row
+                style={{
+                  backgroundColor: '#171718',
+                  color: 'white',
+                  padding: '3%',
+                  borderRadius: '30px',
+                  width: '70%',
+                  position: 'relative',
+                  bottom: '5rem',
+                }}
+              >
+                <h2 className="eventos-descripcion bold">CASAMIENTOS</h2>
+                <p>
+                  Te acompañamos en el camino a este día tan especial con una
+                  ejecutiva de AREIA a cargo de todo el evento para que ustedes
+                  solo se ocupen de DISFRUTAR!
+                </p>
+              </Row>
+            </Col>
+            <Col
+              xs={12}
+              md={6}
+              style={{ display: 'grid', justifyItems: 'center' }}
+            >
+              <img
+                src="/DSC02042.jpg"
+                alt="Evento en Areia Venue"
+                style={{
+                  width: '100%',
+                  objectFit: 'cover',
+                  height: '70vh',
+                  borderRadius: '7%',
+                }}
+              />
+              <Row
+                style={{
+                  backgroundColor: '#fae94f',
+                  padding: '3%',
+                  borderRadius: '30px',
+                  width: '70%',
+                  position: 'relative',
+                  bottom: '5rem',
+                }}
+              >
+                <h2 className="eventos-descripcion bold">
+                  CUMPLEAÑOS & FIESTAS
+                </h2>
+                <p>
+                  Noches únicas con una propuesta increíble de catering, barra y
+                  DJ -y más- para que disfrutes con tus invitados.
+                </p>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container
+          fluid
+          className="text-center"
           style={{
-            height: "100%",
-            display: "grid",
-            padding: "13% 10% 10% 12%",
-            alignContent: "center",
-            color: "white",
+            padding: '6%',
+            height: '80vh',
+            alignContent: 'center',
+            backgroundImage: `
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(./DSC02017.jpg)
+          `,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
-          <h2 style={{ fontSize: "1.13em", fontWeight: "500" }}>
-            NUESTRO ESPACIO
-          </h2>
-          <h1 style={{ fontSize: "2.5em", fontWeight: "200" }}>
-            CONTAMOS CON UN<br /> AMBIENTE ATRACTIVO <br /> Y NATURAL.
-          </h1>
-          <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
-            Las más de 5 hectareas de espacio verde son ideales para
-            desconectarse de la rutina y vivir <br /> una experiencia unica.
+          <p style={{ color: 'white', fontSize: '2rem' }}>
+            Más de 5 hectáreas de espacio verde, ideales para desconectarse{' '}
+            <br /> de la rutina y vivir una experiencia única.
+            <br /> * <br /> La versatilidad de nuestras instalaciones permite
+            que nos <br /> podamos adaptar perfectamente al tamaño del evento a
+            realizar.
           </p>
-          <p style={{ fontSize: "1.3em", fontWeight: "200" }}>
-            La versatilidad de nuestras instalaciones permite que nos podamos
-            adaptar perfectamente al tamaño del evento a realizar.
-          </p>
-        </div>
-        <img
-          className="nuestroEspacio-img"
-          src={imagen2}
-          style={{
-            height: "100%",
-            width: "53%",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-      </div>
-      <div
-        className="divCasamiento"
-        style={{
-          height: "50vh",
-          margin: "9vh 10vw 9vh 46.5vw",
-          alignItems: "center",
-        }}
-      >
-        <img className="imgCasamiento" src={imagen3} />
-        <div
-          style={{
-            backgroundColor: "white",
-            color: "black",
-            display: "grid",
-            alignContent: "center",
-          }}
+        </Container>
+      </section>
+      <footer>
+        <Container
+          className="text-center"
+          style={{ color: 'white', height: '35rem' }}
         >
-          <h2 style={{ fontSize: "15px", fontWeight: "600" }}>UBICACIÓN</h2>
-          <h1 style={{ fontSize: "3em", fontWeight: "100" }}>
-            AREIA SIEMPRE ESTUVO CERCA.
-          </h1>
-          <p style={{ fontSize: "1.4em", fontWeight: "400", color: "black" }}>
-            A 35km de Capital Federal con fácil y rápido acceso en una zona
-            segura rodeada de barrios cerrados.
-          </p>
-          <a href="https://www.google.com/maps/place/AREIA/@-34.4241246,-58.7635257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9f15237e7635:0x1c84373c9462bdd2!8m2!3d-34.424129!4d-58.761337?shorturl=1" target="_blank">
-            <button id="bottone1">
-              <strong style={{ fontWeight: "600" }}>VER MAPA</strong>
-            </button>
-          </a>
-        </div>
-      </div>
-      <div className="divOrg">
-        <div className="contt" style={{ height: "100%", display: "grid", backgroundColor: "white", color: "black", width: "47vw", alignItems: "center", justifyItems: "center", padding: "3%", textAlign: "center" }}>
-          <h1>
-            TENEMOS UN EQUIPO QUE SE ENCARGA <br /> DE TODOS LOS ASPECTOS DE TU EVENTO.
-          </h1>
-          <img src={imagen4} style={{ height: "31vw", width: "58%", objectFit: "cover", borderRadius: "5%", margin: "10px" }} />
-          <h1>LA ORGANIZACIÓN, COORDINACIÓN<br /> Y ASESORAMIENTO REQUERIDO.</h1>
-          <p> Realizamos Eventos Sociales y Corporativos, sintiéndolos<br /> propio acompaniando al cliente en todos los pasos a dar.</p>
-        </div>
-        <img src={imagen5} className="contt2" style={{ height: "100%", width: "53vw", objectFit: "cover" }} />
-      </div>
-      <div className="ofrecemos" style={{ display: "grid", textAlign: "center" }} >
-        <h1>OFRECEMOS</h1>
-        <p>Estacionamiento privado para más de 500 autos <br />Seguridad privada<br />Catering<br />Tecnica/Iluminación & DJs<br />Servicio de coctelería<br />Event Planner</p>
-      </div>
-      <div className="eventos4x4Cont" >
-        <div className="fotos4x4" style={{ width: "100%" }}>
-          <img src={img1x4} />
-          <img src={img2x4} />
-          <img src={img3x4} />
-          <img src={img4x4} />
-        </div>
-      </div>
-      <div className="divFormulario">
-        <div className="form">
-          {show ? (<>
-            <h1>CONTACTO</h1>
-            <p>Dejanos tu nombre, fecha solicitada, cantidad de personas y tipo de evento a realizar.</p>
-            <div>
-              <Form ref={form} onSubmit={sendEmail}>
-                <div style={{ display: 'flex', width: '100%', justifyContent: 'center', height: '100%' }}>
-                  <div style={{ width: '48%', marginRight: '2%', height: '100%' }}>
-                    <Form.Control className="mb-3" name="from_name" type="text" placeholder="Nombre" />
-                    <Form.Control className="mb-3" type="text" name="from_telefono" placeholder="Telefono" />
-                    <Form.Group controlId="formBasicEmail">
-                      <Form.Control type="email" pattern="[^ @]*@[^ @]*"
-                        required placeholder="Mail" name="user_email" />
-                    </Form.Group>
-                  </div>
-                  <div style={{ width: '48%' }}>
-                    <Form.Group className="h-100" controlId="exampleForm.ControlTextarea1">
-                      <Form.Control className="h-100" as="textarea" placeholder="Mensaje" rows={3} name="message" />
-                    </Form.Group>
-                  </div>
-                </div>
-                <button className="mt-4" id="bottone1">
-                  <strong>Enviar</strong>
-                </button>
-              </Form>
-            </div>
-          </>) : (<>
-            <p>¡Gracias por tu consulta! Nos estaremos comunicando a la brevedad...</p>
-            <button className="mt-5" style={{marginLeft:'30%',marginRight:'30%'}} id="bottone1" onClick={() => setShow(true)}>
-                  <strong>Volver</strong>
-                </button>
-          </>)}
-
-        </div>
-        <div className="botonSeguinos" style={{ width: "100%", display: "flex", justifyContent: "center",backgroundColor:'white'}}>
-        <a href="https://www.instagram.com/areiavenue/" className="eventosButton" target="_blank">
-          <button id="bottone1" style={{ borderRadius: "0px", margin: '0' }}>
-            <p style={{ fontWeight: "200", fontSize: "18px", margin: '0' }}>Seguinos en instagram</p>
-            <strong style={{ fontSize: "15px" }}>@areiavenue</strong>
-          </button>
-        </a>
-      </div>
-      </div>
-      <div style={{ textAlign: "center"}}>
-        <h1
-          style={{
-            paddingBottom: "5%",
-            paddingTop: "5%",
-            color: "rgb(243 255 51)",
-            fontWeight: "200",
-          }}
-        >
-          GALERÍA
-        </h1>
-        <Carousel
-          className="carouselDiv"
-          variant="dark"
-        >
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen8}
-              alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen9}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen10}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen11}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen12}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen13}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen15}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen16}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={Imagen17}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <ContactoFooter section="venue" />
+          <Row className="h-100 justify-content-center align-items-center">
+            <Col className="d-flex flex-column align-items-center gap-3">
+              <h2 className="bold" style={{ fontSize: '4rem' }}>
+                AREIA SIEMPRE <br /> ESTUVO CERCA.
+              </h2>
+              <p style={{ fontSize: '20px' }}>
+                A 35km de Capital Federal con fácil y rápido acceso en una zona{' '}
+                <br />
+                segura rodeada de barrios cerrados.
+              </p>
+              <button className="eventos-boton">VER MAPA</button>
+              <p className="mt-4" style={{ fontSize: '20px' }}>
+                Seguinos
+              </p>
+              <Row
+                className="justify-content-center"
+                style={{ flexWrap: 'nowrap' }}
+              >
+                <a
+                  href="https://www.instagram.com/areiafutbol/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-icon"
+                >
+                  <i className="fa fa-facebook" />{' '}
+                </a>
+                <a
+                  href="https://wa.link/u3nof1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-icon"
+                >
+                  <i className="fa fa-twitter" />{' '}
+                </a>
+                <a
+                  href="https://www.instagram.com/areiafutbol/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-icon"
+                >
+                  <i className="fa fa-instagram" />{' '}
+                </a>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
     </>
   );
 }
