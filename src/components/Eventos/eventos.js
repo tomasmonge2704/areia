@@ -62,7 +62,13 @@ export default function Eventos() {
                 la organización de eventos <br /> tanto sociales como
                 corporativos.
               </p>
-              <button style={{ marginTop: '10px' }} className="eventos-boton">
+              <button
+                style={{ marginTop: '10px' }}
+                className="eventos-boton"
+                onClick={() =>
+                  window.open('https://wa.me/+5491134022431', '_blank')
+                }
+              >
                 Pedir presupuesto
               </button>
             </Col>
@@ -82,10 +88,10 @@ export default function Eventos() {
               más!
             </h2>
           </Row>
-          <Row className="mt-4" style={{ padding: '3%' }}>
-            <Carousel style={{ maxHeight: '50vh', overflow: 'hidden' }}>
+          <Row className="mt-4">
+            <Carousel style={{ maxHeight: '65vh', overflow: 'hidden' }}>
               {images.map((image, index) => (
-                <Carousel.Item key={image} style={{ height: '50vh' }}>
+                <Carousel.Item key={image} style={{ height: '65vh' }}>
                   <img
                     className="d-block w-100"
                     src={image}
@@ -95,6 +101,49 @@ export default function Eventos() {
                 </Carousel.Item>
               ))}
             </Carousel>
+          </Row>
+        </Container>
+      </section>
+      <section className="imgFondo1">
+        <Container fluid className="text-center contOfrece">
+          <Row className="justify-content-center">
+            <Col
+              xs={12}
+              md={2}
+              className="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div
+                className="offer-box bg-yellow h-100 d-flex flex-column justify-content-center align-items-center"
+                style={{ height: '100%' }}
+              >
+                <h3 className="text-center">Qué te ofrecemos</h3>
+              </div>
+            </Col>
+            <Col
+              xs={12}
+              md={10}
+              className="d-flex flex-wrap justify-content-center"
+            >
+              {[
+                'Estacionamiento privado +500 autos',
+                'Seguridad privada',
+                'Catering & barra',
+                'DJ & técnica e iluminación',
+                'Actividades deportivas',
+                'Event Planner y más!',
+              ].map((feature, index) => (
+                <Col xs={5} md={3} className="feature-box" key={feature}>
+                  <div className="feature-content">
+                    <img
+                      src={`/sinFondo/${index + 1}.png`}
+                      style={{ height: '100px' }}
+                      alt="check"
+                    />
+                    <h5 className="bold">{feature}</h5>
+                  </div>
+                </Col>
+              ))}
+            </Col>
           </Row>
         </Container>
       </section>
@@ -306,9 +355,9 @@ export default function Eventos() {
           className="text-center"
           style={{ color: 'white', height: '35rem' }}
         >
-          <Row className="h-100 justify-content-center align-items-center">
+          <Row className="h-100 justify-content-center align-items-center mt-5">
             <Col className="d-flex flex-column align-items-center gap-3">
-              <h2 className="bold" style={{ fontSize: '4rem' }}>
+              <h2 className="bold grande">
                 AREIA SIEMPRE <br /> ESTUVO CERCA.
               </h2>
               <p style={{ fontSize: '20px' }}>
@@ -320,10 +369,7 @@ export default function Eventos() {
               <p className="mt-4" style={{ fontSize: '20px' }}>
                 Seguinos
               </p>
-              <Row
-                className="justify-content-center"
-                style={{ flexWrap: 'nowrap' }}
-              >
+              <div>
                 <a
                   href="https://www.instagram.com/areiafutbol/"
                   target="_blank"
@@ -348,7 +394,7 @@ export default function Eventos() {
                 >
                   <i className="fa fa-instagram" />{' '}
                 </a>
-              </Row>
+              </div>
             </Col>
           </Row>
         </Container>

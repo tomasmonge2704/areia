@@ -32,8 +32,14 @@
 .borde {
   border-radius: 10px;
 }
+
+.grande {
+  font-size: 4rem;
+}
+
 .carrousel-descripcion {
-  font-size: 2.5rem;
+  font-size: 35px;
+  line-height: 2.0;
 }
 .seccion-blanco {
   background-color: #fff;
@@ -76,11 +82,16 @@
 .tituloVenue {
   font-size: 5vw; /* Ajusta dinámicamente según el ancho de la ventana */
 }
-
+.contOfrece {
+  padding: 5%;
+}
 /* Corrige el tamaño para pantallas más grandes */
 @media (max-width: 900px) {
   .tituloVenue {
     font-size: 4rem;
+  }
+  .tituloVenue2 {
+    font-size: 3rem;
   }
   .eventos-descripcion {
     padding: 15px;
@@ -89,6 +100,12 @@
   .eventos-boton {
     margin-top: 10px;
     height: 4rem;
+  }
+  .carrousel-descripcion {
+    font-size: 20px !important;
+  }
+  .grande {
+    font-size: 2.5rem;
   }
 }
 
@@ -102,7 +119,46 @@
   color: white;
   text-align: left;
 }
+.imgFondo1 {
+  background-size: cover;
+  background-position: center;
+  background-image: url('/public/evento1.webp');
+}
+.feature-box {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.offer-box {
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.bg-yellow {
+  border-radius: 10px;
+  background-color: rgb(250, 233, 78);
+  opacity: 0.77;
+}
+
+.offer-image {
+  width: 100%;
+  height: auto;
+  clip-path: circle(50% at center);
+}
+
+.feature-content {
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
 .social-icon {
   color: white;
   font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
