@@ -85,8 +85,26 @@
 .contOfrece {
   padding: 5%;
 }
+.sociales-title{
+  font-size: 6rem;
+}
+.tituloVenue3 {
+  font-size: 2rem;
+}
+.carousel-item-height {
+  height: 65vh;
+}
 /* Corrige el tamaño para pantallas más grandes */
 @media (max-width: 900px) {
+  .carousel-item-height {
+    height: 60vh;
+  }
+  .tituloVenue3 {
+    font-size: 1.5rem;
+  }
+  .sociales-title{
+    font-size: 4rem;
+  }
   .tituloVenue {
     font-size: 4rem;
   }

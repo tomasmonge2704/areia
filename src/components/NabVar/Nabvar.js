@@ -5,7 +5,7 @@ import logo from '../../SELECCION_DE_FOTOS/logo.webp';
 
 export default function Nabvar({ section }) {
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" style={{ maxWidth: '100%' }}>
       <Container>
         <Navbar.Brand href="#home" id="logoMobile" style={{ width: '100px' }}>
           <Link to="/" style={{ textDecoration: 'none' }}>

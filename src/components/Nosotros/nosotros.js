@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { BrowserView, MobileView, isIOS } from 'react-device-detect';
@@ -47,15 +48,15 @@ export default function Nosotros() {
     setIsActive2(false);
     setIsActive3(false);
   }
-  const handleClick1 = (event) => {
+  const handleClick1 = () => {
     // 👇️ toggle isActive state on click
     setIsActive1((current) => !current);
   };
-  const handleClick2 = (event) => {
+  const handleClick2 = () => {
     // 👇️ toggle isActive state on click
     setIsActive2((current) => !current);
   };
-  const handleClick3 = (event) => {
+  const handleClick3 = () => {
     // 👇️ toggle isActive state on click
     setIsActive3((current) => !current);
   };
@@ -366,7 +367,11 @@ export default function Nosotros() {
         <Carousel className="carouselDiv" variant="dark">
           {imagenesCarousel.map((img) => (
             <Carousel.Item>
-              <img className="d-block w-100" src={img} alt="First slide" />
+              <img
+                className="d-block w-100 nosotrosCarrousel"
+                src={img}
+                alt="First slide"
+              />
             </Carousel.Item>
           ))}
         </Carousel>

@@ -1,5 +1,6 @@
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Eventos.css';
+import { isMobile } from 'react-device-detect';
 
 const importAll = (requireContext) => requireContext.keys().map(requireContext);
 const images = importAll(
@@ -89,14 +90,21 @@ export default function Eventos() {
             </h2>
           </Row>
           <Row className="mt-4">
-            <Carousel style={{ maxHeight: '65vh', overflow: 'hidden' }}>
+            <Carousel
+              style={{ overflow: 'hidden' }}
+              className="carousel-item-height"
+            >
               {images.map((image, index) => (
-                <Carousel.Item key={image} style={{ height: '65vh' }}>
+                <Carousel.Item key={image} className="carousel-item-height">
                   <img
                     className="d-block w-100"
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    style={{ height: '100%', objectFit: 'cover' }}
+                    style={{
+                      height: '100%',
+                      maxHeight: '100%',
+                      objectFit: 'cover',
+                    }}
                   />
                 </Carousel.Item>
               ))}
@@ -147,33 +155,35 @@ export default function Eventos() {
           </Row>
         </Container>
       </section>
-      <section className="seccion-blanco">
-        <Container fluid style={{ padding: '6%' }}>
-          <Row className="w-100">
-            <Col xs={12} md={4}>
-              <img
-                src="/eventos1.jpg"
-                alt="Evento en Areia Venue"
-                className="eventos-imagen borde"
-              />
-            </Col>
-            <Col xs={12} md={4}>
-              <img
-                src="/eventos2.jpg "
-                alt="Evento en Areia Venue"
-                className="eventos-imagen borde"
-              />
-            </Col>
-            <Col xs={12} md={4}>
-              <img
-                src="/eventos3.jpg"
-                alt="Evento en Areia Venue"
-                className="eventos-imagen borde"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      {!isMobile && (
+        <section className="seccion-blanco">
+          <Container fluid style={{ padding: '6%' }}>
+            <Row className="w-100">
+              <Col xs={12} md={4}>
+                <img
+                  src="/eventos1.jpg"
+                  alt="Evento en Areia Venue"
+                  className="eventos-imagen borde"
+                />
+              </Col>
+              <Col xs={12} md={4}>
+                <img
+                  src="/eventos2.jpg "
+                  alt="Evento en Areia Venue"
+                  className="eventos-imagen borde"
+                />
+              </Col>
+              <Col xs={12} md={4}>
+                <img
+                  src="/eventos3.jpg"
+                  alt="Evento en Areia Venue"
+                  className="eventos-imagen borde"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      )}
       <section className="seccion-blanco">
         <Container fluid className="text-center">
           <Row>
@@ -243,10 +253,10 @@ export default function Eventos() {
         <Container fluid style={{ padding: '10%' }}>
           <Row>
             <h2
+              className="sociales-title"
               style={{
                 position: 'relative',
                 top: '45px',
-                fontSize: '6rem',
                 fontWeight: '1000',
               }}
             >
@@ -341,7 +351,7 @@ export default function Eventos() {
             backgroundPosition: 'center',
           }}
         >
-          <p style={{ color: 'white', fontSize: '2rem' }}>
+          <p style={{ color: 'white' }} className="tituloVenue3">
             Más de 5 hectáreas de espacio verde, ideales para desconectarse{' '}
             <br /> de la rutina y vivir una experiencia única.
             <br /> * <br /> La versatilidad de nuestras instalaciones permite
