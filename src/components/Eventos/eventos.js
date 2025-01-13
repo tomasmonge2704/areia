@@ -31,7 +31,13 @@ export default function Eventos() {
                 <br />
                 para que tu evento sea único.
               </h2>
-              <button className="eventos-boton" style={{ marginTop: '15px' }}>
+              <button
+                className="eventos-boton"
+                style={{ marginTop: '15px' }}
+                onClick={() =>
+                  window.open('https://wa.me/+5491134022431', '_blank')
+                }
+              >
                 más información
               </button>
             </Col>
