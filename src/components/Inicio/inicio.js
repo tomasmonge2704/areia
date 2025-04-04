@@ -7,7 +7,6 @@ import img1 from '../../SELECCION_DE_FOTOS/imgInicio1AREIAweb.jpg';
 import img2 from '../../SELECCION_DE_FOTOS/imgInicio2AREIAweb.jpg';
 import img3 from '../../SELECCION_DE_FOTOS/imgInicio3AREIAweb.jpg';
 import posterVideoInicio from '../../SELECCION_DE_FOTOS/posterVideoInicio.png';
-import video from '../../videos/video_web_nuevo.mov';
 
 import './Inicio.css';
 
@@ -20,7 +19,7 @@ export default function Inicio() {
         controls
         muted
         loop
-        src={video}
+        src="./videoInicio.mp4"
         poster={posterVideoInicio}
       />
       <div
@@ -42,16 +41,18 @@ export default function Inicio() {
             style={{ marginRight: '10px' }}
             target="_blank"
             rel="noreferrer"
+            aria-label="Descargar en App Store"
           >
-            <img src={appStore} />
+            <img src={appStore} alt="Disponible en App Store" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.ibaires.areia"
             style={{ marginLeft: '10px' }}
             target="_blank"
             rel="noreferrer"
+            aria-label="Descargar en Google Play"
           >
-            <img src={playStore} />
+            <img src={playStore} alt="Disponible en Google Play" />
           </a>
         </div>
         <p
@@ -70,9 +71,9 @@ export default function Inicio() {
           backgroundSize: '100% 100%',
         }}
       >
-        <img src={img1} className="imagenesInicio" />
-        <img src={img2} className="imagenesInicio" />
-        <img src={img3} className="imagenesInicio" />
+        <img src={img1} className="imagenesInicio" alt="Imagen destacada 1" />
+        <img src={img2} className="imagenesInicio" alt="Imagen destacada 2" />
+        <img src={img3} className="imagenesInicio" alt="Imagen destacada 3" />
       </div>
       <Sponsors />
       <ContactoFooter />
