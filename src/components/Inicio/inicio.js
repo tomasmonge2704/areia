@@ -3,9 +3,6 @@ import playStore from '../../SELECCION_DE_FOTOS/available_on_google_play.webp';
 import ContactoFooter from '../contactoFooter';
 import Sponsors from './Sponsors';
 import fotoInicio from '../../SELECCION_DE_FOTOS/FotoInicioAREIAweb.jpg';
-import img1 from '../../SELECCION_DE_FOTOS/imgInicio1AREIAweb.jpg';
-import img2 from '../../SELECCION_DE_FOTOS/imgInicio2AREIAweb.jpg';
-import img3 from '../../SELECCION_DE_FOTOS/imgInicio3AREIAweb.jpg';
 import posterVideoInicio from '../../SELECCION_DE_FOTOS/posterVideoInicio.png';
 
 import './Inicio.css';
@@ -71,9 +68,21 @@ export default function Inicio() {
           backgroundSize: '100% 100%',
         }}
       >
-        <img src={img1} className="imagenesInicio" alt="Imagen destacada 1" />
-        <img src={img2} className="imagenesInicio" alt="Imagen destacada 2" />
-        <img src={img3} className="imagenesInicio" alt="Imagen destacada 3" />
+        <img
+          src="./DSC07056.jpg"
+          className="imagenesInicio"
+          alt="Imagen destacada 1"
+        />
+        <img
+          src="./DSC08153.jpg"
+          className="imagenesInicio"
+          alt="Imagen destacada 2"
+        />
+        <img
+          src="./DSC08935.jpg"
+          className="imagenesInicio"
+          alt="Imagen destacada 3"
+        />
       </div>
       <Sponsors />
       <ContactoFooter />
