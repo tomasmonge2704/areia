@@ -15,13 +15,17 @@ export default function Sponsors() {
         <img
           src="./main_sponsor.png"
           alt="Sponsor 1"
-          style={{ width: '100%' }}
+          style={{ width: '75%', height: 'auto' }}
         />
       </div>
 
       <p style={{ marginTop: '3rem', marginBottom: '0px' }}>PARTNERS</p>
       <div className="contenedorSponsors">
-        <img src="./partners.png" alt="partners 1" style={{ width: '50%' }} />
+        <img
+          src="./partners.png"
+          alt="partners 1"
+          style={{ width: '30%', height: 'auto' }}
+        />
       </div>
     </div>
   );
