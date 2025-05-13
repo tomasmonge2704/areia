@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
 import appStore from '../../SELECCION_DE_FOTOS/available_on_app_store.webp';
 import playStore from '../../SELECCION_DE_FOTOS/available_on_google_play.webp';
 import ContactoFooter from '../contactoFooter';
@@ -8,17 +10,42 @@ import posterVideoInicio from '../../SELECCION_DE_FOTOS/posterVideoInicio.png';
 import './Inicio.css';
 
 export default function Inicio() {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
   return (
     <div>
-      <video
-        className="videoInicio"
-        autoPlay
-        controls
-        muted
-        loop
-        src="./videoInicio.mp4"
-        poster={posterVideoInicio}
-      />
+      <div className="video-container">
+        {!isVideoLoaded && (
+          <img
+            src={posterVideoInicio}
+            alt="Video poster"
+            className="video-poster"
+          />
+        )}
+        <ReactPlayer
+          url="./videoInicio.mp4"
+          playing
+          muted
+          loop
+          controls
+          width="100%"
+          height="100%"
+          onReady={() => setIsVideoLoaded(true)}
+          config={{
+            file: {
+              attributes: {
+                preload: 'auto',
+                playsInline: true,
+                disablePictureInPicture: true,
+              },
+            },
+          }}
+          playsinline
+          pip={false}
+          fallback={<div>Cargando video...</div>}
+          loading="lazy"
+        />
+      </div>
       <div
         style={{
           backgroundColor: 'white',
