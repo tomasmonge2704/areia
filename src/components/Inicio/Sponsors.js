@@ -15,7 +15,7 @@ export default function Sponsors() {
         <img
           src="./main_sponsor.png"
           alt="Sponsor 1"
-          style={{ width: '75%', height: 'auto' }}
+          style={{ width: '60%', height: 'auto' }}
         />
       </div>
 
@@ -24,7 +24,7 @@ export default function Sponsors() {
         <img
           src="./partners.png"
           alt="partners 1"
-          style={{ width: '30%', height: 'auto' }}
+          style={{ width: '25%', height: 'auto' }}
         />
       </div>
     </div>
