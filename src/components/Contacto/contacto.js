@@ -1,10 +1,11 @@
 import Imagen2 from '../../SELECCION_DE_FOTOS/fotoFooter1.webp';
-import Imagen1 from '../../SELECCION_DE_FOTOS/fotoFooter2.webp';
+import Imagen1 from '../../SELECCION_DE_FOTOS/fotoFooter3.png';
 import Imagen4 from '../../SELECCION_DE_FOTOS/fotoHome1.webp';
 import Imagen3 from '../../SELECCION_DE_FOTOS/fotoHome2.webp';
 import imagenMapa from '../../SELECCION_DE_FOTOS/mapa.webp';
 import imagenMapa2 from '../../SELECCION_DE_FOTOS/mapa2.webp';
 import './contacto.css';
+import ContactoFooter from '../contactoFooter';
 
 export default function Contacto() {
   return (
@@ -15,7 +16,7 @@ export default function Contacto() {
       >
         <div>
           <a
-            href="https://linktr.ee/estoesareia"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScoQ6EflHucSqPa4XcZEdc57fido8-WsmsU4FTnZieozQOnLA/viewform"
             target="_blank"
             rel="noreferrer"
           >
@@ -33,20 +34,6 @@ export default function Contacto() {
               <p>EN UN CLICK!</p>
             </button>
           </a>
-        </div>
-      </div>
-      <div className="datos">
-        <div>
-          <h1>TEL.</h1> <p>03484218510</p>
-        </div>
-        <div>
-          <h1>WA.</h1> <p>1141576513</p>
-        </div>
-        <div>
-          <h1>UBICACIÓN.</h1> <p>PATRICIAS ARGENTINAS 4005, PILAR</p>
-        </div>
-        <div>
-          <h1>MAIL.</h1> <p>INFO@AREIA.COM.AR</p>
         </div>
       </div>
       <div>
@@ -79,6 +66,16 @@ export default function Contacto() {
         className="home2"
         style={{ backgroundImage: `url(${Imagen2}), url(${Imagen1})` }}
       />
+      <ContactoFooter />
+      <div
+        style={{
+          color: 'white',
+          textAlign: 'center',
+          marginBottom: '2rem',
+        }}
+      >
+        Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados
+      </div>
     </>
   );
 }

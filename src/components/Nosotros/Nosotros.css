@@ -1,11 +1,10 @@
 .nosotrosCarrousel img{
     width: 100%;
   }
-.footer{
-  margin-left:10vw;
-  font-size:30px;
-  margin-top:5rem;
-}
+  .homeVideos{
+    margin-top: 6rem;
+  }
+
 .videoButtons{
     position: absolute;
     display: flex;
@@ -71,8 +70,6 @@ and (orientation: portrait) {
     max-height: 45vh !important;
  }
  .footer{
-  margin-left:13vw;
-  font-size:30px;
   margin-top:3rem;
   margin-bottom: 2rem;
 }

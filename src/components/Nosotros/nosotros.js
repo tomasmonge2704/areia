@@ -209,12 +209,15 @@ export default function Nosotros() {
       </MobileView>
       <div
         className="nosotrosInfo"
-        style={{ backgroundColor: 'white', height: '14vw' }}
+        style={{
+          backgroundColor: 'white',
+          paddingBottom: '1rem',
+          paddingTop: '1rem',
+        }}
       >
         <p>
           <strong>AREIA</strong> es más que un torneo de fútbol.
           <br /> Es una experiencia social y deportiva.
-          <br />
           <br />
           <strong>PARA ENTENDERLA, HAY QUE VIVIRLA.</strong>
         </p>
@@ -243,7 +246,7 @@ export default function Nosotros() {
         </div>
         <div className="textTorneo">
           <h1
-            style={{ color: 'white', fontWeight: '200', paddingBottom: '2vh' }}
+            style={{ color: 'white', fontWeight: '900', paddingBottom: '2vh' }}
           >
             TORNEO
           </h1>
@@ -377,6 +380,15 @@ export default function Nosotros() {
         </Carousel>
       </div>
       <ContactoFooter />
+      <div
+        style={{
+          color: 'white',
+          textAlign: 'center',
+          marginBottom: '2rem',
+        }}
+      >
+        Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados
+      </div>
     </>
   );
 }

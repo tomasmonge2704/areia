@@ -117,7 +117,6 @@ export default function Inicio() {
         style={{
           color: 'white',
           textAlign: 'center',
-          margin: '3%',
           marginBottom: '2rem',
         }}
       >
