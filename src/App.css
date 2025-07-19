@@ -1,4 +1,4 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/* Font Awesome is now imported via npm packages */
 @font-face {
   font-family: 'Scandia web Regular';
   src: url('./Scandia/Scandia.woff') format('woff');
@@ -86,7 +86,7 @@ body {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
   border-radius: 9px;
   color: rgb(23 23 24);
   background: rgb(243 255 51);
@@ -113,23 +113,27 @@ body {
   align-items: center;
 }
 .contactoFooter {
-  height: 8rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  margin-left: 3vw;
+  margin-bottom: 1rem;
 }
 .footer {
-  color: rgb(243 255 51);
-  font-size: 35px !important;
-  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-top: 3rem;
 }
 .datos p {
   color: aliceblue;
 }
 .contactoFooter h1 {
-  font-size: 17px !important;
-  color: aliceblue;
+  font-size: 17px;
+  color: rgb(243 255 51);
 }
 .contactoFooter p {
   color: aliceblue;
@@ -158,7 +162,7 @@ body {
   color: #c3d900 !important;
 }
 #navContacto .contacto {
-  color: #c3d900 !important;
+  color: rgb(243 255 51) !important;
 }
 #navLogo {
   height: 100%;
@@ -205,14 +209,11 @@ a {
   text-decoration: none !important;
 }
 .instagram {
-  color: rgb(23 23 24);
-  background-color: #c3d900;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
+  color: rgb(243 255 51);
+  font-size: 1.5rem;
+  margin: 0 7px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .homeVideos {
   display: flex;
@@ -237,20 +238,16 @@ a {
   filter: drop-shadow(black 2px 4px 6px);
 }
 .fa-phone {
-  color: rgb(23 23 24);
-  background-color: #c3d900;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
+  color: rgb(243 255 51);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .instagram:hover {
-  background-color: white;
+  color: rgb(255 255 255);
 }
 .fa-phone:hover {
-  background-color: white;
+  color: rgb(255 255 255);
 }
 #socialIcons {
   display: flex;
@@ -327,6 +324,15 @@ a {
   font-size: 25px !important;
 }
 @media (max-width: 991px) {
+  .footer{
+    flex-direction: column;
+  }
+  .contactoFooter{
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    justify-content: left;
+
+  }
   .homeVideos video {
     height: 200px;
     border-radius: 18px;
@@ -452,9 +458,8 @@ a {
     max-width: 140px !important;
   }
   .contactoFooter {
-    display: grid;
-    justify-content: center;
-    margin-bottom: 13rem;
+    justify-content: left;
+
   }
   .titulo {
     font-size: 25px;

@@ -10,21 +10,25 @@ export default function Sponsors() {
         backgroundColor: 'white',
       }}
     >
-      <p style={{ marginTop: '3rem', marginBottom: '3rem' }}>MAIN SPONSORS</p>
+      <p className="sponsor-text">
+        MAIN SPONSORS
+      </p>
       <div className="contenedorSponsors">
         <img
           src="./main_sponsor.png"
           alt="Sponsor 1"
-          style={{ width: '60%', height: 'auto' }}
+          style={{ width: '100%', height: 'auto', maxWidth: '1500px' }}
         />
       </div>
 
-      <p style={{ marginTop: '3rem', marginBottom: '0px' }}>PARTNERS</p>
+      <p className="sponsor-text" style={{ marginTop: '1rem' }}>
+        PARTNERS
+      </p>
       <div className="contenedorSponsors">
         <img
-          src="./partners.png"
+          src="./partners2.png"
           alt="partners 1"
-          style={{ width: '25%', height: 'auto' }}
+          style={{ width: '100%', height: 'auto', maxWidth: '600px' }}
         />
       </div>
     </div>

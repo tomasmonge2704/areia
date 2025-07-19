@@ -1,6 +1,7 @@
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Eventos.css';
 import { isMobile } from 'react-device-detect';
+import ContactoFooter from '../contactoFooter';
 
 const importAll = (requireContext) => requireContext.keys().map(requireContext);
 const images = importAll(
@@ -95,26 +96,32 @@ export default function Eventos() {
               más!
             </h2>
           </Row>
-          <Row className="mt-4">
-            <Carousel
-              style={{ overflow: 'hidden' }}
-              className="carousel-item-height"
-            >
-              {images.map((image, index) => (
-                <Carousel.Item key={image} className="carousel-item-height">
-                  <img
-                    className="d-block w-100"
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    style={{
-                      height: '100%',
-                      maxHeight: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
+        </Container>
+      </section>
+      <section style={{backgroundColor: 'white', overflow: 'hidden'}} className="carousel-section">
+        <Container fluid className="p-0">
+          <Row className="m-0">
+            <Col className="p-0">
+              <Carousel
+                style={{ overflow: 'hidden' }}
+                className="carousel-item-height"
+              >
+                {images.map((image, index) => (
+                  <Carousel.Item key={image} className="carousel-item-height">
+                    <img
+                      className="d-block w-100"
+                      src={image}
+                      alt={`Slide ${index + 1}`}
+                      style={{
+                        height: '100%',
+                        maxHeight: '100%',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -124,13 +131,14 @@ export default function Eventos() {
             <Col
               xs={12}
               md={2}
+              style={{width: '100%'}}
               className="d-flex flex-column justify-content-center align-items-center"
             >
               <div
                 className="offer-box bg-yellow h-100 d-flex flex-column justify-content-center align-items-center"
-                style={{ height: '100%' }}
+                style={{ height: '100%', marginBottom: '2rem' }}
               >
-                <h3 className="text-center">Qué te ofrecemos</h3>
+                <h3 className="text-center2">Qué te ofrecemos</h3>
               </div>
             </Col>
             <Col
@@ -146,7 +154,7 @@ export default function Eventos() {
                 'Actividades deportivas',
                 'Event Planner y más!',
               ].map((feature, index) => (
-                <Col xs={5} md={3} className="feature-box" key={feature}>
+                <Col xs={6} md={3} className="feature-box" key={feature}>
                   <div className="feature-content">
                     <img
                       src={`/sinFondo/${index + 1}.png`}
@@ -366,7 +374,7 @@ export default function Eventos() {
           </p>
         </Container>
       </section>
-      <footer>
+      <footer style={{ overflow: 'hidden' }}>
         <Container
           className="text-center"
           style={{ color: 'white', height: '35rem' }}
@@ -382,39 +390,20 @@ export default function Eventos() {
                 segura rodeada de barrios cerrados.
               </p>
               <button className="eventos-boton">VER MAPA</button>
-              <p className="mt-4" style={{ fontSize: '20px' }}>
-                Seguinos
-              </p>
-              <div>
-                <a
-                  href="https://www.instagram.com/areiafutbol/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="social-icon"
-                >
-                  <i className="fa fa-facebook" />{' '}
-                </a>
-                <a
-                  href="https://wa.link/u3nof1"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="social-icon"
-                >
-                  <i className="fa fa-twitter" />{' '}
-                </a>
-                <a
-                  href="https://www.instagram.com/areiafutbol/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="social-icon"
-                >
-                  <i className="fa fa-instagram" />{' '}
-                </a>
-              </div>
             </Col>
           </Row>
         </Container>
       </footer>
+      <ContactoFooter />
+      <div
+        style={{
+          color: 'white',
+          textAlign: 'center',
+          marginBottom: '2rem',
+        }}
+      >
+        Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados
+      </div>
     </>
   );
 }

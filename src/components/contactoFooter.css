@@ -1,0 +1,28 @@
+.contactoFooterList {
+  padding-left: 2rem;
+  border-left: 1px solid rgb(243 255 51);
+  margin-left: 2rem;
+}
+
+.contactoFooterList a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.contactoFooterList a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactoFooterList h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contactoFooterList p {
+  margin-bottom: 0;
+  font-size: 1rem;
+} 
