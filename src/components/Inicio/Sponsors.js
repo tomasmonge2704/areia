@@ -17,7 +17,7 @@ export default function Sponsors() {
         <img
           src="./main_sponsor.png"
           alt="Sponsor 1"
-          style={{ width: '100%', height: 'auto', maxWidth: '1500px' }}
+          style={{ width: '100%', height: 'auto', maxWidth: '1200px' }}
         />
       </div>
 
