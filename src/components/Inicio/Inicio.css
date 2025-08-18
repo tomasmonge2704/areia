@@ -3,7 +3,7 @@
 }
 
 .sponsor-text {
-    font-size: 1.75rem;
+    font-size: 1.75rem !important;
     font-weight: bold;
     margin-top: 3rem;
     margin-bottom: 0rem;
@@ -25,8 +25,8 @@
     object-fit: contain;
 }
 .contenedorSponsors{
-width: 100%;
-padding: 0% 5% 0% 5%;
+    width: 100%;
+    padding: 0% 5% 0% 5%;
 }
 .storeButton img{
     max-width: 200px;

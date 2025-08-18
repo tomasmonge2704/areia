@@ -1,3 +1,5 @@
+import './Inicio.css';
+
 export default function Sponsors() {
   return (
     <div
@@ -10,7 +12,12 @@ export default function Sponsors() {
         backgroundColor: 'white',
       }}
     >
-      <p className="sponsor-text">
+      <p style={{
+        fontSize: '1.75rem',
+        fontWeight: 'bold',
+        marginTop: '3rem',
+        marginBottom: '0rem',
+      }}>
         MAIN SPONSORS
       </p>
       <div className="contenedorSponsors">
@@ -21,7 +28,12 @@ export default function Sponsors() {
         />
       </div>
 
-      <p className="sponsor-text" style={{ marginTop: '1rem' }}>
+      <p style={{
+        fontSize: '1.75rem',
+        fontWeight: 'bold',
+        marginTop: '1rem',
+        marginBottom: '0rem',
+      }}>
         PARTNERS
       </p>
       <div className="contenedorSponsors">
