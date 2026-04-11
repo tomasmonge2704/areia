@@ -10,6 +10,7 @@ import {
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
+  faLink,
 } from '@fortawesome/free-solid-svg-icons';
 import './contactoFooter.css';
 
@@ -166,7 +167,7 @@ export default function ContactoFooter({ section }) {
           >
             <div>
               <h1>
-                <FontAwesomeIcon style={{ marginRight: '8px' }} />
+                <FontAwesomeIcon icon={faLink} style={{ marginRight: '8px' }} />
                 LINKTREE
               </h1>
               <p>Mas información</p>

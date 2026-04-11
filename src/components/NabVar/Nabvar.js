@@ -52,72 +52,77 @@ export default function Nabvar({ section }) {
       }}
     >
       <Container>
-        <Navbar.Brand href="#home" id="logoMobile" style={{ width: '100px' }}>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <img id="navLogo" src={logo} alt="navlogo" />
-          </Link>
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          id="logoMobile"
+          style={{ width: '100px' }}
+        >
+          <img id="navLogo" src={logo} alt="navlogo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Link to="/" id="navInicio" style={{ textDecoration: 'none' }}>
-              <Nav.Link className={section} href="#features">
-                INICIO
-              </Nav.Link>
-            </Link>
-            <Link
+            <Nav.Link
+              as={Link}
+              to="/"
+              id="navInicio"
+              className={section}
+              style={{ textDecoration: 'none' }}
+            >
+              INICIO
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/nosotros"
               id="navNosotros"
-              style={{ textDecoration: 'none' }}
+              className={section}
+              style={{
+                textDecoration: 'none',
+                marginRight: '5vh',
+                marginLeft: '2vh',
+              }}
             >
-              <Nav.Link
-                href="#pricing"
-                className={section}
-                style={{ marginRight: '5vh', marginLeft: '2vh' }}
-              >
-                NOSOTROS
-              </Nav.Link>
-            </Link>
+              NOSOTROS
+            </Nav.Link>
           </Nav>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <Nav id="navLogoA">
-              <Navbar.Brand
-                href="#home"
-                style={{
-                  width: '12vw',
-                  height: '100px',
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                <img id="navLogo" src={logo} alt="navLogoMini" />
-              </Navbar.Brand>
-            </Nav>
-          </Link>
+          <Nav id="navLogoA">
+            <Navbar.Brand
+              as={Link}
+              to="/"
+              style={{
+                width: '12vw',
+                height: '100px',
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              <img id="navLogo" src={logo} alt="navLogoMini" />
+            </Navbar.Brand>
+          </Nav>
           <Nav>
-            <Link
+            <Nav.Link
+              as={Link}
               to="/venue"
               id="navEventos"
-              style={{ textDecoration: 'none' }}
+              className={section}
+              style={{
+                textDecoration: 'none',
+                marginLeft: '4vh',
+                marginRight: '2vh',
+              }}
             >
-              <Nav.Link
-                href="#deets"
-                className={section}
-                style={{ marginLeft: '4vh', marginRight: '2vh' }}
-              >
-                VENUE
-              </Nav.Link>
-            </Link>
-            <Link
+              VENUE
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/contacto"
               id="navContacto"
               className={section}
               style={{ textDecoration: 'none' }}
             >
-              <Nav.Link href="#deets" className={section}>
-                CONTACTO
-              </Nav.Link>
-            </Link>
+              CONTACTO
+            </Nav.Link>
             <div id="socialIcons">
               <a
                 href="https://www.instagram.com/areiafutbol/"
