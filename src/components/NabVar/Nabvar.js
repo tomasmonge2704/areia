@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../../SELECCION_DE_FOTOS/logo.webp';
 
@@ -30,13 +29,14 @@ export default function Nabvar({ section }) {
       window.addEventListener('scroll', controlNavbar);
       return () => window.removeEventListener('scroll', controlNavbar);
     }
+    return undefined;
   }, [lastScrollY]);
 
   return (
-    <Navbar 
-      collapseOnSelect 
-      expand="lg" 
-      style={{ 
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      style={{
         maxWidth: '100%',
         position: 'fixed',
         top: 0,
@@ -44,18 +44,15 @@ export default function Nabvar({ section }) {
         right: 0,
         zIndex: 1000,
         transition: 'transform 0.3s ease-in-out',
-        transform: !isVisible && hasScrolled ? 'translateY(-100%)' : 'translateY(0)',
+        transform:
+          !isVisible && hasScrolled ? 'translateY(-100%)' : 'translateY(0)',
         backgroundColor: 'rgba(23, 23, 24, 0.95)',
         backdropFilter: hasScrolled ? 'blur(10px)' : 'none',
-        boxShadow: hasScrolled ? '0 2px 20px rgba(0, 0, 0, 0.1)' : 'none'
+        boxShadow: hasScrolled ? '0 2px 20px rgba(0, 0, 0, 0.1)' : 'none',
       }}
     >
       <Container>
-        <Navbar.Brand
-          href="#home"
-          id="logoMobile"
-          style={{ width: '100px',  }}
-        >
+        <Navbar.Brand href="#home" id="logoMobile" style={{ width: '100px' }}>
           <Link to="/" style={{ textDecoration: 'none' }}>
             <img id="navLogo" src={logo} alt="navlogo" />
           </Link>
@@ -138,7 +135,7 @@ export default function Nabvar({ section }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faWhatsapp} className="instagram"/>
+                <FontAwesomeIcon icon={faWhatsapp} className="instagram" />
               </a>
             </div>
           </Nav>

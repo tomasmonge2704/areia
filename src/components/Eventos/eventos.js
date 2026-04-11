@@ -98,7 +98,10 @@ export default function Eventos() {
           </Row>
         </Container>
       </section>
-      <section style={{backgroundColor: 'white', overflow: 'hidden'}} className="carousel-section">
+      <section
+        style={{ backgroundColor: 'white', overflow: 'hidden' }}
+        className="carousel-section"
+      >
         <Container fluid className="p-0">
           <Row className="m-0">
             <Col className="p-0">
@@ -131,7 +134,7 @@ export default function Eventos() {
             <Col
               xs={12}
               md={2}
-              style={{width: '100%'}}
+              style={{ width: '100%' }}
               className="d-flex flex-column justify-content-center align-items-center"
             >
               <div
