@@ -1,17 +1,18 @@
-import Imagen2 from '../../SELECCION_DE_FOTOS/fotoFooter1.webp';
-import Imagen1 from '../../SELECCION_DE_FOTOS/fotoFooter3.png';
-import Imagen4 from '../../SELECCION_DE_FOTOS/fotoHome1.webp';
-import Imagen3 from '../../SELECCION_DE_FOTOS/fotoHome2.webp';
-import imagenMapa from '../../SELECCION_DE_FOTOS/mapa.webp';
-import imagenMapa2 from '../../SELECCION_DE_FOTOS/mapa2.webp';
-import './contacto.css';
-import ContactoFooter from '../contactoFooter';
+import styles from './contacto.module.css'
+import Imagen2 from '../../SELECCION_DE_FOTOS/fotoFooter1.webp'
+import Imagen1 from '../../SELECCION_DE_FOTOS/fotoFooter3.png'
+import Imagen4 from '../../SELECCION_DE_FOTOS/fotoHome1.webp'
+import Imagen3 from '../../SELECCION_DE_FOTOS/fotoHome2.webp'
+import imagenMapa from '../../SELECCION_DE_FOTOS/mapa.webp'
+import imagenMapa2 from '../../SELECCION_DE_FOTOS/mapa2.webp'
+import './contacto.css'
+import ContactoFooter from '../contactoFooter'
 
 export default function Contacto() {
   return (
     <>
       <div
-        className="home"
+        className={`${styles.home} home`}
         style={{ backgroundImage: `url(${Imagen4}), url(${Imagen3})` }}
       >
         <div>
@@ -21,16 +22,7 @@ export default function Contacto() {
             rel="noreferrer"
           >
             <button id="bottone1">
-              <h1
-                style={{
-                  color: 'black',
-                  fontWeight: '100',
-                  margin: '0',
-                  fontSize: '30px',
-                }}
-              >
-                INSCRIBITE
-              </h1>
+              <h1 className={styles.inscribiteTitle}>INSCRIBITE</h1>
               <p>EN UN CLICK!</p>
             </button>
           </a>
@@ -53,29 +45,19 @@ export default function Contacto() {
             </a>
           </div>
           <div id="mapa2">
-            <img
-              alt="mapa2"
-              src={imagenMapa2}
-              style={{ width: '100%', height: '100%', padding: '5%' }}
-            />
+            <img alt="mapa2" src={imagenMapa2} className={styles.mapa2Img} />
           </div>
         </div>
       </div>
 
       <div
-        className="home2"
+        className={`${styles.home2} home2`}
         style={{ backgroundImage: `url(${Imagen2}), url(${Imagen1})` }}
       />
       <ContactoFooter />
-      <div
-        style={{
-          color: 'white',
-          textAlign: 'center',
-          marginBottom: '2rem',
-        }}
-      >
+      <div className={styles.copyright}>
         Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados
       </div>
     </>
-  );
+  )
 }

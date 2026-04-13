@@ -1,65 +1,62 @@
-/* eslint-disable */
-import { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
-import { BrowserView, MobileView, isIOS } from 'react-device-detect';
+import { useState } from 'react'
+import { Carousel } from 'react-bootstrap'
+import { BrowserView, MobileView, isIOS } from 'react-device-detect'
+import styles from './Nosotros.module.css'
 
-import Imagen8 from '../../SELECCION_DE_FOTOS/areia 13_11-043.webp';
-import Imagen4 from '../../SELECCION_DE_FOTOS/areia 13_11-060.webp';
-import Imagen14 from '../../SELECCION_DE_FOTOS/areia 13_11-088.webp';
-import Imagen7 from '../../SELECCION_DE_FOTOS/Areia editadas-45.webp';
-import Imagen13 from '../../SELECCION_DE_FOTOS/Areia editadas-8.webp';
-import Imagen10 from '../../SELECCION_DE_FOTOS/AREIA FECHA3-29.webp';
-import Imagen9 from '../../SELECCION_DE_FOTOS/areia producto-3.webp';
-import Imagen12 from '../../SELECCION_DE_FOTOS/areia producto-4.webp';
-import Imagen5 from '../../SELECCION_DE_FOTOS/areia0412-29.webp';
-import Imagen11 from '../../SELECCION_DE_FOTOS/areia1812-163.webp';
-import closeButton from '../../SELECCION_DE_FOTOS/closeButton.webp';
-import Imagen6 from '../../SELECCION_DE_FOTOS/fotoCancha.webp';
-import Imagen1 from '../../SELECCION_DE_FOTOS/video1.webp';
-import Imagen2 from '../../SELECCION_DE_FOTOS/video2.webp';
-import Imagen3 from '../../SELECCION_DE_FOTOS/video3.webp';
-import video1 from '../../videos/video1.mp4';
-import video2 from '../../videos/video2.mp4';
-import video3 from '../../videos/video3.mp4';
-import ContactoFooter from '../contactoFooter';
-import './Nosotros.css';
+import Imagen8 from '../../SELECCION_DE_FOTOS/areia 13_11-043.webp'
+import Imagen4 from '../../SELECCION_DE_FOTOS/areia 13_11-060.webp'
+import Imagen14 from '../../SELECCION_DE_FOTOS/areia 13_11-088.webp'
+import Imagen7 from '../../SELECCION_DE_FOTOS/Areia editadas-45.webp'
+import Imagen13 from '../../SELECCION_DE_FOTOS/Areia editadas-8.webp'
+import Imagen10 from '../../SELECCION_DE_FOTOS/AREIA FECHA3-29.webp'
+import Imagen9 from '../../SELECCION_DE_FOTOS/areia producto-3.webp'
+import Imagen12 from '../../SELECCION_DE_FOTOS/areia producto-4.webp'
+import Imagen5 from '../../SELECCION_DE_FOTOS/areia0412-29.webp'
+import Imagen11 from '../../SELECCION_DE_FOTOS/areia1812-163.webp'
+import closeButton from '../../SELECCION_DE_FOTOS/closeButton.webp'
+import Imagen6 from '../../SELECCION_DE_FOTOS/fotoCancha.webp'
+import Imagen1 from '../../SELECCION_DE_FOTOS/video1.webp'
+import Imagen2 from '../../SELECCION_DE_FOTOS/video2.webp'
+import Imagen3 from '../../SELECCION_DE_FOTOS/video3.webp'
+import video1 from '../../videos/video1.mp4'
+import video2 from '../../videos/video2.mp4'
+import video3 from '../../videos/video3.mp4'
+import ContactoFooter from '../contactoFooter'
+import './Nosotros.css'
 
 export default function Nosotros() {
-  const [isActive1, setIsActive1] = useState(false);
-  const [isActive2, setIsActive2] = useState(false);
-  const [isActive3, setIsActive3] = useState(false);
+  const [isActive1, setIsActive1] = useState(false)
+  const [isActive2, setIsActive2] = useState(false)
+  const [isActive3, setIsActive3] = useState(false)
 
   function unMute(e) {
-    e.target.muted = false;
+    e.target.muted = false
   }
   function Mute(e) {
-    e.target.muted = true;
+    e.target.muted = true
   }
   function play(e) {
-    e.target.play();
-    e.target.muted = false;
+    e.target.play()
+    e.target.muted = false
   }
   function stop(e) {
-    e.target.pause();
-    e.target.muted = true;
+    e.target.pause()
+    e.target.muted = true
   }
   function closeAll() {
-    setIsActive1(false);
-    setIsActive2(false);
-    setIsActive3(false);
+    setIsActive1(false)
+    setIsActive2(false)
+    setIsActive3(false)
   }
   const handleClick1 = () => {
-    // 👇️ toggle isActive state on click
-    setIsActive1((current) => !current);
-  };
+    setIsActive1((current) => !current)
+  }
   const handleClick2 = () => {
-    // 👇️ toggle isActive state on click
-    setIsActive2((current) => !current);
-  };
+    setIsActive2((current) => !current)
+  }
   const handleClick3 = () => {
-    // 👇️ toggle isActive state on click
-    setIsActive3((current) => !current);
-  };
+    setIsActive3((current) => !current)
+  }
   const imagenesCarousel = [
     Imagen7,
     Imagen8,
@@ -69,17 +66,22 @@ export default function Nosotros() {
     Imagen12,
     Imagen13,
     Imagen14,
-  ];
+  ]
+
   return (
     <>
       <div
         className={
           isActive1 || isActive2 || isActive3
-            ? 'closeButton-active'
+            ? `closeButton-active ${styles.closeButtonActive}`
             : 'closeButton'
         }
         style={{ backgroundImage: `url(${closeButton})` }}
         onClick={closeAll}
+        onKeyDown={(e) => e.key === 'Enter' && closeAll()}
+        role="button"
+        tabIndex="0"
+        aria-label="Close"
       />
       <BrowserView>
         <div className="homeVideos">
@@ -87,32 +89,44 @@ export default function Nosotros() {
             className={isActive1 ? 'activeVideo' : ''}
             src={video1}
             onMouseOver={unMute}
+            onFocus={unMute}
             onMouseLeave={Mute}
+            onBlur={Mute}
             onClick={handleClick1}
             autoPlay
             loop
             muted={!isActive1}
-          />
+          >
+            <track kind="captions" />
+          </video>
           <video
             className={isActive2 ? 'activeVideo' : ''}
             src={video2}
             onMouseOver={unMute}
+            onFocus={unMute}
             onMouseLeave={Mute}
+            onBlur={Mute}
             onClick={handleClick2}
             autoPlay
             loop
             muted={!isActive2}
-          />
+          >
+            <track kind="captions" />
+          </video>
           <video
             className={isActive3 ? 'activeVideo' : ''}
             src={video3}
             onMouseOver={unMute}
+            onFocus={unMute}
             onMouseLeave={Mute}
+            onBlur={Mute}
             onClick={handleClick3}
             autoPlay
             loop
             muted={!isActive3}
-          />
+          >
+            <track kind="captions" />
+          </video>
           <div className="videoButtons">
             <a
               href="https://www.youtube.com/shorts/2pFB6DUgnKA"
@@ -123,7 +137,7 @@ export default function Nosotros() {
                 id="bottone1"
                 className={isActive1 ? 'videoButton1' : 'displayNone'}
               >
-                <strong style={{ fontWeight: '600' }}>Ir a YouTube</strong>
+                <strong className={styles.strongText600}>Ir a YouTube</strong>
               </button>
             </a>
             <a
@@ -135,7 +149,7 @@ export default function Nosotros() {
                 id="bottone1"
                 className={isActive2 ? 'videoButton2' : 'displayNone'}
               >
-                <strong style={{ fontWeight: '600' }}>Ir a YouTube</strong>
+                <strong className={styles.strongText600}>Ir a YouTube</strong>
               </button>
             </a>
             <a
@@ -147,7 +161,7 @@ export default function Nosotros() {
                 id="bottone1"
                 className={isActive3 ? 'videoButton3' : 'displayNone'}
               >
-                <strong style={{ fontWeight: '600' }}>Ir a YouTube</strong>
+                <strong className={styles.strongText600}>Ir a YouTube</strong>
               </button>
             </a>
           </div>
@@ -160,20 +174,32 @@ export default function Nosotros() {
               src={video1}
               poster={Imagen1}
               onMouseOver={play}
+              onFocus={play}
               onMouseLeave={stop}
-            />
+              onBlur={stop}
+            >
+              <track kind="captions" />
+            </video>
             <video
               src={video2}
               poster={Imagen2}
               onMouseOver={play}
+              onFocus={play}
               onMouseLeave={stop}
-            />
+              onBlur={stop}
+            >
+              <track kind="captions" />
+            </video>
             <video
               src={video3}
               poster={Imagen3}
               onMouseOver={play}
+              onFocus={play}
               onMouseLeave={stop}
-            />
+              onBlur={stop}
+            >
+              <track kind="captions" />
+            </video>
           </div>
         ) : (
           <div className="homeVideos">
@@ -182,39 +208,44 @@ export default function Nosotros() {
               src={video1}
               poster={Imagen1}
               onMouseOver={play}
+              onFocus={play}
               onMouseLeave={stop}
+              onBlur={stop}
               onClick={handleClick1}
               muted={!isActive1}
-            />
+            >
+              <track kind="captions" />
+            </video>
             <video
               className={isActive2 ? 'activeVideo' : ''}
               src={video2}
               poster={Imagen2}
               onMouseOver={play}
+              onFocus={play}
               onMouseLeave={stop}
+              onBlur={stop}
               onClick={handleClick2}
               muted={!isActive2}
-            />
+            >
+              <track kind="captions" />
+            </video>
             <video
               className={isActive3 ? 'activeVideo' : ''}
               src={video3}
               poster={Imagen3}
               onMouseOver={play}
+              onFocus={play}
               onMouseLeave={stop}
+              onBlur={stop}
               onClick={handleClick3}
               muted={!isActive3}
-            />
+            >
+              <track kind="captions" />
+            </video>
           </div>
         )}
       </MobileView>
-      <div
-        className="nosotrosInfo"
-        style={{
-          backgroundColor: 'white',
-          paddingBottom: '1rem',
-          paddingTop: '1rem',
-        }}
-      >
+      <div className={`${styles.nosotrosInfo} nosotrosInfo`}>
         <p>
           <strong>AREIA</strong> es más que un torneo de fútbol.
           <br /> Es una experiencia social y deportiva.
@@ -222,37 +253,24 @@ export default function Nosotros() {
           <strong>PARA ENTENDERLA, HAY QUE VIVIRLA.</strong>
         </p>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-        }}
-        className="contenedorTorneo"
-      >
-        <div
-          className="imgTorneo"
-          style={{
-            zIndex: '10',
-            width: '34vw',
-            marginLeft: '10vw',
-          }}
-        >
+      <div className={`${styles.contenedorTorneo} contenedorTorneo`}>
+        <div className={`${styles.imgTorneo} imgTorneo`}>
           <img
-            style={{ maxWidth: '100%', position: 'relative', bottom: '2rem' }}
+            className={styles.carouselImg}
             src={Imagen4}
+            alt="Torneo imagen 1"
           />
-          <img style={{ maxWidth: '100%', filter: 'none' }} src={Imagen5} />
+          <img
+            className={styles.carouselImgFilterNone}
+            src={Imagen5}
+            alt="Torneo imagen 2"
+          />
         </div>
         <div className="textTorneo">
-          <h1
-            style={{ color: 'white', fontWeight: '900', paddingBottom: '2vh' }}
-          >
-            TORNEO
-          </h1>
-          <p style={{ color: 'white', fontWeight: '200' }}>
-            <strong style={{ color: 'white', fontWeight: '500' }}>AREIA</strong>{' '}
-            cuenta con una política de admisión
+          <h1 className={styles.torneoTitle}>TORNEO</h1>
+          <p className={styles.torneoText}>
+            <strong className={styles.torneoStrong}>AREIA</strong> cuenta con
+            una política de admisión
             <br />
             en base a un sistema de recomendaciones.
             <br />
@@ -267,53 +285,25 @@ export default function Nosotros() {
           </p>
         </div>
       </div>
-      <div
-        className="cont"
-        style={{
-          backgroundColor: '#f5ff35',
-          height: '200px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <h1 style={{ fontWeight: '400' }}>
+      <div className={`${styles.serviceBanner} cont`}>
+        <h1 className={styles.serviceTitle}>
           CALIDAD{' '}
-          <strong style={{ fontSize: '38px' }}> ATENCIÓN AL CLIENTE </strong>{' '}
+          <strong className={styles.atencionCliente}>
+            {' '}
+            ATENCIÓN AL CLIENTE{' '}
+          </strong>{' '}
           SERVICIO
         </h1>
       </div>
       <div
-        className="canchas"
+        className={`${styles.canchasBg} canchas`}
         style={{
           backgroundImage: `url(${Imagen6})`,
-          backgroundSize: 'cover',
         }}
       >
-        <div className="contenedor" style={{ height: '100%' }}>
-          <h1
-            className="titulo"
-            style={{
-              color: 'white',
-              fontWeight: '400',
-              margin: '0',
-              padding: '0',
-              position: 'relative',
-              top: '16px',
-            }}
-          >
-            5 HECTÁREAS
-          </h1>
-          <div
-            style={{
-              backgroundColor: 'white',
-              width: '40%',
-              display: 'grid',
-              placeContent: 'space-evenly',
-              paddingBottom: '5rem',
-              height: '100%',
-            }}
-          >
+        <div className={`${styles.canchasContainer} contenedor`}>
+          <h1 className={`${styles.canchasTitle} titulo`}>5 HECTÁREAS</h1>
+          <div className={styles.canchasInfoBox}>
             <h1>CANCHAS</h1>
             <p>
               -7 canchas de F7 Masculino
@@ -347,48 +337,25 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div
-        className="contenedorWhite"
-        style={{
-          backgroundColor: 'white',
-          height: '10rem',
-          display: 'flex',
-          justifyContent: 'center',
-        }}
-      />
-      <div style={{ textAlign: 'center' }}>
-        <h1
-          style={{
-            paddingBottom: '5%',
-            paddingTop: '5%',
-            color: 'rgb(243 255 51)',
-            fontWeight: '200',
-          }}
-        >
-          GALERÍA
-        </h1>
+      <div className={styles.whiteSpacer} />
+      <div className={styles.centerText}>
+        <h1 className={styles.galeriaHeader}>GALERÍA</h1>
         <Carousel className="carouselDiv" variant="dark">
           {imagenesCarousel.map((img) => (
-            <Carousel.Item>
+            <Carousel.Item key={img}>
               <img
                 className="d-block w-100 nosotrosCarrousel"
                 src={img}
-                alt="First slide"
+                alt="Galeria slide"
               />
             </Carousel.Item>
           ))}
         </Carousel>
       </div>
       <ContactoFooter />
-      <div
-        style={{
-          color: 'white',
-          textAlign: 'center',
-          marginBottom: '2rem',
-        }}
-      >
+      <div className={styles.copyright}>
         Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados
       </div>
     </>
-  );
+  )
 }
