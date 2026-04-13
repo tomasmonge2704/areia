@@ -7,9 +7,9 @@ export default function Sponsors() {
       <p className={`${styles.title} ${styles.mainTitle}`}>MAIN SPONSORS</p>
       <div className={styles.sponsorsList}>
         {[
-          'FERNET BRANCA.png',
+          'STELLA2.png',
           'GATORADE.png',
-          'STELLA.png',
+          'FERNET BRANCA.png',
           'TAKENOS.png',
           'UNDER ARMOUR.png',
         ].map((sponsor) => (
