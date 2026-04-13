@@ -1,0 +1,38 @@
+.divInicio {
+  background-color: white;
+  height: 25rem;
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center;
+  margin-top: -10px;
+}
+
+.appTitle {
+  color: black;
+  font-size: 30px;
+}
+
+.storeLinkLeft {
+  margin-right: 10px;
+}
+
+.storeLinkRight {
+  margin-left: 10px;
+}
+
+.textInicio {
+  color: black;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.contenedorImagenesInicio {
+  background-size: 100% 100%;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}

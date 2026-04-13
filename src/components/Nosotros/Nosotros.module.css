@@ -1,0 +1,119 @@
+.closeButtonActive {
+  background-size: cover;
+}
+
+.nosotrosInfo {
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.contenedorTorneo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imgTorneo {
+  z-index: 10;
+  width: 34vw;
+  margin-left: 10vw;
+}
+
+.strongText600 {
+  font-weight: 600;
+}
+
+.carouselImg {
+  max-width: 100%;
+  position: relative;
+  bottom: 2rem;
+}
+
+.carouselImgFilterNone {
+  max-width: 100%;
+  filter: none;
+}
+
+.torneoTitle {
+  color: white;
+  font-weight: 900;
+  padding-bottom: 2vh;
+}
+
+.torneoText {
+  color: white;
+  font-weight: 200;
+}
+
+.torneoStrong {
+  color: white;
+  font-weight: 500;
+}
+
+.serviceBanner {
+  background-color: #f5ff35;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceTitle {
+  font-weight: 400;
+}
+
+.atencionCliente {
+  font-size: 38px;
+}
+
+.canchasBg {
+  background-size: cover;
+}
+
+.canchasContainer {
+  height: 100%;
+}
+
+.canchasTitle {
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 16px;
+}
+
+.canchasInfoBox {
+  background-color: white;
+  width: 40%;
+  display: grid;
+  place-content: space-evenly;
+  padding-bottom: 5rem;
+  height: 100%;
+}
+
+.whiteSpacer {
+  background-color: white;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.galeriaHeader {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  color: rgb(243 255 51);
+  font-weight: 200;
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}

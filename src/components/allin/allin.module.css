@@ -1,0 +1,93 @@
+.headerRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+.igLink {
+  margin-bottom: 0rem;
+  font-weight: unset;
+}
+
+.menuTitleBox {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 6vh;
+}
+
+.exclusiveText {
+  color: white;
+}
+
+.menuGrid {
+  margin: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.combosBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12%;
+}
+
+.comboItem {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.bottlesBox {
+  border: 1px solid;
+  border-color: rgb(243 254 52);
+  width: 47%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottleNombre {
+  width: 80%;
+}
+
+.bottlePrecio {
+  width: 20%;
+}
+
+.mixersBox {
+  border: 1px solid;
+  border-color: rgb(243 254 52);
+  width: 53%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mixerNombre {
+  width: 70%;
+}
+
+.mixerPrecio {
+  width: 10%;
+}
+
+.lineaAmarillaTop {
+  border-top: 1px solid;
+  color: rgb(243 254 52);
+  width: 100%;
+  margin-bottom: 0.7vh;
+}
+
+.lineaAmarillaBottom {
+  border-top: 1px solid;
+  color: rgb(243 254 52);
+  width: 100%;
+}

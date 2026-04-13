@@ -440,10 +440,12 @@ a {
     text-align: center;
   }
   #socialIcons {
-    position: relative;
-    left: 77%;
-    top: -35px;
-    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
   }
   .navbar-nav {
     margin-left: 0;

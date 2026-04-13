@@ -1,18 +1,11 @@
-import React from 'react';
-import './spinner.css';
+import React from 'react'
+import styles from './spinner.module.css'
+import './spinner.css'
 
 export default function LoadingSpinner() {
   return (
-    <div
-      className="spinner-container"
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        height: '100vh',
-        alignItems: 'center',
-      }}
-    >
+    <div className={`${styles.container} spinner-container`}>
       <div className="loader" />
     </div>
-  );
+  )
 }

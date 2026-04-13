@@ -1,12 +1,13 @@
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
-import './Eventos.css';
-import { isMobile } from 'react-device-detect';
-import ContactoFooter from '../contactoFooter';
+import { Container, Row, Col, Carousel } from 'react-bootstrap'
+import { isMobile } from 'react-device-detect'
+import ContactoFooter from '../contactoFooter'
+import styles from './Eventos.module.css'
+import './Eventos.css'
 
-const importAll = (requireContext) => requireContext.keys().map(requireContext);
+const importAll = (requireContext) => requireContext.keys().map(requireContext)
 const images = importAll(
   require.context('../../../public/Carrousell', false, /\.(jpg|jpeg|png)$/)
-);
+)
 
 export default function Eventos() {
   return (
@@ -33,8 +34,7 @@ export default function Eventos() {
                 para que tu evento sea único.
               </h2>
               <button
-                className="eventos-boton"
-                style={{ marginTop: '15px' }}
+                className={`eventos-boton ${styles.margin15}`}
                 onClick={() =>
                   window.open('https://wa.me/+5491134022431', '_blank')
                 }
@@ -71,8 +71,7 @@ export default function Eventos() {
                 corporativos.
               </p>
               <button
-                style={{ marginTop: '10px' }}
-                className="eventos-boton"
+                className={`eventos-boton ${styles.margin10}`}
                 onClick={() =>
                   window.open('https://wa.me/+5491134022431', '_blank')
                 }
@@ -98,28 +97,19 @@ export default function Eventos() {
           </Row>
         </Container>
       </section>
-      <section
-        style={{ backgroundColor: 'white', overflow: 'hidden' }}
-        className="carousel-section"
-      >
+      <section className={`carousel-section ${styles.carouselSection}`}>
         <Container fluid className="p-0">
           <Row className="m-0">
             <Col className="p-0">
               <Carousel
-                style={{ overflow: 'hidden' }}
-                className="carousel-item-height"
+                className={`carousel-item-height ${styles.carouselStyle}`}
               >
                 {images.map((image, index) => (
                   <Carousel.Item key={image} className="carousel-item-height">
                     <img
-                      className="d-block w-100"
+                      className={`d-block w-100 ${styles.carouselImg}`}
                       src={image}
                       alt={`Slide ${index + 1}`}
-                      style={{
-                        height: '100%',
-                        maxHeight: '100%',
-                        objectFit: 'cover',
-                      }}
                     />
                   </Carousel.Item>
                 ))}
@@ -134,12 +124,10 @@ export default function Eventos() {
             <Col
               xs={12}
               md={2}
-              style={{ width: '100%' }}
-              className="d-flex flex-column justify-content-center align-items-center"
+              className={`d-flex flex-column justify-content-center align-items-center ${styles.contOfreceCol}`}
             >
               <div
-                className="offer-box bg-yellow h-100 d-flex flex-column justify-content-center align-items-center"
-                style={{ height: '100%', marginBottom: '2rem' }}
+                className={`offer-box bg-yellow h-100 d-flex flex-column justify-content-center align-items-center ${styles.offerBox}`}
               >
                 <h3 className="text-center2">Qué te ofrecemos</h3>
               </div>
@@ -161,7 +149,7 @@ export default function Eventos() {
                   <div className="feature-content">
                     <img
                       src={`/sinFondo/${index + 1}.png`}
-                      style={{ height: '100px' }}
+                      className={styles.featureIcon}
                       alt="check"
                     />
                     <h5 className="bold">{feature}</h5>
@@ -174,7 +162,7 @@ export default function Eventos() {
       </section>
       {!isMobile && (
         <section className="seccion-blanco">
-          <Container fluid style={{ padding: '6%' }}>
+          <Container fluid className={styles.padding6}>
             <Row className="w-100">
               <Col xs={12} md={4}>
                 <img
@@ -204,24 +192,16 @@ export default function Eventos() {
       <section className="seccion-blanco">
         <Container fluid className="text-center">
           <Row>
-            <Col
-              xs={12}
-              md={5}
-              style={{
-                backgroundColor: '#807046',
-                color: 'white',
-                padding: '4%',
-              }}
-            >
+            <Col xs={12} md={5} className={styles.corporativoCol}>
               <h1 className="tituloVenue2">Corporativo</h1>
               <img
                 src="/2.png"
                 alt="Evento en Areia Venue"
-                style={{ width: '100%', objectFit: 'cover' }}
+                className={styles.corporativoImg}
               />
               <Row className="text-start p-4">
                 <h2 className="eventos-descripcion bold">TEAM BUILDING</h2>
-                <p style={{ width: '80%' }}>
+                <p className={styles.corporativoText}>
                   Actividades divertidas y distendidas para tu empresa. El
                   objetivo es fomentar el trabajo en equipo y mejorar las
                   relaciones interpersonales.
@@ -229,34 +209,34 @@ export default function Eventos() {
               </Row>
             </Col>
             <Col xs={12} md={7} className="text-start">
-              <Row style={{ alignItems: 'center' }}>
+              <Row className={styles.actividadesCol}>
                 <Col>
                   <img
                     src="/3.png"
                     alt="Evento en Areia Venue"
-                    style={{ width: '100%', objectFit: 'cover' }}
+                    className={styles.actividadesImg}
                   />
                 </Col>
                 <Col>
                   <h2 className="eventos-descripcion bold">ACTIVIDADES</h2>
-                  <p style={{ width: '70%' }}>
+                  <p className={styles.actividadesText}>
                     Actividades deportivas coordinadas por miembros de nuestro
                     staff + distintas actividades recreativas disponibles
                     durante todo el evento.
                   </p>
                 </Col>
               </Row>
-              <Row style={{ alignItems: 'center' }}>
+              <Row className={styles.actividadesCol}>
                 <Col>
                   <img
                     src="/4.png"
                     alt="Evento en Areia Venue"
-                    style={{ width: '100%', objectFit: 'cover' }}
+                    className={styles.actividadesImg}
                   />
                 </Col>
                 <Col>
                   <h2 className="eventos-descripcion bold">CATERING & BARRA</h2>
-                  <p style={{ width: '70%' }}>
+                  <p className={styles.actividadesText}>
                     Nuestra propuesta incluye catering a lo largo de todo el
                     evento, y un after party opcional.
                   </p>
@@ -267,46 +247,20 @@ export default function Eventos() {
         </Container>
       </section>
       <section className="seccion-blanco">
-        <Container fluid style={{ padding: '10%' }}>
+        <Container fluid className={styles.padding10}>
           <Row>
-            <h2
-              className="sociales-title"
-              style={{
-                position: 'relative',
-                top: '45px',
-                fontWeight: '1000',
-              }}
-            >
+            <h2 className={`sociales-title ${styles.socialesTitle}`}>
               Sociales
             </h2>
           </Row>
           <Row>
-            <Col
-              xs={12}
-              md={6}
-              style={{ display: 'grid', justifyItems: 'center' }}
-            >
+            <Col xs={12} md={6} className={styles.socialesCol}>
               <img
                 src="/boda.jpg"
                 alt="Evento en Areia Venue"
-                style={{
-                  width: '100%',
-                  height: '70vh',
-                  objectFit: 'cover',
-                  borderRadius: '7%',
-                }}
+                className={styles.socialesCardImg}
               />
-              <Row
-                style={{
-                  backgroundColor: '#171718',
-                  color: 'white',
-                  padding: '3%',
-                  borderRadius: '30px',
-                  width: '70%',
-                  position: 'relative',
-                  bottom: '5rem',
-                }}
-              >
+              <Row className={styles.casamientosRow}>
                 <h2 className="eventos-descripcion bold">CASAMIENTOS</h2>
                 <p>
                   Te acompañamos en el camino a este día tan especial con una
@@ -315,31 +269,13 @@ export default function Eventos() {
                 </p>
               </Row>
             </Col>
-            <Col
-              xs={12}
-              md={6}
-              style={{ display: 'grid', justifyItems: 'center' }}
-            >
+            <Col xs={12} md={6} className={styles.socialesCol}>
               <img
                 src="/DSC02042.jpg"
                 alt="Evento en Areia Venue"
-                style={{
-                  width: '100%',
-                  objectFit: 'cover',
-                  height: '70vh',
-                  borderRadius: '7%',
-                }}
+                className={styles.socialesCardImg}
               />
-              <Row
-                style={{
-                  backgroundColor: '#fae94f',
-                  padding: '3%',
-                  borderRadius: '30px',
-                  width: '70%',
-                  position: 'relative',
-                  bottom: '5rem',
-                }}
-              >
+              <Row className={styles.cumpleRow}>
                 <h2 className="eventos-descripcion bold">
                   CUMPLEAÑOS & FIESTAS
                 </h2>
@@ -355,20 +291,15 @@ export default function Eventos() {
       <section>
         <Container
           fluid
-          className="text-center"
+          className={`text-center ${styles.experienciaContainer}`}
           style={{
-            padding: '6%',
-            height: '80vh',
-            alignContent: 'center',
             backgroundImage: `
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
             url(./DSC02017.jpg)
           `,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
           }}
         >
-          <p style={{ color: 'white' }} className="tituloVenue3">
+          <p className={`${styles.experienciaText} tituloVenue3`}>
             Más de 5 hectáreas de espacio verde, ideales para desconectarse{' '}
             <br /> de la rutina y vivir una experiencia única.
             <br /> * <br /> La versatilidad de nuestras instalaciones permite
@@ -377,17 +308,14 @@ export default function Eventos() {
           </p>
         </Container>
       </section>
-      <footer style={{ overflow: 'hidden' }}>
-        <Container
-          className="text-center"
-          style={{ color: 'white', height: '35rem' }}
-        >
+      <footer className={styles.footerWrapper}>
+        <Container className={`text-center ${styles.footerContainer}`}>
           <Row className="h-100 justify-content-center align-items-center mt-5">
             <Col className="d-flex flex-column align-items-center gap-3">
               <h2 className="bold grande">
                 AREIA SIEMPRE <br /> ESTUVO CERCA.
               </h2>
-              <p style={{ fontSize: '20px' }}>
+              <p className={styles.footerText}>
                 A 35km de Capital Federal con fácil y rápido acceso en una zona{' '}
                 <br />
                 segura rodeada de barrios cerrados.
@@ -398,15 +326,9 @@ export default function Eventos() {
         </Container>
       </footer>
       <ContactoFooter />
-      <div
-        style={{
-          color: 'white',
-          textAlign: 'center',
-          marginBottom: '2rem',
-        }}
-      >
+      <div className={styles.copyright}>
         Copyright 2024 AREIA©️ - Ementa SRL - Todos los derechos reservados
       </div>
     </>
-  );
+  )
 }

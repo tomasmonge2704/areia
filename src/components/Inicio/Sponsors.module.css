@@ -1,0 +1,65 @@
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  background-color: rgb(243 255 51) !important;
+}
+
+.sponsorsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sponsorItem {
+  max-height: 150px;
+  max-width: 250px;
+  width: auto;
+  cursor: pointer;
+}
+
+.mainTitle {
+  margin-top: 3rem;
+}
+
+.partnerTitle {
+  margin-top: 1rem;
+}
+
+.sponsorImg {
+  width: 100%;
+  height: auto;
+}
+
+.mainSponsor {
+  max-width: 1200px;
+}
+
+.partnerSponsor {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .sponsorsList {
+    gap: 0;
+    padding: 1rem 0;
+  }
+
+  .sponsorItem {
+    max-height: 80px;
+    max-width: 180px;
+  }
+}

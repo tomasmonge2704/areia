@@ -1,5 +1,6 @@
-import imagenMapa from '../../SELECCION_DE_FOTOS/mapa.webp';
-import imagenMapa2 from '../../SELECCION_DE_FOTOS/mapa2.webp';
+import styles from './mapa.module.css'
+import imagenMapa from '../../SELECCION_DE_FOTOS/mapa.webp'
+import imagenMapa2 from '../../SELECCION_DE_FOTOS/mapa2.webp'
 
 export default function Mapa() {
   return (
@@ -19,15 +20,10 @@ export default function Mapa() {
           <img
             src={imagenMapa2}
             alt="Mapa detallado"
-            style={{
-              width: '100%',
-              height: '100%',
-              padding: '5%',
-              filter: 'drop-shadow(2px 4px 6px black)',
-            }}
+            className={styles.mapaDetailedImg}
           />
         </div>
       </div>
     </div>
-  );
+  )
 }

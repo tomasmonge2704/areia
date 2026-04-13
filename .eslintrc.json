@@ -11,7 +11,7 @@
     "react/button-has-type": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "prettier/prettier": "error",
-    "semi": ["error", "always"],
+    "semi": ["error", "never"],
     "react/jsx-props-no-spreading": "off",
     "no-duplicate-imports": "error",
     "import/no-dynamic-require": "off",
