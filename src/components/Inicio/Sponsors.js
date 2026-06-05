@@ -8,10 +8,11 @@ export default function Sponsors() {
       <div className={styles.sponsorsList}>
         {[
           'STELLA2.png',
+          'UNDER ARMOUR.png',
+          'Swiss Medical.png',
           'GATORADE.png',
           'FERNET BRANCA.png',
           'TAKENOS.png',
-          'UNDER ARMOUR.png',
         ].map((sponsor) => (
           <img
             key={sponsor}
