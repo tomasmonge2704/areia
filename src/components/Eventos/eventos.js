@@ -118,25 +118,20 @@ export default function Eventos() {
           </Row>
         </Container>
       </section>
-      <section className="imgFondo1">
-        <Container fluid className="text-center contOfrece">
-          <Row className="justify-content-center">
-            <Col
-              xs={12}
-              md={2}
-              className={`d-flex flex-column justify-content-center align-items-center ${styles.contOfreceCol}`}
-            >
-              <div
-                className={`offer-box bg-yellow h-100 d-flex flex-column justify-content-center align-items-center ${styles.offerBox}`}
-              >
-                <h3 className="text-center2">Qué te ofrecemos</h3>
-              </div>
-            </Col>
-            <Col
-              xs={12}
-              md={10}
-              className="d-flex flex-wrap justify-content-center"
-            >
+      <section className="seccion-ofrecemos">
+        <div className="ofrecemos-container">
+          <div className="ofrecemos-imagen-col">
+            <img
+              src="/evento1.webp"
+              alt="Qué te ofrecemos en Areia Venue"
+              className="ofrecemos-imagen"
+            />
+          </div>
+          <div className="ofrecemos-info-col">
+            <div className="ofrecemos-header">
+              <h2 className="ofrecemos-titulo">Qué te ofrecemos</h2>
+            </div>
+            <div className="ofrecemos-lista">
               {[
                 'Estacionamiento privado +500 autos',
                 'Seguridad privada',
@@ -145,20 +140,23 @@ export default function Eventos() {
                 'Actividades deportivas',
                 'Event Planner y más!',
               ].map((feature, index) => (
-                <Col xs={6} md={3} className="feature-box" key={feature}>
-                  <div className="feature-content">
+                <div
+                  className={`ofrecemos-item ofrecemos-item-${index + 1}`}
+                  key={feature}
+                >
+                  <div className="ofrecemos-icon-wrapper">
                     <img
                       src={`/sinFondo/${index + 1}.png`}
-                      className={styles.featureIcon}
-                      alt="check"
+                      className="ofrecemos-icon"
+                      alt={feature}
                     />
-                    <h5 className="bold">{feature}</h5>
                   </div>
-                </Col>
+                  <h4 className="ofrecemos-text">{feature}</h4>
+                </div>
               ))}
-            </Col>
-          </Row>
-        </Container>
+            </div>
+          </div>
+        </div>
       </section>
       {!isMobile && (
         <section className="seccion-blanco">

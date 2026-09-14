@@ -7,6 +7,7 @@ import ContactoFooter from '../contactoFooter'
 import Sponsors from './Sponsors'
 import fotoInicio from '../../SELECCION_DE_FOTOS/FotoInicioAREIAweb.jpg'
 import posterVideoInicio from '../../SELECCION_DE_FOTOS/posterVideoInicio.png'
+import logo from '../../SELECCION_DE_FOTOS/logo.webp'
 
 import './Inicio.css'
 
@@ -24,6 +25,7 @@ export default function Inicio() {
           />
         )}
         <ReactPlayer
+          className="react-player"
           url="./videoInicio.mp4"
           playing
           muted
@@ -48,7 +50,10 @@ export default function Inicio() {
         />
       </div>
       <div className={`${styles.divInicio} divInicio`}>
-        <p className={styles.appTitle}>AREIA APP</p>
+        <div className={styles.appTitle}>
+          <img src={logo} alt="AREIA" className={styles.appLogo} />
+          <span className={styles.appWord}>APP</span>
+        </div>
         <div className="storeButton">
           <a
             href="https://apps.apple.com/app/areia/id6478087598"
@@ -81,21 +86,27 @@ export default function Inicio() {
           backgroundImage: `url(${fotoInicio})`,
         }}
       >
-        <img
-          src="./DSC07056.jpg"
-          className="imagenesInicio"
-          alt="Imagen destacada 1"
-        />
-        <img
-          src="./DSC08153.jpg"
-          className="imagenesInicio"
-          alt="Imagen destacada 2"
-        />
-        <img
-          src="./DSC08935.jpg"
-          className="imagenesInicio"
-          alt="Imagen destacada 3"
-        />
+        <div className="cardInicio cardInicio-1">
+          <img
+            src="./DSC07056.jpg"
+            className="imagenesInicio"
+            alt="Imagen destacada 1"
+          />
+        </div>
+        <div className="cardInicio cardInicio-2">
+          <img
+            src="./DSC08153.jpg"
+            className="imagenesInicio"
+            alt="Imagen destacada 2"
+          />
+        </div>
+        <div className="cardInicio cardInicio-3">
+          <img
+            src="./DSC08935.jpg"
+            className="imagenesInicio"
+            alt="Imagen destacada 3"
+          />
+        </div>
       </div>
       <Sponsors />
       <ContactoFooter />
