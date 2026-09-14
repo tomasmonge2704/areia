@@ -144,45 +144,174 @@
   color: white;
   text-align: left;
 }
-.imgFondo1 {
-  background-size: cover;
-  background-position: center;
-  background-image: url('/public/evento1.webp');
-}
-.feature-box {
+/* Sección Qué te ofrecemos - Split 50/50 Desktop & Parallax Stacking Mobile */
+.seccion-ofrecemos {
   width: 100%;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  background: rgb(255 255 255 / 80%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.offer-box {
-  padding: 20px;
-  color: #333;
-  text-align: center;
-}
-
-.bg-yellow {
-  border-radius: 10px;
-  background-color: rgb(250, 233, 78);
-}
-
-.offer-image {
+.ofrecemos-container {
+  display: flex;
   width: 100%;
-  height: auto;
-  clip-path: circle(50% at center);
+  min-height: 85vh;
 }
 
-.feature-content {
-  text-align: center;
+.ofrecemos-imagen-col {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
 }
 
-.feature-icon {
-  font-size: 2rem;
-  color: #ffc107;
-  margin-bottom: 10px;
+.ofrecemos-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ofrecemos-info-col {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 4.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.ofrecemos-header {
+  margin-bottom: 2.25rem;
+}
+
+.ofrecemos-titulo {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #171718;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.ofrecemos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.ofrecemos-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(23, 23, 24, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
+}
+
+.ofrecemos-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.ofrecemos-item-1 { z-index: 1; --stack-idx: 0; }
+.ofrecemos-item-2 { z-index: 2; --stack-idx: 1; }
+.ofrecemos-item-3 { z-index: 3; --stack-idx: 2; }
+.ofrecemos-item-4 { z-index: 4; --stack-idx: 3; }
+.ofrecemos-item-5 { z-index: 5; --stack-idx: 4; }
+.ofrecemos-item-6 { z-index: 6; --stack-idx: 5; }
+
+.ofrecemos-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.ofrecemos-icon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ofrecemos-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .ofrecemos-container {
+    flex-direction: column;
+  }
+  .ofrecemos-imagen-col {
+    width: 100%;
+    height: 42vh;
+  }
+  .ofrecemos-info-col {
+    width: 100%;
+    padding: 2.5rem 1.25rem 4rem 1.25rem;
+  }
+  .ofrecemos-titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .ofrecemos-lista {
+    display: block;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  .ofrecemos-item {
+    position: sticky;
+    top: calc(75px + var(--stack-idx, 0) * 10px);
+    width: 100%;
+    min-height: 110px;
+    margin-bottom: 2rem;
+    background-color: rgba(23, 23, 24, 0.95);
+    box-shadow: 0 -10px 28px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+  }
+  .ofrecemos-icon-wrapper {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    margin-right: 1.25rem;
+  }
+  .ofrecemos-text {
+    font-size: 1.05rem;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @keyframes venueItemParallax {
+    to {
+      transform: scale(0.95);
+      filter: brightness(0.85);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ofrecemos-item-1,
+    .ofrecemos-item-2,
+    .ofrecemos-item-3,
+    .ofrecemos-item-4,
+    .ofrecemos-item-5 {
+      animation: venueItemParallax linear both;
+      animation-timeline: view();
+      animation-range: exit 0% exit 100%;
+      transform-origin: center top;
+    }
+  }
 }
 .social-icon {
   color: rgb(243 255 51);
@@ -231,7 +360,7 @@
 .momentos-section,
 .seccion-blanco,
 .carousel-section,
-.imgFondo1 {
+.seccion-ofrecemos {
   overflow-x: hidden;
   width: 100%;
 }

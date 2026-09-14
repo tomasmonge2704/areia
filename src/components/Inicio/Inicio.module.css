@@ -1,5 +1,5 @@
 .divInicio {
-  background-color: white;
+  background-color: rgba(23, 23, 24, 0.95);
   height: 25rem;
   display: grid;
   justify-content: space-around;
@@ -9,8 +9,25 @@
 }
 
 .appTitle {
-  color: black;
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.appLogo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.appWord {
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
 }
 
 .storeLinkLeft {
@@ -21,10 +38,25 @@
   margin-left: 10px;
 }
 
+.storeLinkLeft img,
+.storeLinkRight img {
+  filter: invert(1);
+  transition: transform 0.2s ease;
+}
+
+.storeLinkLeft:hover img,
+.storeLinkRight:hover img {
+  transform: scale(1.04);
+}
+
 .textInicio {
-  color: black;
+  color: white;
   font-size: 16px;
   margin-top: 30px;
+}
+
+.textInicio strong {
+  color: rgb(243 255 51) !important;
 }
 
 .contenedorImagenesInicio {
@@ -35,4 +67,16 @@
   color: white;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .appTitle {
+    margin-bottom: 22px;
+  }
+  .appLogo {
+    height: 32px;
+  }
+  .appWord {
+    font-size: 24px;
+  }
 }
