@@ -24,9 +24,9 @@ export default function Sponsors() {
       </div>
 
       <p className={`${styles.title} ${styles.partnerTitle}`}>PARTNERS</p>
-      <div className="contenedorSponsors">
+      <div className="contenedorSponsors" style={{ padding: '0px' }}>
         <img
-          src="./partners3.png"
+          src="./partners7.png"
           alt="partners 1"
           className={`${styles.sponsorImg} ${styles.partnerSponsor}`}
           style={{ marginTop: '2rem' }}
